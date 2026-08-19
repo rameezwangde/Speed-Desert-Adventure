@@ -200,3 +200,85 @@
 /* Keep centering independent from Framer Motion's inline scale transform */
 .equipment-map>img{left:50%;top:50%;translate:-50% -50%}
 @media(max-width:700px){.equipment-map>img{left:auto;top:auto;translate:none}}
+
+/* Payment Banner */
+.payment-banner {
+  background: #090909;
+  padding: 15px 4vw;
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid #222;
+  border-bottom: 3px solid #222;
+}
+.payment-banner:after {
+  content:'';
+  position:absolute;
+  inset:0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.45'/%3E%3C/svg%3E");
+  opacity: 0.15;
+  pointer-events: none;
+}
+.pb-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  gap: 4vw;
+}
+.pb-buggy {
+  flex: 0 0 220px;
+}
+.pb-buggy img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 15px 15px rgba(0,0,0,0.5));
+  transform: scaleX(-1);
+}
+.pb-text {
+  flex: 1;
+}
+.pb-text h3 {
+  font: 600 24px/1 'Barlow Condensed';
+  color: #d71920;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+  letter-spacing: 0.05em;
+}
+.pb-text h2 {
+  font: 900 44px/1 Oswald;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+}
+.pb-action {
+  flex: 0 0 auto;
+}
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  background: #d71920;
+  color: white;
+  font: 700 16px Oswald;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 15px rgba(215, 25, 32, 0.25);
+  transition: transform 0.2s, background 0.2s;
+}
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  background: #e31b23;
+}
+@media(max-width: 800px) {
+  .pb-content { flex-direction: column; text-align: center; gap: 15px; }
+  .pb-buggy { flex: 0 0 150px; }
+  .pb-text h3 { font-size: 20px; }
+  .pb-text h2 { font-size: 34px; }
+  .pb-action { margin-bottom: 10px; margin-top: 10px; }
+}

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import IntroExperience from './components/IntroExperience'
 import Hero from './components/Hero'
 import NoAdvancePayment from './components/NoAdvancePayment'
+import PaymentBanner from './components/PaymentBanner'
 import AboutPreview from './components/AboutPreview'
 import TourHighlights from './components/TourHighlights'
 import PricingBooking from './components/PricingBooking'
@@ -37,7 +38,8 @@ export default function App() {
         <Navbar ready={heroReady} />
         <main>
           <Hero ready={heroReady} />
-          <NoAdvancePayment />
+          {/* <NoAdvancePayment /> */}
+          <PaymentBanner />
           <AboutPreview />
           <TourHighlights />
           <PricingBooking />
