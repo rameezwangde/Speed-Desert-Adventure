@@ -14,7 +14,7 @@ const questions = [
 
 export default function FAQ() {
   const [open,setOpen]=useState(1)
-  return <section className="faq-section"><div className="faq-bg">FAQ</div><SectionHeading eyebrow="KNOW BEFORE YOU RIDE" title="Frequently Asked" accent="Questions" />
+  return <section className="faq-section"><SectionHeading eyebrow="KNOW BEFORE YOU RIDE" title="Frequently Asked" accent="Questions" />
     <div className="faq-list">{questions.map(([q,a],i)=><div className={`faq-row ${open===i?'open':''}`} key={q}><button onClick={()=>setOpen(open===i?-1:i)}><b>{String(i+1).padStart(2,'0')}</b><span>{q}</span><i>+</i></button><AnimatePresence initial={false}>{open===i&&<motion.div initial={{height:0,opacity:0}} animate={{height:'auto',opacity:1}} exit={{height:0,opacity:0}} transition={{duration:.35}}><p>{a}</p></motion.div>}</AnimatePresence></div>)}</div>
   </section>
 }
