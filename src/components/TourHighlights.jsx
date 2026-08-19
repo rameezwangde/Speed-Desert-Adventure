@@ -2,9 +2,36 @@ import { motion } from 'framer-motion'
 import SectionHeading from './SectionHeading'
 
 const tours = [
-  { id: '01', title: '4 Seater Early Bird Dune Buggy Tour', copy: 'A sunrise-ready desert route for your group.', duration: '—', seats: '4', transfer: 'Optional', image: '/tour-blue.png', position: '58%' },
-  { id: '02', title: 'Red Dunes Afternoon Buggy Tour', copy: 'A guided afternoon drive through open red dunes.', duration: '—', seats: '—', transfer: 'Optional', image: '/tour-red.png', position: '55%' },
-  { id: '03', title: 'Desert Combo: Safari + Dune Buggy', copy: 'A flexible combo experience ready for final details.', duration: '—', seats: '—', transfer: 'Optional', image: '/tour-four-seat.png', position: '43%' },
+  { 
+    price: '500 AED', 
+    title: '4 Seater Early Bird Dune Buggy Tour (Couples)', 
+    copy: 'Join our Early Bird Buggy Tour for an exciting desert adventure!',
+    duration: '1-hour', 
+    seats: '1, 2 & 4 Seaters', 
+    transferType: 'Private Transfer',
+    transfer: '300 AED', 
+    image: '/tour-blue.png' 
+  },
+  { 
+    price: '500 AED', 
+    title: 'Red Dunes Afternoon Buggy Tour (Family)', 
+    copy: 'Explore the famous Red Dunes of Dubai during the magical golden hours of the afternoon.',
+    duration: '1-hour', 
+    seats: '1, 2 & 4 Seaters', 
+    transferType: 'Private Transfer',
+    transfer: '300 AED', 
+    image: '/tour-red.png' 
+  },
+  { 
+    price: '399 AED', 
+    title: 'Desert Combo: Sharing Safari + Dune Buggy', 
+    copy: 'Embark on an unforgettable adventure through the stunning Dubai desert with our Desert Combo tour.',
+    duration: '1-hour', 
+    seats: '1, 2 & 4 Seaters', 
+    transferType: 'Shared Transfer',
+    transfer: 'Free Pick & Drop', 
+    image: '/tour-four-seat.png' 
+  },
 ]
 
 export default function TourHighlights() {
@@ -22,14 +49,41 @@ export default function TourHighlights() {
         </span>
       </h2>
     </motion.div>
-    <div className="tour-grid">
-      {tours.map((tour, i) => <motion.article className="tour-card" key={tour.id} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .2 }} transition={{ delay: i * .12, duration: .7, ease: [.22,1,.36,1] }}>
-        <div className="tour-image" style={{ '--position': tour.position, '--image': `url(${tour.image})` }}><div className="tour-slash"/><span className="tour-price">FROM AED —</span><b>{tour.id}</b></div>
-        <div className="tour-body"><h3>{tour.title}</h3><p>{tour.copy}</p>
-          <div className="tour-specs"><div><small>01 / DURATION</small><strong>{tour.duration}</strong></div><div><small>02 / SEATS</small><strong>{tour.seats}</strong></div><div><small>03 / TRANSFER</small><strong>{tour.transfer}</strong></div></div>
-          <div className="tour-actions"><a href="#contact">Book now</a><a href="#pricing">Tour details <span>↗</span></a></div>
-        </div>
-      </motion.article>)}
+    <div className="hourly-grid">
+      {tours.map((tour, i) => (
+        <motion.article className="hourly-card" key={i} initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .25 }} transition={{ delay: i * .12, duration: .7, ease: [.22,1,.36,1] }}>
+          <div className="nhc-image-wrap">
+            <img src={tour.image} alt={tour.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
+            <div className="nhc-price">{tour.price}</div>
+          </div>
+          <div className="nhc-body">
+            <h3 className="nhc-title">{tour.title}</h3>
+            <p style={{ color: '#999', fontSize: '16px', lineHeight: '1.4', textAlign: 'center', marginBottom: '25px' }}>{tour.copy}</p>
+            
+            <div className="nhc-specs">
+              <div className="nhc-spec">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path d="M12 6v6l4 2" strokeWidth="2" strokeLinecap="round"/></svg>
+                <small>Duration</small>
+                <strong>{tour.duration}</strong>
+              </div>
+              <div className="nhc-spec">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" strokeWidth="2"/><circle cx="9" cy="7" r="4" strokeWidth="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" strokeWidth="2"/><path d="M16 3.13a4 4 0 0 1 0 7.75" strokeWidth="2"/></svg>
+                <small>Seats</small>
+                <strong>{tour.seats}</strong>
+              </div>
+              <div className="nhc-spec">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" strokeWidth="2"/><circle cx="7" cy="17" r="2" strokeWidth="2"/><path d="M9 17h6" strokeWidth="2"/><circle cx="17" cy="17" r="2" strokeWidth="2"/></svg>
+                <small>{tour.transferType}</small>
+                <strong>{tour.transfer}</strong>
+              </div>
+            </div>
+            <div className="nhc-actions">
+              <a href="#book" className="btn-primary">BOOK NOW</a>
+              <a href="#details" className="btn-secondary">TOUR DETAILS</a>
+            </div>
+          </div>
+        </motion.article>
+      ))}
     </div>
   </section>
 }
