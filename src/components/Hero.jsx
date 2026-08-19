@@ -6,7 +6,7 @@ export default function Hero({ ready }) {
   const item = (delay, extra = {}) => ({ initial: { opacity: 0, x: -50, ...extra }, animate: ready ? { opacity: 1, x: 0, rotate: 0 } : {}, transition: { delay, duration: .85, ease: [.22,1,.36,1] } })
   return (
     <section id="home" className="hero">
-      <div className="hero-grain"/><div className="speed-lines"/>
+      <div className="speed-lines"/>
       <motion.div className="hero-photo" initial={{ opacity: 0, x: 80 }} animate={ready ? { opacity: 1, x: 0 } : {}} transition={{ delay: .45, duration: 1.15, ease: [.22,1,.36,1] }}/>
       <div className="red-slashes"/>
       <div className="hero-copy">
