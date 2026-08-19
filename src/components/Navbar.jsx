@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import BrushButton from './BrushButton'
 
-const links = ['Home', 'About Us', 'Packages', 'Gallery', 'Contact']
+const links = ['Home', 'About Us', 'Packages', 'Gallery', 'Testimonials', 'Contact']
 
 export default function Navbar({ ready }) {
   const [scrolled, setScrolled] = useState(false)
