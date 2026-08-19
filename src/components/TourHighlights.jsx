@@ -36,7 +36,7 @@ const tours = [
 
 export default function TourHighlights() {
   return <section className="tour-highlights" id="tour-highlights">
-    <div className="giant-ride">CHOOSE YOUR RIDE</div>
+
     <motion.div className="custom-scribble-heading" initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .45 }} transition={{ duration: .7, ease: [.22,1,.36,1] }}>
       <span className="csh-eyebrow">BUILT FOR THE DUNES</span>
       <h2 className="csh-title">
