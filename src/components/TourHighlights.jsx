@@ -10,7 +10,18 @@ const tours = [
 export default function TourHighlights() {
   return <section className="tour-highlights" id="tour-highlights">
     <div className="giant-ride">CHOOSE YOUR RIDE</div>
-    <SectionHeading eyebrow="BUILT FOR THE DUNES" title="Speed Desert Adventure —" accent="Tour Highlights" />
+    <motion.div className="custom-scribble-heading" initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .45 }} transition={{ duration: .7, ease: [.22,1,.36,1] }}>
+      <span className="csh-eyebrow">BUILT FOR THE DUNES</span>
+      <h2 className="csh-title">
+        Speed Desert Adventure —{' '}
+        <span className="csh-accent">
+          Tour Highlights
+          <svg className="csh-scribble" viewBox="0 0 100 20" preserveAspectRatio="none">
+            <path d="M 2 12 Q 8 2 14 12 T 26 12 T 38 12 T 50 12 T 62 12 T 74 12 T 86 12 T 98 12" stroke="#d71920" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </span>
+      </h2>
+    </motion.div>
     <div className="tour-grid">
       {tours.map((tour, i) => <motion.article className="tour-card" key={tour.id} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .2 }} transition={{ delay: i * .12, duration: .7, ease: [.22,1,.36,1] }}>
         <div className="tour-image" style={{ '--position': tour.position, '--image': `url(${tour.image})` }}><div className="tour-slash"/><span className="tour-price">FROM AED —</span><b>{tour.id}</b></div>
