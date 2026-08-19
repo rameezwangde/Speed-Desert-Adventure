@@ -15,8 +15,6 @@ export default function Hero({ ready }) {
         <motion.p {...item(.5)}>Dune buggy adventures like never before.</motion.p>
         <motion.div className="hero-actions" {...item(.62)}>
           <BrushButton href="#packages">Explore packages</BrushButton>
-          <button className="play" aria-label="Play adventure film"><span>▶</span></button>
-          <small>WATCH<br/>THE FILM</small>
         </motion.div>
       </div>
       <HeroFeatures ready={ready}/>
