@@ -869,7 +869,8 @@ a {
 
   .hero {
     height: auto;
-    min-height: 930px
+    min-height: 930px;
+    overflow: hidden
   }
 
   .hero-photo {
@@ -890,8 +891,8 @@ a {
   }
 
   .hero h1 {
-    font-size: clamp(72px, 23vw, 110px);
-    line-height: .74;
+    font-size: clamp(58px, 16vw, 88px);
+    line-height: .78;
     margin-top: 10px
   }
 
@@ -917,27 +918,29 @@ a {
   }
 
   .feature-strip {
-    height: 176px;
+    height: auto;
+    min-height: 120px;
     display: block
   }
 
   .features {
     grid-template-columns: repeat(2, 1fr);
-    padding: 12px 14px
+    padding: 10px 12px;
+    height: auto
   }
 
   .feature {
-    padding: 8px;
+    padding: 8px 6px;
     border-bottom: 1px solid #292929
   }
 
   .feature svg {
-    width: 29px;
-    height: 29px
+    width: 26px;
+    height: 26px
   }
 
   .feature p {
-    font-size: 11px
+    font-size: 10px
   }
 
   .awaits {
@@ -1042,8 +1045,8 @@ a {
   }
 
   .about {
-    min-height: 1100px;
-    padding: 80px 24px;
+    min-height: auto;
+    padding: 30px 24px 50px;
     display: block
   }
 
@@ -1058,7 +1061,7 @@ a {
 
   .about-image {
     height: 420px;
-    margin: 120px -24px 55px;
+    margin: 20px -24px 55px;
     background-size: auto 100%;
     background-position: 70% 52%;
     clip-path: polygon(0 7%, 100% 0, 94% 91%, 3% 100%)
@@ -1340,7 +1343,8 @@ a {
 
   .hero {
     height: auto;
-    min-height: 900px
+    min-height: 900px;
+    overflow: hidden
   }
 
   .hero:before {
@@ -1358,8 +1362,8 @@ a {
   }
 
   .hero h1 {
-    font-size: clamp(66px, 21vw, 98px);
-    line-height: .76
+    font-size: clamp(54px, 15vw, 82px);
+    line-height: .78
   }
 
   .hero-photo {
@@ -3603,10 +3607,14 @@ a {
 }
 
 @media(max-width: 800px) {
+  .payment-banner {
+    padding: 30px 15px;
+  }
+
   .pb-content {
     flex-direction: column;
     text-align: center;
-    gap: 35px;
+    gap: 25px;
   }
 
   .pb-buggy {
@@ -3672,8 +3680,7 @@ a {
   .guide-section,
   .includes-section,
   .faq-section {
-    padding-left: 18px;
-    padding-right: 18px
+    padding: 35px 18px
   }
 
   /* ---- Section headings ---- */
@@ -3806,7 +3813,7 @@ a {
     font-size: 16px
   }
 
-  .cta-copy > div {
+  .cta-copy>div {
     flex-direction: column;
     gap: 14px;
     align-items: flex-start
@@ -3886,7 +3893,7 @@ a {
     justify-content: center
   }
 
-  .pb-whatsapp-btn > * {
+  .pb-whatsapp-btn>* {
     transform: none
   }
 }
