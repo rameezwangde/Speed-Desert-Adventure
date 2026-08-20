@@ -9,7 +9,7 @@ const hourly = [
     duration: '30 mins',
     seats: '1, 2 & 4 Seaters',
     transfer: '300 AED',
-    image: '/1.jpeg' 
+    image: '/buggy-duo.jpg' 
   },
   { 
     price: '800 AED / Person', 
@@ -19,7 +19,7 @@ const hourly = [
     seats: '1, 2 & 4 Seaters',
     transfer: '300 AED',
     popular: true, 
-    image: '/2.jpeg' 
+    image: '/1-hour.png' 
   },
   { 
     price: '1400 AED / Person', 
@@ -28,7 +28,7 @@ const hourly = [
     duration: '2-hours',
     seats: '1, 2 & 4 Seaters',
     transfer: '300 AED',
-    image: '/3.jpeg' 
+    image: '/2-hour.png' 
   },
 ]
 
