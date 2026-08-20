@@ -13,9 +13,35 @@ const guide = [
 
 export default function BuggyGuide() {
   const [open, setOpen] = useState(0)
-  return <section className="guide-section">
-    <div className="guide-intro"><SectionHeading align="center" eyebrow="PREPARE FOR THE TERRAIN" title="Inclusive Guide For" accent="Sand Dune Buggy Dubai" /><p>A practical tour guide structure covering preparation, safety and the desert driving experience.</p></div>
+  return (
+    <section className="guide-section">
+      <div className="guide-top">
+        <div className="guide-intro">
+          <SectionHeading eyebrow="PREPARE FOR THE TERRAIN" title="Inclusive Guide For" accent="Sand Dune Buggy Dubai" />
+          <p>A practical tour guide structure covering preparation, safety and the desert driving experience.</p>
+        </div>
+        
+        <div className="guide-visual">
+          <img src="/guide-teal.png" alt="Dune Buggy Guide" loading="lazy" />
+        </div>
+      </div>
 
-    <div className="guide-accordion">{guide.map(([q,a],i)=><div className={`guide-item ${open===i?'open':''}`} key={q}><button onClick={()=>setOpen(open===i?-1:i)}><b>0{i+1}</b><span>{q}</span><i>{open===i?'−':'+'}</i></button><AnimatePresence initial={false}>{open===i&&<motion.p initial={{height:0,opacity:0}} animate={{height:'auto',opacity:1}} exit={{height:0,opacity:0}} transition={{duration:.35}}>{a}</motion.p>}</AnimatePresence></div>)}</div>
-  </section>
+      <div className="guide-accordion">
+        {guide.map(([q,a],i)=>(
+          <div className={`guide-item ${open===i?'open':''}`} key={q}>
+            <button onClick={()=>setOpen(open===i?-1:i)}>
+              <b>0{i+1}</b><span>{q}</span><i>{open===i?'−':'+'}</i>
+            </button>
+            <AnimatePresence initial={false}>
+              {open===i && (
+                <motion.p initial={{height:0,opacity:0}} animate={{height:'auto',opacity:1}} exit={{height:0,opacity:0}} transition={{duration:.35}}>
+                  {a}
+                </motion.p>
+              )}
+            </AnimatePresence>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
 }
