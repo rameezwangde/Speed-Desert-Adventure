@@ -13,7 +13,6 @@ export default function Hero({ ready }) {
         <motion.span className="kicker" {...item(.12)}>CONQUER DUBAI'S DUNES</motion.span>
         <motion.h1 {...item(.2, { rotate: -1 })}>
           <span className="red">ULTIMATE</span>
-          <span className="desert">SELF-DRIVE</span>
           <span className="speed">ADVENTURES.</span>
         </motion.h1>
         <motion.p {...item(.5)} className="hero-desc">
