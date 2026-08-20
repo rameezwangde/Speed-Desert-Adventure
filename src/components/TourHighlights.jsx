@@ -20,7 +20,7 @@ const tours = [
     seats: '2 & 4 Seaters', 
     transferType: 'Private Transfer (4x4)',
     transfer: '300 AED', 
-    image: '/tour-red.png' 
+    image: '/red-buggy.jpeg' 
   },
   { 
     price: '400 AED', 
@@ -30,7 +30,7 @@ const tours = [
     seats: '1, 2 & 4 Seaters', 
     transferType: 'Private Transfer (4x4)',
     transfer: '300 AED', 
-    image: '/tour-four-seat.png' 
+    image: '/polaris-buggy.jpg' 
   },
 ]
 
