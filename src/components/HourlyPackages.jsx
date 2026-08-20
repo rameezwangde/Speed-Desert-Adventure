@@ -9,7 +9,7 @@ const hourly = [
     duration: '30 mins',
     seats: '1, 2 & 4 Seaters',
     transfer: '300 AED',
-    image: '/hourly-yellow.png' 
+    image: '/1.jpeg' 
   },
   { 
     price: '800 AED / Person', 
@@ -19,7 +19,7 @@ const hourly = [
     seats: '1, 2 & 4 Seaters',
     transfer: '300 AED',
     popular: true, 
-    image: '/hourly-white.png' 
+    image: '/2.jpeg' 
   },
   { 
     price: '1400 AED / Person', 
@@ -28,7 +28,7 @@ const hourly = [
     duration: '2-hours',
     seats: '1, 2 & 4 Seaters',
     transfer: '300 AED',
-    image: '/hourly-green.png' 
+    image: '/3.jpeg' 
   },
 ]
 

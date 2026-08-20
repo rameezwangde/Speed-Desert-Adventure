@@ -22,7 +22,7 @@ export default function BuggyGuide() {
         </div>
         
         <div className="guide-visual">
-          <img src="/guide-teal.png" alt="Dune Buggy Guide" loading="lazy" />
+          <img src="/guide.jpeg" alt="Dune Buggy Guide" loading="lazy" />
         </div>
       </div>
 

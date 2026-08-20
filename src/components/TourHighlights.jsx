@@ -3,33 +3,33 @@ import SectionHeading from './SectionHeading'
 
 const tours = [
   { 
-    price: '500 AED', 
-    title: '4 Seater Early Bird Dune Buggy Tour (Couples)', 
-    copy: 'Join our Early Bird Buggy Tour for an exciting desert adventure!',
+    price: '700-900 AED', 
+    title: 'Can-Am Maverick XRS 26 Dune Buggy', 
+    copy: "Dominate Dubai's red dunes with the 2026 Can-Am Maverick XRS—built for high-performance.",
     duration: '1-hour', 
-    seats: '1, 2 & 4 Seaters', 
-    transferType: 'Private Transfer',
+    seats: '2 & 4 Seaters', 
+    transferType: 'Private Transfer (4x4)',
     transfer: '300 AED', 
     image: '/tour-blue.png' 
   },
   { 
-    price: '500 AED', 
-    title: 'Red Dunes Afternoon Buggy Tour (Family)', 
-    copy: 'Explore the famous Red Dunes of Dubai during the magical golden hours of the afternoon.',
+    price: '899-1200 AED', 
+    title: "Can-am Buggy Maverick R X rs: '26 Smart-Shox!", 
+    copy: 'Immerse yourself in our Night Riders Buggy Adventure for a unique desert experience.',
     duration: '1-hour', 
-    seats: '1, 2 & 4 Seaters', 
-    transferType: 'Private Transfer',
+    seats: '2 & 4 Seaters', 
+    transferType: 'Private Transfer (4x4)',
     transfer: '300 AED', 
     image: '/tour-red.png' 
   },
   { 
-    price: '399 AED', 
-    title: 'Desert Combo: Sharing Safari + Dune Buggy', 
-    copy: 'Embark on an unforgettable adventure through the stunning Dubai desert with our Desert Combo tour.',
+    price: '400 AED', 
+    title: 'Polaris RZR Dune Buggy Tour (Custom)', 
+    copy: 'Embark on an exciting desert journey, from solo to group adventures.',
     duration: '1-hour', 
     seats: '1, 2 & 4 Seaters', 
-    transferType: 'Shared Transfer',
-    transfer: 'Free Pick & Drop', 
+    transferType: 'Private Transfer (4x4)',
+    transfer: '300 AED', 
     image: '/tour-four-seat.png' 
   },
 ]
