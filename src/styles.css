@@ -3656,3 +3656,264 @@ a {
     transform: scale(1.05);
   }
 }
+
+/* ============================================================
+   COMPREHENSIVE MOBILE-RESPONSIVE OVERRIDES
+   Covers all homepage sections for 700px and below
+   ============================================================ */
+
+@media(max-width:700px) {
+
+  /* ---- Global section padding ---- */
+  .tour-highlights,
+  .hourly-section,
+  .pricing-section,
+  .booking-process,
+  .guide-section,
+  .includes-section,
+  .faq-section {
+    padding-left: 18px;
+    padding-right: 18px
+  }
+
+  /* ---- Section headings ---- */
+  .csh-title {
+    font-size: clamp(32px, 9vw, 52px)
+  }
+
+  .section-heading h2 {
+    font-size: clamp(36px, 10vw, 56px)
+  }
+
+  /* ---- Tour Highlights (3-col → 1-col) ---- */
+  .tour-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 36px
+  }
+
+  .tour-card:last-child {
+    grid-column: auto;
+    width: auto;
+    margin: 0
+  }
+
+  .tour-image {
+    height: 220px
+  }
+
+  .tour-body h3 {
+    font-size: 22px
+  }
+
+  .tour-specs {
+    grid-template-columns: 1fr 1fr 1fr
+  }
+
+  .tour-specs div {
+    padding: 10px 5px
+  }
+
+  .tour-actions {
+    grid-template-columns: 1fr
+  }
+
+  /* ---- Hourly Packages (3-col → 1-col) ---- */
+  .hourly-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px
+  }
+
+  .nhc-image-wrap {
+    height: 210px
+  }
+
+  .nhc-body {
+    padding: 22px 18px
+  }
+
+  .nhc-title {
+    font-size: 21px
+  }
+
+  .nhc-specs {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 14px 0
+  }
+
+  .nhc-spec small {
+    font-size: 9px
+  }
+
+  .nhc-spec strong {
+    font-size: 13px
+  }
+
+  .nhc-actions {
+    grid-template-columns: 1fr
+  }
+
+  .popular-badge {
+    font-size: 10px;
+    padding: 6px 28px 6px 12px
+  }
+
+  /* ---- Pricing table — horizontal scroll ---- */
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch
+  }
+
+  .custom-table {
+    min-width: 640px
+  }
+
+  .table-title {
+    font-size: 26px;
+    margin: 50px 0 18px
+  }
+
+  .pricing-intro {
+    font-size: 17px;
+    margin-top: 24px;
+    margin-bottom: 30px
+  }
+
+  /* ---- Booking Process ---- */
+  .booking-step {
+    flex-direction: column;
+    text-align: center
+  }
+
+  /* ---- CTA Section ---- */
+  .final-cta {
+    min-height: 520px
+  }
+
+  .cta-copy {
+    width: auto;
+    margin: 0 20px;
+    align-self: flex-end;
+    margin-bottom: 60px
+  }
+
+  .cta-copy h2 {
+    font-size: clamp(48px, 14vw, 72px)
+  }
+
+  .cta-copy p {
+    font-size: 16px
+  }
+
+  .cta-copy > div {
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start
+  }
+
+  /* ---- Guide Section ---- */
+  .guide-top {
+    display: block
+  }
+
+  .guide-visual {
+    height: 280px;
+    margin-top: 32px
+  }
+
+  .guide-accordion {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 32px
+  }
+
+  /* ---- FAQ ---- */
+  .faq-row button {
+    min-height: 70px;
+    font-size: 15px
+  }
+
+  /* ---- Footer ---- */
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 30px
+  }
+
+  .footer-brand,
+  .footer-col,
+  .footer-col:last-child {
+    grid-column: auto
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center
+  }
+
+  /* ---- Payment Banner ---- */
+  .pb-content {
+    flex-direction: column;
+    gap: 24px
+  }
+
+  .pb-buggy {
+    width: 75%
+  }
+
+  .pb-center h2 {
+    font-size: 36px
+  }
+
+  .pb-features {
+    flex-direction: column;
+    transform: none;
+    border-radius: 4px;
+    padding: 16px;
+    gap: 12px
+  }
+
+  .pb-feature {
+    transform: none
+  }
+
+  .pb-whatsapp-btn {
+    transform: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    width: 100%;
+    justify-content: center
+  }
+
+  .pb-whatsapp-btn > * {
+    transform: none
+  }
+}
+
+/* Extra small phones (< 420px) */
+@media(max-width:420px) {
+  .hero h1 {
+    font-size: clamp(58px, 18vw, 80px)
+  }
+
+  .csh-title {
+    font-size: 30px
+  }
+
+  .tour-image {
+    height: 190px
+  }
+
+  .nhc-image-wrap {
+    height: 185px
+  }
+
+  .nhc-specs {
+    grid-template-columns: 1fr 1fr 1fr
+  }
+
+  .cta-copy h2 {
+    font-size: clamp(42px, 13vw, 60px)
+  }
+}

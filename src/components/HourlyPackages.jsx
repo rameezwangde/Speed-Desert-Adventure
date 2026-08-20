@@ -19,7 +19,7 @@ const hourly = [
     seats: '1, 2 & 4 Seaters',
     transfer: '300 AED',
     popular: true, 
-    image: '/1-hour.png' 
+    image: '/buggy.png' 
   },
   { 
     price: '1400 AED / Person', 
