@@ -10,7 +10,7 @@ const tours = [
     seats: '2 & 4 Seaters', 
     transferType: 'Private Transfer (4x4)',
     transfer: '300 AED', 
-    image: '/tour-blue.png' 
+    image: '/blue-buggy.png' 
   },
   { 
     price: '899-1200 AED', 
