@@ -4701,15 +4701,15 @@ a {
   }
 }
 /* TESTIMONIALS PAGE */
-.testimonials-hero { min-height: 40vh; position: relative; display: flex; align-items: center; padding: 130px 6vw 70px; background: #050505; overflow: hidden; }
-.testimonials-hero-photo { position: absolute; inset: 0; background: linear-gradient(0deg, #050505 5%, transparent 60%), url('/cta-silver.png') center/cover no-repeat; opacity: 0.4; }
+.testimonials-hero { min-height: 40vh; position: relative; display: flex; align-items: center; padding: 130px 6vw 20px; background: #050505; overflow: hidden; }
+.testimonials-hero-photo { position: absolute; inset: 0; background: linear-gradient(0deg, #050505 5%, transparent 60%), url('/buggy-duo.jpg') center/cover no-repeat; opacity: 0.4; }
 .testimonials-hero-copy { position: relative; z-index: 2; }
 .testimonials-hero-copy span { color: #e11924; font-weight: 900; letter-spacing: 0.22em; font-size: 14px; }
 .testimonials-hero-copy h1 { font-size: clamp(60px, 8vw, 130px); line-height: 0.8; margin: 20px 0 25px; text-transform: uppercase; font-style: italic; }
 .testimonials-hero-copy h1 em { color: #e11924; font-style: inherit; }
 .testimonials-hero-copy p { max-width: 520px; font-size: 20px; line-height: 1.55; color: #ddd; }
 
-.testimonials-marquee-section { padding: 80px 6vw 60px; background: #050505; overflow: hidden; }
+.testimonials-marquee-section { padding: 30px 6vw 60px; background: #050505; overflow: hidden; }
 .marquee-container { margin-top: 50px; display: flex; flex-direction: column; gap: 24px; }
 .marquee-row { width: 100%; overflow: hidden; position: relative; }
 .marquee-row::before, .marquee-row::after { content: ''; position: absolute; top: 0; bottom: 0; width: 120px; z-index: 2; pointer-events: none; }
