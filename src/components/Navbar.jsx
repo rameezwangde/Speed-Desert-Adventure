@@ -7,7 +7,7 @@ const links = [
   { label: 'About Us', href: '/about' },
   { label: 'Packages', href: '/#tour-highlights' },
   { label: 'Gallery', href: '/#gallery' },
-  { label: 'Testimonials', href: '/#testimonials' },
+  { label: 'Testimonials', href: '/testimonials' },
   { label: 'Contact', href: '/contact' },
 ]
 
