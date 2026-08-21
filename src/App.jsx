@@ -15,8 +15,10 @@ import TourIncludes from './components/TourIncludes'
 import FAQ from './components/FAQ'
 import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
+import AboutPage from './pages/About'
 
 export default function App() {
+  const isAboutPage = window.location.pathname.replace(/\/$/, '') === '/about'
   const [introOpen, setIntroOpen] = useState(false)
   const [heroReady, setHeroReady] = useState(false)
 
@@ -31,6 +33,8 @@ export default function App() {
     setIntroOpen(false)
     window.setTimeout(() => setHeroReady(true), 350)
   }
+
+  if (isAboutPage) return <div className="site"><div className="page-shell"><Navbar ready /><AboutPage/><Footer/></div></div>
 
   return (
     <div className={introOpen ? 'site intro-is-open' : 'site'}>
