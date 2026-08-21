@@ -15,6 +15,7 @@ import TourIncludes from './components/TourIncludes'
 import FAQ from './components/FAQ'
 import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
+import WhatsAppFloat from './components/WhatsAppFloat'
 import AboutPage from './pages/About'
 
 export default function App() {
@@ -34,7 +35,7 @@ export default function App() {
     window.setTimeout(() => setHeroReady(true), 350)
   }
 
-  if (isAboutPage) return <div className="site"><div className="page-shell"><Navbar ready /><AboutPage/><Footer/></div></div>
+  if (isAboutPage) return <div className="site"><div className="page-shell"><Navbar ready /><AboutPage/><Footer/><WhatsAppFloat/></div></div>
 
   return (
     <div className={introOpen ? 'site intro-is-open' : 'site'}>
@@ -55,6 +56,7 @@ export default function App() {
           <FinalCTA />
         </main>
         <Footer />
+        <WhatsAppFloat />
       </div>
       <AnimatePresence>{introOpen && <IntroExperience onClose={closeIntro} />}</AnimatePresence>
     </div>

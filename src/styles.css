@@ -3936,3 +3936,7 @@ a {
     font-size: clamp(42px, 13vw, 60px)
   }
 }
+
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background-color: #25d366; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); z-index: 1000; transition: transform 0.3s, background-color 0.3s; }
+.whatsapp-float:hover { transform: scale(1.1); background-color: #20b858; }
+.whatsapp-float svg { width: 35px; height: 35px; }
