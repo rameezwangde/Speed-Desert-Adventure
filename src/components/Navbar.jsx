@@ -8,7 +8,7 @@ const links = [
   { label: 'Packages', href: '/#tour-highlights' },
   { label: 'Gallery', href: '/#gallery' },
   { label: 'Testimonials', href: '/#testimonials' },
-  { label: 'Contact', href: '/#contact' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export default function Navbar({ ready }) {

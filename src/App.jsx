@@ -17,9 +17,11 @@ import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
 import WhatsAppFloat from './components/WhatsAppFloat'
 import AboutPage from './pages/About'
+import ContactPage from './pages/Contact'
 
 export default function App() {
   const isAboutPage = window.location.pathname.replace(/\/$/, '') === '/about'
+  const isContactPage = window.location.pathname.replace(/\/$/, '') === '/contact'
   const [introOpen, setIntroOpen] = useState(false)
   const [heroReady, setHeroReady] = useState(false)
 
@@ -36,6 +38,7 @@ export default function App() {
   }
 
   if (isAboutPage) return <div className="site"><div className="page-shell"><Navbar ready /><AboutPage/><Footer/><WhatsAppFloat/></div></div>
+  if (isContactPage) return <div className="site"><div className="page-shell"><Navbar ready /><ContactPage/><Footer/><WhatsAppFloat/></div></div>
 
   return (
     <div className={introOpen ? 'site intro-is-open' : 'site'}>
