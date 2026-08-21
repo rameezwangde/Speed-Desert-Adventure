@@ -4717,12 +4717,12 @@ a {
 .marquee-row::after { right: 0; background: linear-gradient(270deg, #050505, transparent); }
 .marquee-track { display: flex; gap: 24px; width: max-content; }
 
-.review-card { flex-shrink: 0; width: 400px; background: #111; border: 1px solid #222; padding: 32px 28px; display: flex; flex-direction: column; gap: 16px; }
+.review-card { flex-shrink: 0; width: 400px; background: #f4ebd8; border: 1px solid #e2d5bd; padding: 32px 28px; display: flex; flex-direction: column; gap: 16px; border-radius: 4px; }
 .review-stars { color: #e11924; font-size: 20px; letter-spacing: 4px; }
-.review-text { color: #ccc; font: 500 17px/1.65 'Barlow Condensed'; flex: 1; }
-.review-author { border-top: 1px solid #222; padding-top: 16px; }
-.review-author strong { display: block; color: #fff; font: 700 16px Oswald; text-transform: uppercase; letter-spacing: 0.05em; }
-.review-author span { color: #888; font: 500 14px/1.4 'Barlow Condensed'; }
+.review-text { color: #333; font: 500 17px/1.65 'Barlow Condensed'; flex: 1; }
+.review-author { border-top: 1px solid #e2d5bd; padding-top: 16px; }
+.review-author strong { display: block; color: #111; font: 700 16px Oswald; text-transform: uppercase; letter-spacing: 0.05em; }
+.review-author span { color: #555; font: 500 14px/1.4 'Barlow Condensed'; }
 
 .testimonials-stats { padding: 60px 6vw 100px; background: #050505; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #222; border-bottom: 1px solid #222; }
 .testimonials-stats > div { padding: 40px 30px; border-right: 1px solid #222; text-align: center; }
