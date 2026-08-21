@@ -91,7 +91,6 @@ function MarqueeRow({ items, direction = 'left', speed = 35 }) {
             <p className="review-text">"{r.text}"</p>
             <div className="review-author">
               <strong>{r.name}</strong>
-              <span>{r.country}</span>
             </div>
           </div>
         ))}
