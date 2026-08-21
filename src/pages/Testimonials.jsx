@@ -82,7 +82,7 @@ function MarqueeRow({ items, direction = 'left', speed = 35 }) {
     <div className="marquee-row">
       <motion.div
         className="marquee-track"
-        animate={{ x: direction === 'left' ? [0, -50 * items.length + '%'] : [-50 * items.length + '%', 0] }}
+        animate={{ x: direction === 'left' ? [0, '-50%'] : ['-50%', 0] }}
         transition={{ x: { repeat: Infinity, repeatType: 'loop', duration: speed, ease: 'linear' } }}
       >
         {doubled.map((r, i) => (
