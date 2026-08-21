@@ -5,7 +5,7 @@ export default function IntroExperience({ onClose }) {
   const reduced = useReducedMotion()
   const duration = reduced ? 0 : 1.1
   return (
-    <motion.div className="intro-layer" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .35 }} role="dialog" aria-modal="true" aria-label="Welcome to Speed Désert Adventure">
+    <motion.div className="intro-layer" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: .35 }} role="dialog" aria-modal="true" aria-label="Welcome to Speed Desert Adventure">
       <motion.div className="intro-panel" initial={reduced ? false : { scale: .88, rotate: -2 }} animate={{ scale: 1, rotate: 0 }} exit={reduced ? { opacity: 0 } : { x: '55vw', opacity: 0, rotate: 3 }} transition={{ duration, ease: [.22,1,.36,1] }}>
         <button className="intro-close" onClick={onClose} aria-label="Close introduction">×</button>
         <div className="intro-copy">

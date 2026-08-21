@@ -22,8 +22,8 @@ export default function Navbar({ ready }) {
 
   return (
     <motion.header initial={{ opacity: 0, y: -20 }} animate={ready ? { opacity: 1, y: 0 } : { opacity: .15, y: -8 }} transition={{ duration: .7 }} className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <a href="/" className="logo" aria-label="Speed Désert Adventure home">
-        <img src="/logo.png" alt="Speed Désert Adventure" />
+      <a href="/" className="logo" aria-label="Speed Desert Adventure home">
+        <img src="/logo.png" alt="Speed Desert Adventure" />
       </a>
       <nav className="desktop-nav" aria-label="Primary navigation">
         {links.map(link => <a className={(link.href === '/' && location.pathname === '/') || link.href === location.pathname ? 'active' : ''} key={link.label} href={link.href}>{link.label}</a>)}
