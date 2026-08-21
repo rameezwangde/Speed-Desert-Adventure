@@ -59,7 +59,14 @@ const reviews = [
   { name: 'Myatis Bullier', country: 'Local Guide · 15 reviews · 3 photos', rating: 5, text: 'It was a magical experience, thank you so much! We went on a buggy ride with our two children, ages 3 and 5, and we all loved it! Thank you so much, everything was perfect! Thank you to Hassan for his kindness! This is our second time here, and it won\'t be our last!' },
   { name: 'Andrea Courtial', country: '4 reviews · 1 photo', rating: 5, text: 'We went buggy riding, an incredible experience!! I highly recommend this place 🥰🥰🥰 ...' },
   { name: 'Alexandra FISCH', country: 'Local Guide · 80 reviews · 119 photos', rating: 5, text: 'A very warm welcome from start to finish, from the initial contact until our return to the hotel!\n\nThe team is very helpful, friendly, and welcoming; we almost felt at home!\nThe quad and buggy ride (brand new) was simply magnificent, an unforgettable family experience!\nHonestly, I would do it again in a heartbeat! Don\'t hesitate for a second!' },
-  { name: 'Nassim Zaoui Andalouci', country: 'Local Guide · 14 reviews · 7 photos', rating: 5, text: 'Everything was perfect, from the welcome at the start to the buggy ride with its beautiful photo spots. The staff was attentive. The ride was fantastic, with superb dunes to enjoy the buggy experience. And to top it all off, a great barbecue with the sunset over the camp.' }
+  { name: 'Nassim Zaoui Andalouci', country: 'Local Guide · 14 reviews · 7 photos', rating: 5, text: 'Everything was perfect, from the welcome at the start to the buggy ride with its beautiful photo spots. The staff was attentive. The ride was fantastic, with superb dunes to enjoy the buggy experience. And to top it all off, a great barbecue with the sunset over the camp.' },
+  { name: 'Boubacar Sylla', country: '3 reviews', rating: 5, text: 'Great place for buggy riding! The instructor Hassan is very cool and reasonably priced. I highly recommend it! 💖 ✌🏽 ...' },
+  { name: 'claire perrin', country: 'Local Guide · 12 reviews · 18 photos', rating: 5, text: 'An extraordinary experience in fantastic personal buggies! My head is full of memories and thrills. Thank you to Mamady and his team! 🤩 I highly recommend them! ...' },
+  { name: 'Roman Achacha', country: '1 review', rating: 5, text: 'Great activity, great buggy, and a great ride that really lasts an hour or more, thank you for everything 💖' },
+  { name: 'Abderrahim Imoussaten', country: '5 reviews', rating: 5, text: 'Speed Desert Adventure gave us an excellent welcome. We had the opportunity to take a buggy tour and enjoy a fantastic Bedouin dinner! I highly recommend it!' },
+  { name: 'Aurelie Rosenfeld', country: '2 reviews', rating: 5, text: 'Great buggy experience!' },
+  { name: 'kylia lgls', country: '11 reviews · 2 photos', rating: 5, text: 'The buggy ride was incredible!' },
+  { name: 'Soumaila Camara', country: '5 reviews · 1 photo', rating: 5, text: 'Very good buggy' }
 ]
 
 const row1 = [...reviews, ...reviews]
