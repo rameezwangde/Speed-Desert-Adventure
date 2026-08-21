@@ -119,7 +119,7 @@ export default function TestimonialsPage() {
       <section className="testimonials-marquee-section">
         <SectionHeading eyebrow="TRUSTED BY RIDERS WORLDWIDE" title="Guest" accent="Reviews" />
         <div className="marquee-container">
-          <MarqueeRow items={row1} direction="left" speed={300} />
+          <MarqueeRow items={row1} direction="left" speed={600} />
         </div>
       </section>
 
