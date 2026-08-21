@@ -2960,7 +2960,7 @@ a {
   position: relative;
   overflow: hidden;
   background: #040404;
-  padding: 90px 6vw 35px
+  padding: 20px 6vw 35px
 }
 
 .footer-word {
@@ -3036,7 +3036,7 @@ a {
 .footer-coordinates {
   position: relative;
   z-index: 2;
-  margin: 65px 0 20px;
+  margin: 25px 0 20px;
   border-top: 1px solid #292929;
   padding-top: 18px;
   color: #555;
