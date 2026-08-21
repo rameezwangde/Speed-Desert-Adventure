@@ -66,7 +66,8 @@ const reviews = [
   { name: 'Abderrahim Imoussaten', country: '5 reviews', rating: 5, text: 'Speed Desert Adventure gave us an excellent welcome. We had the opportunity to take a buggy tour and enjoy a fantastic Bedouin dinner! I highly recommend it!' },
   { name: 'Aurelie Rosenfeld', country: '2 reviews', rating: 5, text: 'Great buggy experience!' },
   { name: 'kylia lgls', country: '11 reviews · 2 photos', rating: 5, text: 'The buggy ride was incredible!' },
-  { name: 'Soumaila Camara', country: '5 reviews · 1 photo', rating: 5, text: 'Very good buggy' }
+  { name: 'Soumaila Camara', country: '5 reviews · 1 photo', rating: 5, text: 'Very good buggy' },
+  { name: 'Anais Dery', country: '3 reviews', rating: 5, text: 'Great experience! A must-do in Dubai, the buggies are good quality! I recommend it.' }
 ]
 
 const row1 = [...reviews, ...reviews]
