@@ -20,7 +20,8 @@ const hourly = [
     seats: '1, 2 & 4 Seaters',
     transfer: '300 AED',
     popular: true, 
-    image: '/buggy.png' 
+    image: '/buggy.png',
+    link: '/tour/1-hour-dune-buggy-tour'
   },
   { 
     price: '1400 AED / Person', 

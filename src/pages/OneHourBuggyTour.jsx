@@ -5,8 +5,8 @@ import BrushButton from '../components/BrushButton'
 
 const tourInfo = [
   'Private Transfer (Optional)',
-  'Polaris RZR SPORT EPS / Can-Am Maverick',
-  '30 Min Buggy Drive',
+  'Polaris RZR / Can-Am Maverick',
+  '1-Hour Buggy Drive',
   'Self Drive Dune Buggy',
   'Climate-Controlled Comfort Lounge',
   'Private Tour',
@@ -39,9 +39,9 @@ const tripInclusions = [
   'Sandboarding'
 ]
 
-export default function ThirtyMinBuggyRide() {
+export default function OneHourBuggyTour() {
   useEffect(() => {
-    document.title = '30-Minute Dune Buggy Ride Dubai | Speed Desert Adventure'
+    document.title = '1-Hour Dune Buggy Tour Dubai | Speed Desert Adventure'
     window.scrollTo(0, 0)
   }, [])
 
@@ -49,9 +49,9 @@ export default function ThirtyMinBuggyRide() {
     <main className="tour-details-page">
       <section className="td-hero">
         <div className="td-hero-header">
-          <SectionHeading eyebrow="QUICK ADVENTURE" title="30-MINUTE" accent="DUNE BUGGY RIDE DUBAI" align="center" />
+          <SectionHeading eyebrow="IMMERSIVE DESERT ADVENTURE" title="1-HOUR" accent="DUNE BUGGY TOUR DUBAI" align="center" />
           <div className="td-hero-price">
-            <span className="price-label">AED 400</span>
+            <span className="price-label">AED 800</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function ThirtyMinBuggyRide() {
             <svg viewBox="0 0 24 24" fill="none" stroke="#e11924"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path d="M12 6v6l4 2" strokeWidth="2" strokeLinecap="round"/></svg>
             <div>
               <small>Duration</small>
-              <strong>30 Min</strong>
+              <strong>1-Hour</strong>
             </div>
           </div>
           <div className="td-stat">
@@ -81,30 +81,30 @@ export default function ThirtyMinBuggyRide() {
         </div>
 
         <div className="td-gallery">
-          <motion.img src="/buggy-duo.jpg" alt="30 Minute Buggy Ride" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} />
+          <motion.img src="/polaris-buggy.jpg" alt="1 Hour Buggy Ride" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} />
           <motion.img src="/tour-four-seat.png" alt="Group buggy tour" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} />
-          <motion.img src="/polaris-buggy.jpg" alt="Polaris buggy in desert" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} />
+          <motion.img src="/buggy.png" alt="Polaris buggy in desert" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} />
           <motion.img src="/tour-red.png" alt="Desert ride" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }} />
         </div>
       </section>
 
       <section className="td-content-section">
         <div className="td-main-content">
-          <SectionHeading eyebrow="Book Your 1, 2-4 Seater" title="Dune Buggy Tour" accent="in Dubai" />
+          <SectionHeading eyebrow="Book Your 1, 2-4 Seater" title="Dune Buggy Ride" accent="in Dubai" />
           
           <div className="td-text-blocks">
-            <p>Experience pure adrenaline with our <strong>30-Minute Dune Buggy Ride Dubai</strong>, the perfect introduction to off-road adventure with <strong>Speed Desert Adventure</strong>. This short yet action-packed ride is ideal for first-time riders, thrill seekers with limited time, or anyone looking to add excitement to their <strong>Dubai</strong> trip.</p>
+            <p>Take your desert experience to the next level with our <strong>1-Hour Dune Buggy Ride Dubai</strong>, the perfect balance of adrenaline, exploration, and freedom with <strong>Speed Desert Adventure</strong>. This extended ride is ideal for riders who want more time to explore the dunes and fully experience the thrill of dune buggy driving in <strong>Dubai</strong>.</p>
             
-            <p>Set in the iconic red dunes of the <strong>Al Lahbab Desert</strong>, this experience lets you take control of a powerful dune buggy and race across rolling dunes under expert supervision. You'll enjoy breathtaking desert views, adrenaline-filled climbs, and smooth descents—all within a perfectly timed 30-minute adventure.</p>
+            <p>Set deep within the legendary red dunes of the <strong>Al Lahbab Desert</strong>, this tour allows you to venture farther into the desert, tackle higher dunes, and enjoy longer uninterrupted drives across the vast <strong>Dubai Desert</strong>. With more time on the sand, you'll enjoy scenic photo stops, smooth dune transitions, and an authentic off-road adventure.</p>
 
-            <p>Choose between our two high-performance buggies: the <strong>Can-Am Maverick</strong> or the <strong>Polaris RZR</strong>, both built for power, safety, and desert control. No license or prior experience is required—just show up ready for fun.</p>
+            <p>Choose between two world-class dune buggies—the <strong>Can-Am Maverick</strong> or the <strong>Polaris RZR</strong>—both engineered for power, control, and safety. No driving license or prior experience is required; full training and guidance are included.</p>
             
-            <h2>Why Choose a 30-Minute Dune Buggy Ride in Dubai?</h2>
-            <p>A 30-minute dune buggy ride is the ideal choice for travelers who want maximum excitement in minimal time while exploring the iconic <strong>Al Lahbab Desert</strong>. This experience delivers a concentrated dose of adventure across the red dunes of the <strong>Dubai Desert</strong>, making it perfect for first-time riders, short-stay visitors, and adrenaline lovers.</p>
+            <h2>Why Choose a 1-Hour Dune Buggy Ride in Dubai?</h2>
+            <p>A 1-hour dune buggy tour offers the ideal duration for riders who want a deeper, more immersive desert experience. With extra time, you can explore larger dune fields, enjoy more dynamic driving routes, and truly feel the freedom of off-road adventure in the <strong>Al Lahbab Desert</strong>.</p>
             
-            <p>Riding a high-performance buggy like the <strong>Can-Am Maverick</strong> or <strong>Polaris RZR</strong> allows you to experience steep dune climbs, smooth descents, and panoramic desert views—without committing to a long tour. It's an efficient, thrilling way to enjoy dune buggy Dubai adventures while keeping your schedule flexible.</p>
+            <p>Driving premium machines like the <strong>Can-Am Maverick</strong> or <strong>Polaris RZR</strong> for a full hour gives you the chance to build confidence, improve your driving skills, and enjoy uninterrupted thrills without feeling rushed.</p>
             
-            <p>Offered by <strong>Speed Desert Adventure</strong>, this ride combines professional guidance, full safety support, and world-class desert terrain, making it one of the most popular choices for visitors in <strong>Dubai</strong> who want an unforgettable desert experience without spending hours in the dunes.</p>
+            <p>Offered by <strong>Speed Desert Adventure</strong>, this experience is one of the most popular choices for adventure seekers visiting <strong>Dubai</strong> who want more than just a quick ride.</p>
           </div>
         </div>
 
@@ -124,19 +124,19 @@ export default function ThirtyMinBuggyRide() {
       </section>
 
       <section className="td-ticket-prices">
-        <SectionHeading title="30-Minute Dune Buggy Ride Dubai" accent="Information:" align="center" />
+        <SectionHeading title="1-Hour Dune Buggy Tour Dubai" accent="Information:" align="center" />
         <div className="table-wrapper td-table">
           <table className="custom-table">
             <thead>
               <tr>
-                <th>30-Minute Dune Buggy Ride Dubai</th>
+                <th>1-Hour Dune Buggy Tour Dubai</th>
                 <th>Information</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td><strong>Ticket Price</strong></td>
-                <td>400 AED / Person</td>
+                <td>800 AED / Person</td>
               </tr>
               <tr>
                 <td><strong>Seating Options</strong></td>
@@ -144,7 +144,7 @@ export default function ThirtyMinBuggyRide() {
               </tr>
               <tr>
                 <td><strong>Duration</strong></td>
-                <td>30 Min Buggy Drive</td>
+                <td>1-Hour Buggy Drive</td>
               </tr>
               <tr>
                 <td><strong>Tour Timing</strong></td>
