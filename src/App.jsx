@@ -26,11 +26,13 @@ import PolarisRZRCustom from './pages/PolarisRZRCustom'
 import ThirtyMinBuggyRide from './pages/ThirtyMinBuggyRide'
 import OneHourBuggyTour from './pages/OneHourBuggyTour'
 import TwoHourBuggyTour from './pages/TwoHourBuggyTour'
+import GalleryPage from './pages/Gallery'
 
 export default function App() {
   const isAboutPage = window.location.pathname.replace(/\/$/, '') === '/about'
   const isContactPage = window.location.pathname.replace(/\/$/, '') === '/contact'
   const isTestimonialsPage = window.location.pathname.replace(/\/$/, '') === '/testimonials'
+  const isGalleryPage = window.location.pathname.replace(/\/$/, '') === '/gallery'
   const isTourDetailsPage = window.location.pathname.replace(/\/$/, '') === '/tour/can-am-maverick-xrs-26'
   const isCanAmMaverickRXRSTour = window.location.pathname.replace(/\/$/, '') === '/tour/can-am-maverick-r-x-rs'
   const isPolarisRZRCustomTour = window.location.pathname.replace(/\/$/, '') === '/tour/polaris-rzr-custom'
@@ -55,6 +57,7 @@ export default function App() {
   if (isAboutPage) return <div className="site"><div className="page-shell"><Navbar ready /><AboutPage/><Footer/><WhatsAppFloat/></div></div>
   if (isContactPage) return <div className="site"><div className="page-shell"><Navbar ready /><ContactPage/><Footer/><WhatsAppFloat/></div></div>
   if (isTestimonialsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TestimonialsPage/><Footer/><WhatsAppFloat/></div></div>
+  if (isGalleryPage) return <div className="site"><div className="page-shell"><Navbar ready /><GalleryPage/><Footer/><WhatsAppFloat/></div></div>
   if (isTourDetailsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TourDetailsPage/><Footer/><WhatsAppFloat/></div></div>
   if (isCanAmMaverickRXRSTour) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverickRXRS/><Footer/><WhatsAppFloat/></div></div>
   if (isPolarisRZRCustomTour) return <div className="site"><div className="page-shell"><Navbar ready /><PolarisRZRCustom/><Footer/><WhatsAppFloat/></div></div>
