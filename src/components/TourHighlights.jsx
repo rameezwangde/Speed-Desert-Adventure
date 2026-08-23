@@ -32,7 +32,8 @@ const tours = [
     seats: '1, 2 & 4 Seaters', 
     transferType: 'Private Transfer (4x4)',
     transfer: '300 AED', 
-    image: '/polaris-buggy.jpg' 
+    image: '/polaris-buggy.jpg',
+    link: '/tour/polaris-rzr-custom'
   },
 ]
 
@@ -81,7 +82,7 @@ export default function TourHighlights() {
             </div>
             <div className="nhc-actions">
               <a href="#book" className="btn-primary">BOOK NOW</a>
-              <a href={tour.link || "#details"} className="btn-secondary">TOUR DETAILS</a>
+              <a href={tour.link || "#details"} onClick={(e) => { if(tour.link) { window.location.href = tour.link; } }} style={{ pointerEvents: 'auto', zIndex: 10, position: 'relative' }} className="btn-secondary">TOUR DETAILS</a>
             </div>
           </div>
         </motion.article>

@@ -22,12 +22,15 @@ import TestimonialsPage from './pages/Testimonials'
 import TourDetailsPage from './pages/TourDetails'
 import CanAmMaverickRXRS from './pages/CanAmMaverickRXRS'
 
+import PolarisRZRCustom from './pages/PolarisRZRCustom'
+
 export default function App() {
   const isAboutPage = window.location.pathname.replace(/\/$/, '') === '/about'
   const isContactPage = window.location.pathname.replace(/\/$/, '') === '/contact'
   const isTestimonialsPage = window.location.pathname.replace(/\/$/, '') === '/testimonials'
   const isTourDetailsPage = window.location.pathname.replace(/\/$/, '') === '/tour/can-am-maverick-xrs-26'
   const isCanAmMaverickRXRSTour = window.location.pathname.replace(/\/$/, '') === '/tour/can-am-maverick-r-x-rs'
+  const isPolarisRZRCustomTour = window.location.pathname.replace(/\/$/, '') === '/tour/polaris-rzr-custom'
   const [introOpen, setIntroOpen] = useState(false)
   const [heroReady, setHeroReady] = useState(false)
 
@@ -48,6 +51,7 @@ export default function App() {
   if (isTestimonialsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TestimonialsPage/><Footer/><WhatsAppFloat/></div></div>
   if (isTourDetailsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TourDetailsPage/><Footer/><WhatsAppFloat/></div></div>
   if (isCanAmMaverickRXRSTour) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverickRXRS/><Footer/><WhatsAppFloat/></div></div>
+  if (isPolarisRZRCustomTour) return <div className="site"><div className="page-shell"><Navbar ready /><PolarisRZRCustom/><Footer/><WhatsAppFloat/></div></div>
 
   return (
     <div className={introOpen ? 'site intro-is-open' : 'site'}>
