@@ -21,7 +21,8 @@ const tours = [
     seats: '2 & 4 Seaters', 
     transferType: 'Private Transfer (4x4)',
     transfer: '300 AED', 
-    image: '/red-buggy.jpeg' 
+    image: '/red-buggy.jpeg',
+    link: '/tour/can-am-maverick-r-x-rs'
   },
   { 
     price: '400 AED', 
