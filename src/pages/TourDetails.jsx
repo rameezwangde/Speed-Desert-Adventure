@@ -49,6 +49,10 @@ export default function TourDetails() {
   return (
     <main className="tour-details-page">
       <section className="td-hero">
+        <a href="/" className="td-back-button" onClick={(e) => { e.preventDefault(); window.location.href = '/'; }}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Back to Tours
+        </a>
         <div className="td-hero-header">
           <SectionHeading eyebrow="2 & 4 SEATER DUNE BUGGY" title="CAN-AM MAVERICK" accent="XRS 26" align="center" />
           <div className="td-hero-price">

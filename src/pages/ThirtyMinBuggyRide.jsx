@@ -48,6 +48,10 @@ export default function ThirtyMinBuggyRide() {
   return (
     <main className="tour-details-page">
       <section className="td-hero">
+        <a href="/" className="td-back-button" onClick={(e) => { e.preventDefault(); window.location.href = '/'; }}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Back to Tours
+        </a>
         <div className="td-hero-header">
           <SectionHeading eyebrow="QUICK ADVENTURE" title="30-MINUTE" accent="DUNE BUGGY RIDE DUBAI" align="center" />
           <div className="td-hero-price">
