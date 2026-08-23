@@ -30,7 +30,8 @@ const hourly = [
     duration: '2-hours',
     seats: '1, 2 & 4 Seaters',
     transfer: '300 AED',
-    image: '/2-hour.png' 
+    image: '/2-hour.png',
+    link: '/tour/2-hour-dune-buggy-adventure'
   },
 ]
 
