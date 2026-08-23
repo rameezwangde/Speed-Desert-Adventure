@@ -23,6 +23,7 @@ import TourDetailsPage from './pages/TourDetails'
 import CanAmMaverickRXRS from './pages/CanAmMaverickRXRS'
 
 import PolarisRZRCustom from './pages/PolarisRZRCustom'
+import ThirtyMinBuggyRide from './pages/ThirtyMinBuggyRide'
 
 export default function App() {
   const isAboutPage = window.location.pathname.replace(/\/$/, '') === '/about'
@@ -31,6 +32,7 @@ export default function App() {
   const isTourDetailsPage = window.location.pathname.replace(/\/$/, '') === '/tour/can-am-maverick-xrs-26'
   const isCanAmMaverickRXRSTour = window.location.pathname.replace(/\/$/, '') === '/tour/can-am-maverick-r-x-rs'
   const isPolarisRZRCustomTour = window.location.pathname.replace(/\/$/, '') === '/tour/polaris-rzr-custom'
+  const isThirtyMinBuggyRide = window.location.pathname.replace(/\/$/, '') === '/tour/30-minute-dune-buggy-ride'
   const [introOpen, setIntroOpen] = useState(false)
   const [heroReady, setHeroReady] = useState(false)
 
@@ -52,6 +54,7 @@ export default function App() {
   if (isTourDetailsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TourDetailsPage/><Footer/><WhatsAppFloat/></div></div>
   if (isCanAmMaverickRXRSTour) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverickRXRS/><Footer/><WhatsAppFloat/></div></div>
   if (isPolarisRZRCustomTour) return <div className="site"><div className="page-shell"><Navbar ready /><PolarisRZRCustom/><Footer/><WhatsAppFloat/></div></div>
+  if (isThirtyMinBuggyRide) return <div className="site"><div className="page-shell"><Navbar ready /><ThirtyMinBuggyRide/><Footer/><WhatsAppFloat/></div></div>
 
   return (
     <div className={introOpen ? 'site intro-is-open' : 'site'}>

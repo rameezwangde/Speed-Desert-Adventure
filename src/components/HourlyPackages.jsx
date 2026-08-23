@@ -9,7 +9,8 @@ const hourly = [
     duration: '30 mins',
     seats: '1, 2 & 4 Seaters',
     transfer: '300 AED',
-    image: '/buggy-duo.jpg' 
+    image: '/buggy-duo.jpg',
+    link: '/tour/30-minute-dune-buggy-ride'
   },
   { 
     price: '800 AED / Person', 
@@ -72,7 +73,7 @@ export default function HourlyPackages() {
             </div>
             <div className="nhc-actions">
               <a href="#book" className="btn-primary">BOOK NOW</a>
-              <a href="#details" className="btn-secondary">TOUR DETAILS</a>
+              <a href={item.link || "#details"} onClick={(e) => { if(item.link) { window.location.href = item.link; } }} style={{ pointerEvents: 'auto', zIndex: 10, position: 'relative' }} className="btn-secondary">TOUR DETAILS</a>
             </div>
           </div>
         </motion.article>
