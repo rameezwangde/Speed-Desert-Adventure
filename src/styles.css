@@ -82,7 +82,7 @@
   position: relative;
   background: #e9e1d3;
   color: #080808;
-  padding: 60px 6vw;
+  padding: 30px 6vw;
   display: grid;
   grid-template-columns: .7fr 1.25fr 1fr;
   gap: 5vw;
@@ -141,7 +141,7 @@
 }
 
 .operator-section {
-  padding: 60px 6vw;
+  padding: 30px 6vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 7vw;
@@ -196,7 +196,7 @@
 
 .choose-section {
   position: relative;
-  padding: 60px 6vw;
+  padding: 30px 6vw;
   background: #101010
 }
 
@@ -261,7 +261,7 @@
 .trusted-section {
   background: #e9e1d3;
   color: #080808;
-  padding: 60px 7vw;
+  padding: 30px 7vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8vw;
@@ -337,7 +337,7 @@
 }
 
 .tour-types-section {
-  padding: 60px 6vw;
+  padding: 30px 6vw;
   background: #090909
 }
 
@@ -563,7 +563,7 @@
   .welcome-section,
   .operator-section,
   .trusted-section {
-    padding: 85px 24px;
+    padding: 50px 24px;
     grid-template-columns: 1fr
   }
 
@@ -586,7 +586,7 @@
 
   .choose-section,
   .tour-types-section {
-    padding: 85px 24px
+    padding: 50px 24px
   }
 
   .choose-bg {
