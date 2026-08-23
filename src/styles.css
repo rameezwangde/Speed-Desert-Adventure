@@ -4745,3 +4745,56 @@ a {
   .testimonials-stats { grid-template-columns: 1fr 1fr; }
   .testimonials-stats > div:nth-child(2) { border-right: 0; }
 }
+/* TOUR DETAILS PAGE */
+.tour-details-page { background: #050505; color: #f5f1e8; min-height: 100vh; overflow-x: hidden; }
+.td-hero { padding: 140px 6vw 60px; border-bottom: 1px solid #1a1a1a; }
+.td-hero-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 30px; margin-bottom: 50px; }
+.td-hero-price { display: flex; flex-direction: column; gap: 15px; align-items: flex-end; }
+.td-hero-price .price-label { font-size: 32px; font-weight: 900; color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.1); }
+.td-quick-stats { display: flex; gap: 40px; margin-bottom: 60px; padding: 30px 40px; background: rgba(255,255,255,0.02); border: 1px solid #1a1a1a; border-radius: 12px; flex-wrap: wrap; }
+.td-stat { display: flex; align-items: center; gap: 20px; }
+.td-stat svg { width: 36px; height: 36px; stroke-width: 1.5px; }
+.td-stat div { display: flex; flex-direction: column; }
+.td-stat small { color: #888; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; }
+.td-stat strong { font-size: 20px; color: #fff; font-weight: 700; margin-top: 4px; }
+.td-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-top: 20px; }
+.td-gallery img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px; }
+.td-content-section { display: grid; grid-template-columns: 2fr 1fr; gap: 6vw; padding: 80px 6vw; }
+.td-text-blocks { margin-top: 40px; }
+.td-text-blocks p { font-size: 18px; line-height: 1.7; color: #bbb; margin-bottom: 24px; }
+.td-text-blocks p a { color: #e11924; text-decoration: none; font-weight: 700; }
+.td-info-card { background: #0c0c0c; border: 1px solid #1a1a1a; padding: 40px 30px; border-radius: 12px; position: sticky; top: 120px; }
+.td-info-card h3 { font-size: 24px; text-transform: uppercase; margin-bottom: 30px; color: #fff; border-bottom: 1px solid #222; padding-bottom: 15px; }
+.td-checklist { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px; }
+.td-checklist li { display: flex; align-items: flex-start; gap: 12px; font-size: 16px; color: #ccc; line-height: 1.4; }
+.td-checklist li svg { width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px; }
+.td-ticket-prices { padding: 60px 6vw; background: #080808; border-top: 1px solid #1a1a1a; }
+.td-table { margin-top: 40px; max-width: 900px; margin-left: auto; margin-right: auto; }
+.td-table td:first-child { width: 40%; }
+.td-recommended-tours { padding: 80px 6vw 120px; text-align: center; }
+.td-recommended-content { max-width: 800px; margin: 40px auto 0; font-size: 20px; line-height: 1.6; color: #aaa; }
+.td-recommended-content a { color: #e11924; font-weight: 700; text-decoration: none; border-bottom: 1px solid rgba(225,25,36,0.3); transition: 0.3s; }
+.td-recommended-content a:hover { border-color: #e11924; }
+
+@media(max-width: 1024px) {
+  .td-gallery { grid-template-columns: 1fr 1fr; }
+  .td-gallery img:first-child { grid-column: auto; grid-row: auto; }
+  .td-content-section { grid-template-columns: 1fr; }
+  .td-info-card { position: relative; top: 0; }
+}
+@media(max-width: 768px) {
+  .td-hero { padding: 120px 24px 40px; }
+  .td-hero-header { flex-direction: column; align-items: flex-start; }
+  .td-hero-price { align-items: flex-start; }
+  .td-quick-stats { flex-direction: column; gap: 24px; padding: 24px; }
+  .td-gallery { height: auto; display: flex; flex-direction: column; }
+  .td-gallery img { height: auto; aspect-ratio: 16/9; }
+  .td-content-section, .td-ticket-prices, .td-recommended-tours { padding: 50px 24px; }
+}
+.td-text-blocks h2 { font-size: 26px; font-weight: 800; color: #fff; margin: 40px 0 15px; text-transform: uppercase; }
+.td-text-blocks h2:first-child { margin-top: 0; }
+.td-inclusions-section { padding: 80px 6vw; background: #0c0c0c; border-top: 1px solid #1a1a1a; }
+.td-inclusions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 50px; max-width: 1200px; margin-left: auto; margin-right: auto; }
+.td-inclusion-item { display: flex; align-items: center; gap: 15px; padding: 20px; border: 1px solid #222; border-radius: 10px; background: #080808; font-size: 16px; color: #ddd; font-weight: 500; transition: border-color 0.3s, background 0.3s; }
+.td-inclusion-item:hover { border-color: #e11924; background: #111; }
+.td-inclusion-item svg { width: 24px; height: 24px; flex-shrink: 0; stroke: #e11924; }

@@ -10,7 +10,8 @@ const tours = [
     seats: '2 & 4 Seaters', 
     transferType: 'Private Transfer (4x4)',
     transfer: '300 AED', 
-    image: '/blue-buggy.png' 
+    image: '/blue-buggy.png',
+    link: '/tour/can-am-maverick-xrs-26'
   },
   { 
     price: '899-1200 AED', 
@@ -79,7 +80,7 @@ export default function TourHighlights() {
             </div>
             <div className="nhc-actions">
               <a href="#book" className="btn-primary">BOOK NOW</a>
-              <a href="#details" className="btn-secondary">TOUR DETAILS</a>
+              <a href={tour.link || "#details"} className="btn-secondary">TOUR DETAILS</a>
             </div>
           </div>
         </motion.article>
