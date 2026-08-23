@@ -4710,6 +4710,16 @@ a {
 .testimonials-hero-copy p { max-width: 520px; font-size: 20px; line-height: 1.55; color: #ddd; }
 
 .testimonials-marquee-section { padding: 30px 6vw 60px; background: #050505; overflow: hidden; }
+.reviews-header-container { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; text-align: center; margin-bottom: 20px; }
+.reviews-badge { background: linear-gradient(135deg, rgba(225,25,36,0.15), rgba(225,25,36,0.05)); border: 1px solid rgba(225,25,36,0.4); padding: 18px 40px; border-radius: 50px; display: inline-flex; align-items: center; gap: 15px; font-size: 22px; color: #fff; box-shadow: 0 0 25px rgba(225,25,36,0.15); font-family: Oswald, sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
+.reviews-badge strong { color: #fff; font-weight: 700; font-size: 28px; text-shadow: 0 2px 10px rgba(225,25,36,0.5); }
+.reviews-badge .review-stars { font-size: 24px; letter-spacing: 3px; color: #e11924; filter: drop-shadow(0 0 8px rgba(225,25,36,0.6)); }
+.reviews-action-container { display: flex; justify-content: center; margin-top: 50px; }
+@media(max-width: 768px) {
+  .reviews-badge { font-size: 16px; padding: 14px 24px; }
+  .reviews-badge strong { font-size: 20px; }
+  .reviews-badge .review-stars { font-size: 18px; }
+}
 .marquee-container { margin-top: 50px; display: flex; flex-direction: column; gap: 24px; }
 .marquee-row { width: 100%; overflow: hidden; position: relative; }
 .marquee-row::before, .marquee-row::after { content: ''; position: absolute; top: 0; bottom: 0; width: 120px; z-index: 2; pointer-events: none; }

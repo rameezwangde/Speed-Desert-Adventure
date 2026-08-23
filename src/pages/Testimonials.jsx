@@ -116,10 +116,33 @@ export default function TestimonialsPage() {
       </section>
 
       <section className="testimonials-marquee-section">
-        <SectionHeading eyebrow="TRUSTED BY RIDERS WORLDWIDE" title="Guest" accent="Reviews" />
+        <div className="reviews-header-container">
+          <SectionHeading eyebrow="TRUSTED BY RIDERS WORLDWIDE" title="Guest" accent="Reviews" align="center" />
+          <motion.div 
+            className="reviews-badge"
+            initial={{ opacity: 0, x: -20 }} 
+            whileInView={{ opacity: 1, x: 0 }} 
+            viewport={{ once: true, amount: .45 }} 
+            transition={{ duration: .7, delay: 0.2, ease: [.22,1,.36,1] }}
+          >
+            <div className="review-stars">★★★★★</div>
+            <span><strong>500+ Reviews</strong> on Google</span>
+          </motion.div>
+        </div>
         <div className="marquee-container">
           <MarqueeRow items={row1} direction="left" speed={600} />
         </div>
+        <motion.div 
+          className="reviews-action-container"
+          initial={{ opacity: 0, y: 20 }} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          viewport={{ once: true }} 
+          transition={{ duration: .6 }}
+        >
+          <a href="https://www.google.com/search?q=speed+desert+dubai&oq=speed+desert+dubai&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjINCAQQABiGAxiABBiKBTINCAUQABiGAxiABBiKBTIGCAYQRRg9MgYIBxBFGDzSAQgzMDA4ajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x3ef577e44c6fd419:0xe016430521669677,1" target="_blank" rel="noopener noreferrer" className="brush-button">
+            <span>Read All Google Reviews</span>
+          </a>
+        </motion.div>
       </section>
 
       <section className="testimonials-stats">
