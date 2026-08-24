@@ -15,7 +15,7 @@ const packagesData = [
     category: 'Quad Bike',
     options: [
       { name: '620cc Quad Bike', link: '/tour/620cc-quad-bike', bg: 'linear-gradient(135deg, #0a0a0a 0%, #1c1c1c 100%)' },
-      { name: 'Yamaha 700cc', link: '/tour/yamaha-700cc', bg: 'linear-gradient(135deg, #111 0%, #180808 100%)' },
+      { name: 'Yamaha 700cc', link: '/tour/yamaha-700cc-raptor', bg: 'linear-gradient(135deg, #111 0%, #180808 100%)' },
     ]
   },
   {
