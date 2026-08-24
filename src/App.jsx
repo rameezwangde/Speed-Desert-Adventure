@@ -33,12 +33,14 @@ import QuadBike620cc from './pages/QuadBike620cc'
 import Yamaha700ccRaptor from './pages/Yamaha700ccRaptor'
 import DesertComboSharingSafariQuad from './pages/DesertComboSharingSafariQuad'
 import DesertComboSharingSafariBuggy from './pages/DesertComboSharingSafariBuggy'
+import CanAmMaverick from './pages/CanAmMaverick'
 
 export default function App() {
   const isQuadBike620ccTour = window.location.pathname.replace(/\/$/, '') === '/tour/620cc-quad-bike'
   const isYamaha700ccRaptorTour = window.location.pathname.replace(/\/$/, '') === '/tour/yamaha-700cc-raptor'
   const isSafariQuadTour = window.location.pathname.replace(/\/$/, '') === '/tour/safari-quad'
   const isSafariBuggyTour = window.location.pathname.replace(/\/$/, '') === '/tour/safari-buggy'
+  const isCanAmMaverickCategory = window.location.pathname.replace(/\/$/, '') === '/tour/can-am-maverick'
   const isPackagesPage = window.location.pathname.replace(/\/$/, '') === '/packages'
   const isAboutPage = window.location.pathname.replace(/\/$/, '') === '/about'
   const isContactPage = window.location.pathname.replace(/\/$/, '') === '/contact'
@@ -69,6 +71,7 @@ export default function App() {
   if (isYamaha700ccRaptorTour) return <div className="site"><div className="page-shell"><Navbar ready /><Yamaha700ccRaptor/><Footer/><WhatsAppFloat/></div></div>
   if (isSafariQuadTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariQuad/><Footer/><WhatsAppFloat/></div></div>
   if (isSafariBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariBuggy/><Footer/><WhatsAppFloat/></div></div>
+  if (isCanAmMaverickCategory) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverick/><Footer/><WhatsAppFloat/></div></div>
   if (isPackagesPage) return <div className="site"><div className="page-shell"><Navbar ready /><PackagesPage/><Footer/><WhatsAppFloat/></div></div>
   if (isAboutPage) return <div className="site"><div className="page-shell"><Navbar ready /><AboutPage/><Footer/><WhatsAppFloat/></div></div>
   if (isContactPage) return <div className="site"><div className="page-shell"><Navbar ready /><ContactPage/><Footer/><WhatsAppFloat/></div></div>
