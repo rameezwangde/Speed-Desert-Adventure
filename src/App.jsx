@@ -28,7 +28,12 @@ import OneHourBuggyTour from './pages/OneHourBuggyTour'
 import TwoHourBuggyTour from './pages/TwoHourBuggyTour'
 import GalleryPage from './pages/Gallery'
 
+import PackagesPage from './pages/Packages'
+import QuadBike620cc from './pages/QuadBike620cc'
+
 export default function App() {
+  const isQuadBike620ccTour = window.location.pathname.replace(/\/$/, '') === '/tour/620cc-quad-bike'
+  const isPackagesPage = window.location.pathname.replace(/\/$/, '') === '/packages'
   const isAboutPage = window.location.pathname.replace(/\/$/, '') === '/about'
   const isContactPage = window.location.pathname.replace(/\/$/, '') === '/contact'
   const isTestimonialsPage = window.location.pathname.replace(/\/$/, '') === '/testimonials'
@@ -54,6 +59,8 @@ export default function App() {
     window.setTimeout(() => setHeroReady(true), 350)
   }
 
+  if (isQuadBike620ccTour) return <div className="site"><div className="page-shell"><Navbar ready /><QuadBike620cc/><Footer/><WhatsAppFloat/></div></div>
+  if (isPackagesPage) return <div className="site"><div className="page-shell"><Navbar ready /><PackagesPage/><Footer/><WhatsAppFloat/></div></div>
   if (isAboutPage) return <div className="site"><div className="page-shell"><Navbar ready /><AboutPage/><Footer/><WhatsAppFloat/></div></div>
   if (isContactPage) return <div className="site"><div className="page-shell"><Navbar ready /><ContactPage/><Footer/><WhatsAppFloat/></div></div>
   if (isTestimonialsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TestimonialsPage/><Footer/><WhatsAppFloat/></div></div>
