@@ -132,7 +132,7 @@ export default function Yamaha700ccRaptor() {
       <section className="td-ticket-prices" style={{ padding: '0 5%', maxWidth: '1200px', margin: '40px auto 80px' }}>
         <SectionHeading title="Yamaha 700cc Raptor" accent="Ticket Price & Timing" align="center" />
         <div className="table-wrapper td-table" style={{ maxWidth: '800px', margin: '40px auto 0' }}>
-          <table className="custom-table" style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid rgba(255,255,255,0.1)' }}>
+          <table className="custom-table" style={{ width: '100%', minWidth: '100%', borderCollapse: 'collapse', border: '1px solid rgba(255,255,255,0.1)' }}>
             <tbody>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Yamaha 700cc Raptor Quad Bike Ride</strong></td>
