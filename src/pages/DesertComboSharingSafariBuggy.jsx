@@ -6,42 +6,45 @@ import FAQ from '../components/FAQ'
 import TourIncludes from '../components/TourIncludes'
 
 const tourInfo = [
-  '14:30 to 15:00 Pick up',
   'Sharing Car 4WD',
-  'Hotel Pickup and Drop-Off',
-  '30-Minute Quad Ride',
-  'Self Drive Quad Bike',
-  'Air-conditioned vehicle for comfort',
-  'Licensed Desert Guide',
+  '14:30 to 15:00 Pick up',
+  '30-Minute Dune Buggy ride',
+  'Self Drive Dune Buggy',
   'Red - Dune Bashing 30 minutes',
-  'Free sandboarding',
-  'Camel ride: 5-10 minutes, with option to extend freely.',
-  'Complimentary Water & Soft Drinks',
-  'Henna Tattoo (For Ladies Only)',
+  'Air-conditioned vehicle for comfort',
+  'Hotel Pickup and Drop-Off',
+  'Experienced instructor & Licensed Desert Guide',
   'Shisha (In the corner)',
-  'Memorable Stop For Photos',
   'BBQ With Buffet Dinner',
+  'Free Camel Ride (5-10 mins) + Free sandboarding',
+  'Henna Tattoo (For Ladies Only)',
+  'Complimentary Water & Soft Drinks',
+  'Memorable Stop For Photos',
   'Shows (Fireshow-Tanoura-Belly Dancing-Yowla)'
 ]
 
 const tripInclusions = [
-  'Self Drive Quad Bike',
-  'Dune Bashing (30 mins)',
+  'Bluetooth Music System',
+  'Water',
   'Camel Ride',
-  'BBQ Buffet Dinner',
-  'Water & Soft Drinks',
-  'Live Shows (Belly Dance, Fire, Tanoura)',
-  'Henna Tattoo (Ladies)',
-  'Shisha',
-  'Sandboarding',
-  'Hotel Pickup & Drop-Off',
-  'Comfortable 4WD Vehicle',
-  'Licensed Desert Guide'
+  'Medication (If Needed)',
+  'Climate-Controlled Comfort Lounge',
+  'Safety Gears',
+  'Expert Driver',
+  'Guided Tour',
+  'Car Parking',
+  'Children Play Area',
+  'Photo Stop/Opportunities',
+  'Souvenir Opportunities',
+  'Male/Female Mosques',
+  'Men Washroom',
+  'Ladies Washroom',
+  'Sandboarding'
 ]
 
-export default function DesertComboSharingSafariQuad() {
+export default function DesertComboSharingSafariBuggy() {
   useEffect(() => {
-    document.title = 'Desert Combo: Safari + Quad | Speed Desert Adventure'
+    document.title = 'Desert Combo: Safari + Buggy | Speed Desert Adventure'
     window.scrollTo(0, 0)
   }, [])
 
@@ -53,12 +56,12 @@ export default function DesertComboSharingSafariQuad() {
           Back to Packages
         </a>
         <div className="td-hero-header">
-          <SectionHeading eyebrow="DESERT COMBO:" title="SHARING SAFARI +" accent="QUAD BIKING TOUR" align="center" />
+          <SectionHeading eyebrow="DESERT COMBO:" title="SHARING SAFARI" accent="DESERT + DUNE BUGGY" align="center" />
           <p style={{ textAlign: 'center', color: '#fff', fontSize: '18px', maxWidth: '800px', margin: '0 auto 30px' }}>
-            Embark on an unforgettable adventure where exhilarating excitement meets rich cultural immersion in the heart of Dubai's iconic desert.
+            Combine the thrill of dune bashing with a powerful buggy ride across the red dunes, topped off with a traditional Bedouin camp experience.
           </p>
           <div className="td-hero-price">
-            <span className="price-label">AED 99</span>
+            <span className="price-label">AED 299</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -75,14 +78,14 @@ export default function DesertComboSharingSafariQuad() {
             <svg viewBox="0 0 24 24" fill="none" stroke="#e11924"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" strokeWidth="2"/><circle cx="9" cy="7" r="4" strokeWidth="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" strokeWidth="2"/><path d="M16 3.13a4 4 0 0 1 0 7.75" strokeWidth="2"/></svg>
             <div>
               <small>Seats</small>
-              <strong>1 Seater</strong>
+              <strong>1, 2 & 4 Seaters</strong>
             </div>
           </div>
           <div className="td-stat">
             <svg viewBox="0 0 24 24" fill="none" stroke="#e11924"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" strokeWidth="2"/><circle cx="7" cy="17" r="2" strokeWidth="2"/><path d="M9 17h6" strokeWidth="2"/><circle cx="17" cy="17" r="2" strokeWidth="2"/></svg>
             <div>
-              <small>Sharing Transfer</small>
-              <strong>Free Pick & Drop Off</strong>
+              <small>Shared Transfer</small>
+              <strong>Free Pick & Drop</strong>
             </div>
           </div>
         </div>
@@ -93,7 +96,7 @@ export default function DesertComboSharingSafariQuad() {
               <img 
                 key={idx} 
                 src={`/gallery/img-g2-${num}.jpeg`} 
-                alt={`Desert Safari Tour ${num}`} 
+                alt={`Buggy Safari Tour ${num}`} 
                 style={{ height: '280px', width: '420px', objectFit: 'cover', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }} 
               />
             ))}
@@ -103,18 +106,18 @@ export default function DesertComboSharingSafariQuad() {
 
       <section className="td-content-section">
         <div className="td-main-content">
-          <SectionHeading eyebrow="Experience" title="Desert Combo: Safari + Quad" accent="in Dubai" />
+          <SectionHeading eyebrow="Experience" title="Desert Combo: Safari + Dune Buggy" accent="in Dubai" />
           
           <div className="td-text-blocks">
-            <p>Join <strong>Speed Desert Adventure</strong> for an unforgettable Desert Safari Adventure that blends high-octane excitement and rich cultural immersion in the stunning landscape of Dubai's majestic red dunes. Your experience begins with a convenient hotel pickup scheduled between 2:30 PM and 3:00 PM, in a comfortable, shared 4WD vehicle equipped for the rugged desert and guided by a licensed expert skilled in desert navigation.</p>
+            <p>Are you ready to embark on an unforgettable journey through the enchanting landscapes of Dubai's deserts? At <strong>Speed Desert Adventure</strong>, we've crafted the perfect adventure for thrill-seekers and culture enthusiasts alike: the Desert Combo—Sharing Safari + Dune Buggy Package. This exhilarating package combines the thrill of dune bashing and the exploration of vast sandy expanses in a shared safari experience, topped off with an adrenaline-pumping dune buggy ride. It's the ultimate way to experience the desert, offering both shared experiences and personal adventure, ensuring there's something for everyone.</p>
             
-            <p>The adventure kicks off with a thrilling 30-minute dune bashing session, where you'll carve through the golden dunes at exhilarating speeds. Take a moment to pause atop one of the tallest dunes to enjoy breathtaking panoramic views and capture memorable photos. Amp up the excitement by strapping on a sandboard to glide down the soft, sweeping slopes, and enjoy a serene camel ride through the desert landscape, with an option to extend the ride at no additional cost. Ladies will have the opportunity to receive a beautiful henna tattoo, making for a perfect souvenir from the trip.</p>
+            <p>Your adventure begins the moment we pick you up from your location in Dubai. Settle into our comfortable, air-conditioned 4WD vehicles, designed to handle the rugged desert terrain with ease. As you travel to the heart of the desert, your experienced guide will share insights into the desert's ecology, history, and the customs of its original inhabitants.</p>
             
-            <p>As the day turns into twilight, retreat to our authentic Bedouin camp for a warm welcome and a cozy evening under the stars. Relax with a session of shisha in a laid-back setting, or simply savor the tranquility of the desert evening. Throughout your adventure, stay refreshed with complimentary beverages and indulge in a sumptuous BBQ buffet dinner that caters to both vegetarian and non-vegetarian preferences. The night comes alive with spectacular live entertainment, including a mesmerizing fire show, the enchanting Tanoura dance, belly dancing performances, and the traditional Yowla dance.</p>
-            
-            <p>Please note that this adventure may not be suitable for pregnant women, infants under one year, seniors over 70, or those with mobility issues. For optimal comfort, we recommend wearing lightweight shoes suitable for sand, applying sunscreen, and carrying sunglasses or a hat. In cooler months, dressing warmly will enhance your enjoyment of the experience. Be aware that during Ramadan, our entertainment offerings adjust to respect cultural sensitivities, featuring only Tanoura and fire shows.</p>
+            <p>Next, take the wheel yourself with our state-of-the-art dune buggies. No experience is more empowering than navigating through the dunes, feeling every bump and dip as you control the buggy across the desert landscape. Our dune buggies are equipped with top safety features, ensuring you feel secure while pushing the limits of speed and agility.</p>
 
-            <p>Book your Desert Safari Adventure with Speed Desert Adventure today for an unmatched blend of thrill and cultural experience. Don't miss out on this opportunity to create lasting memories in one of the most beautiful desert landscapes in the world!</p>
+            <p>After the high-energy activities, we'll retreat to a traditional Bedouin camp where the pace slows but the wonder continues. Here, you can relax and enjoy the hospitality of the desert people. Savor a mouth-watering BBQ dinner under the stars, watch live cultural performances like belly dancing and the mesmerizing Tanoura dance, and engage in ancient customs such as henna painting.</p>
+
+            <p>As the evening winds down, relax around the campfire, indulge in some aromatic shisha, or simply lay back and stargaze, letting the tranquility of the desert night wash over you. It's the perfect end to an action-packed day.</p>
           </div>
         </div>
 
@@ -134,33 +137,33 @@ export default function DesertComboSharingSafariQuad() {
       </section>
 
       <section className="td-ticket-prices" style={{ padding: '0 5%', maxWidth: '1200px', margin: '40px auto 0' }}>
-        <SectionHeading title="Desert Combo:" accent="Sharing Safari + Quad Price & Timing" align="center" />
+        <SectionHeading title="Desert Combo:" accent="Safari+Buggy Ticket Price & Timing" align="center" />
         <div className="table-wrapper td-table" style={{ maxWidth: '800px', margin: '40px auto 0' }}>
           <table className="custom-table" style={{ width: '100%', minWidth: '100%', borderCollapse: 'collapse', border: '1px solid rgba(255,255,255,0.1)' }}>
             <tbody>
               <tr>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Desert Combo: Sharing Safari + Quad 1-seater</strong></td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Desert Combo: Safari+Buggy Details</strong></td>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Information</strong></td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Ticket Price</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>AED 99.00</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>AED 299.00</td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Package</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Desert Safari + Quad Bike</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Desert Safari + Dune Buggy</td>
               </tr>
               <tr>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Seating Capacity</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>1-Seater</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Seating capacity</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>1 seater</td>
               </tr>
               <tr>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Quad Ride Duration</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>30 minutes</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Buggy Ride Duration</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>30min</td>
               </tr>
               <tr>
-                <td style={{ padding: '20px' }}>Total Duration</td>
-                <td style={{ padding: '20px' }}>6 Hours</td>
+                <td style={{ padding: '20px' }}>Total Tour Duration</td>
+                <td style={{ padding: '20px' }}>6 hours</td>
               </tr>
             </tbody>
           </table>
@@ -187,9 +190,9 @@ export default function DesertComboSharingSafariQuad() {
         <div className="faq-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(450px, 1fr))', gap: '20px', marginTop: '40px' }}>
           {[
             { q: "Is hotel pick-up and drop-off included in the package?", a: "Yes! Our Desert Combo package includes a convenient pick-up and drop-off service from your hotel or residence in a comfortable, shared 4WD vehicle." },
-            { q: "What should I wear for the Desert Safari and Quad Biking?", a: "We recommend wearing comfortable, loose-fitting clothing and closed-toe shoes suitable for sand. Don't forget to bring sunglasses, a hat, and sunscreen. In cooler months, a light jacket is advisable." },
-            { q: "Is prior experience required for quad biking?", a: "No prior experience is necessary. Our quad bikes are fully automatic and easy to handle. Our licensed instructors will provide a comprehensive safety briefing and training before you start." },
-            { q: "Can my children participate in this combo tour?", a: "The desert safari and camp activities are family-friendly. However, due to safety regulations, children typically need to be at least 16 years old to drive the quad bikes independently. Younger children may be allowed as passengers on double-seater bikes or buggies." },
+            { q: "What should I wear for the Desert Safari and Dune Buggy ride?", a: "We recommend wearing comfortable, loose-fitting clothing and closed-toe shoes suitable for sand. Don't forget to bring sunglasses, a hat, and sunscreen. In cooler months, a light jacket is advisable." },
+            { q: "Is prior experience required for driving a dune buggy?", a: "No prior experience is necessary. Our dune buggies are fully automatic and easy to handle. Our licensed instructors will provide a comprehensive safety briefing and training before you start." },
+            { q: "Can my children participate in this combo tour?", a: "The desert safari and camp activities are family-friendly. However, due to safety regulations, children typically need to be at least 16 years old to drive the dune buggies independently. Younger children may be allowed as passengers." },
             { q: "What kind of food is served at the BBQ buffet?", a: "Our lavish BBQ buffet includes a wide variety of delicious options, catering to both vegetarian and non-vegetarian preferences. You'll enjoy fresh salads, grilled meats, traditional Arabic dishes, and desserts." },
             { q: "Is the desert safari safe for pregnant women or people with back problems?", a: "For safety reasons, dune bashing is not recommended for pregnant women, infants under one year, or individuals with back, neck, or heart conditions. We can arrange for you to skip the dune bashing and be taken directly to the camp to enjoy the other activities." }
           ].map((faq, i) => (

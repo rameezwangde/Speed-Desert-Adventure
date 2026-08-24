@@ -129,7 +129,7 @@ export default function Yamaha700ccRaptor() {
         </aside>
       </section>
 
-      <section className="td-ticket-prices" style={{ padding: '0 5%', maxWidth: '1200px', margin: '40px auto 80px' }}>
+      <section className="td-ticket-prices" style={{ padding: '0 5%', maxWidth: '1200px', margin: '40px auto 0' }}>
         <SectionHeading title="Yamaha 700cc Raptor" accent="Ticket Price & Timing" align="center" />
         <div className="table-wrapper td-table" style={{ maxWidth: '800px', margin: '40px auto 0' }}>
           <table className="custom-table" style={{ width: '100%', minWidth: '100%', borderCollapse: 'collapse', border: '1px solid rgba(255,255,255,0.1)' }}>
@@ -174,7 +174,7 @@ export default function Yamaha700ccRaptor() {
         </div>
       </section>
 
-      <section className="td-faq-section" style={{ padding: '80px 5%', maxWidth: '1200px', margin: '0 auto' }}>
+      <section className="td-faq-section" style={{ padding: '20px 5% 80px', maxWidth: '1200px', margin: '0 auto' }}>
         <SectionHeading title="Frequently Asked" accent="Questions" align="center" />
         <div className="faq-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(450px, 1fr))', gap: '20px', marginTop: '40px' }}>
           {[

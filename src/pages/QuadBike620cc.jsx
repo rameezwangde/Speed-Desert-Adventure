@@ -282,7 +282,7 @@ export default function QuadBike620cc() {
         </div>
       </section>
 
-      <section className="td-faq-section" style={{ padding: '80px 5%', maxWidth: '1200px', margin: '0 auto' }}>
+      <section className="td-faq-section" style={{ padding: '20px 5% 80px', maxWidth: '1200px', margin: '0 auto' }}>
         <SectionHeading title="Frequently Asked" accent="Questions" align="center" />
         <div className="faq-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(450px, 1fr))', gap: '20px', marginTop: '40px' }}>
           {[
