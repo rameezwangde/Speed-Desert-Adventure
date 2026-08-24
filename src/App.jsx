@@ -23,6 +23,7 @@ import TourDetailsPage from './pages/TourDetails'
 import CanAmMaverickRXRS from './pages/CanAmMaverickRXRS'
 
 import PolarisRZRCustom from './pages/PolarisRZRCustom'
+import Stage4Stunner from './pages/Stage4Stunner'
 import ThirtyMinBuggyRide from './pages/ThirtyMinBuggyRide'
 import OneHourBuggyTour from './pages/OneHourBuggyTour'
 import TwoHourBuggyTour from './pages/TwoHourBuggyTour'
@@ -49,6 +50,7 @@ export default function App() {
   const isTourDetailsPage = window.location.pathname.replace(/\/$/, '') === '/tour/can-am-maverick-xrs-26'
   const isCanAmMaverickRXRSTour = window.location.pathname.replace(/\/$/, '') === '/tour/can-am-maverick-r-x-rs'
   const isPolarisRZRCustomTour = window.location.pathname.replace(/\/$/, '') === '/tour/polaris-rzr-custom'
+  const isStage4Stunner = window.location.pathname.replace(/\/$/, '') === '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps'
   const isThirtyMinBuggyRide = window.location.pathname.replace(/\/$/, '') === '/tour/30-minute-dune-buggy-ride'
   const isOneHourBuggyTour = window.location.pathname.replace(/\/$/, '') === '/tour/1-hour-dune-buggy-tour'
   const isTwoHourBuggyTour = window.location.pathname.replace(/\/$/, '') === '/tour/2-hour-dune-buggy-adventure'
@@ -69,6 +71,11 @@ export default function App() {
 
   if (isQuadBike620ccTour) return <div className="site"><div className="page-shell"><Navbar ready /><QuadBike620cc/><Footer/><WhatsAppFloat/></div></div>
   if (isYamaha700ccRaptorTour) return <div className="site"><div className="page-shell"><Navbar ready /><Yamaha700ccRaptor/><Footer/><WhatsAppFloat/></div></div>
+  if (isTourDetailsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TourDetailsPage/><Footer/><WhatsAppFloat/></div></div>
+  if (isCanAmMaverickRXRSTour) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverickRXRS/><Footer/><WhatsAppFloat/></div></div>
+  if (isPolarisRZRCustomTour) return <div className="site"><div className="page-shell"><Navbar ready /><PolarisRZRCustom/><Footer/><WhatsAppFloat/></div></div>
+  if (isStage4Stunner) return <div className="site"><div className="page-shell"><Navbar ready /><Stage4Stunner/><Footer/><WhatsAppFloat/></div></div>
+  if (isThirtyMinBuggyRide) return <div className="site"><div className="page-shell"><Navbar ready /><ThirtyMinBuggyRide/><Footer/><WhatsAppFloat/></div></div>
   if (isSafariQuadTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariQuad/><Footer/><WhatsAppFloat/></div></div>
   if (isSafariBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariBuggy/><Footer/><WhatsAppFloat/></div></div>
   if (isCanAmMaverickCategory) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverick/><Footer/><WhatsAppFloat/></div></div>
@@ -77,12 +84,7 @@ export default function App() {
   if (isContactPage) return <div className="site"><div className="page-shell"><Navbar ready /><ContactPage/><Footer/><WhatsAppFloat/></div></div>
   if (isTestimonialsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TestimonialsPage/><Footer/><WhatsAppFloat/></div></div>
   if (isGalleryPage) return <div className="site"><div className="page-shell"><Navbar ready /><GalleryPage/><Footer/><WhatsAppFloat/></div></div>
-  if (isTourDetailsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TourDetailsPage/><Footer/><WhatsAppFloat/></div></div>
-  if (isCanAmMaverickRXRSTour) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverickRXRS/><Footer/><WhatsAppFloat/></div></div>
-  if (isPolarisRZRCustomTour) return <div className="site"><div className="page-shell"><Navbar ready /><PolarisRZRCustom/><Footer/><WhatsAppFloat/></div></div>
-  if (isThirtyMinBuggyRide) return <div className="site"><div className="page-shell"><Navbar ready /><ThirtyMinBuggyRide/><Footer/><WhatsAppFloat/></div></div>
-  if (isOneHourBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><OneHourBuggyTour/><Footer/><WhatsAppFloat/></div></div>
-  if (isTwoHourBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><TwoHourBuggyTour/><Footer/><WhatsAppFloat/></div></div>
+
 
   return (
     <div className={introOpen ? 'site intro-is-open' : 'site'}>

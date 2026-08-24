@@ -8,7 +8,7 @@ const packagesData = [
     options: [
       { name: 'Can-Am Maverick', link: '/tour/can-am-maverick', bg: 'linear-gradient(135deg, #111 0%, #222 100%)' },
       { name: 'Polaris RZR', link: '/tour/polaris-rzr-custom', bg: 'linear-gradient(135deg, #111 0%, #1a1a1a 100%)' },
-      { name: 'Stage 4 Stunner', link: '/tour/stage-4-stunner', bg: 'linear-gradient(135deg, #180808 0%, #111 100%)' },
+      { name: 'Stage 4 Stunner', link: '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps', bg: 'linear-gradient(135deg, #180808 0%, #111 100%)' },
     ]
   },
   {
