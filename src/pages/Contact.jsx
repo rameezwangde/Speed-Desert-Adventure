@@ -34,7 +34,7 @@ export default function ContactPage() {
             </div>
             <div className="info-block">
               <h3>Email</h3>
-              <p><a href="mailto:info@speeddesert.com">info@speeddesert.com</a></p>
+              <p><a href="mailto:info@speeddesert.ae">info@speeddesert.ae</a></p>
             </div>
             <div className="info-block">
               <h3>Operating Hours</h3>
