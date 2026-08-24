@@ -174,38 +174,9 @@ export default function QuadBike620cc() {
             </div>
           </div>
 
-          <div style={{ marginTop: '80px' }}>
-            <SectionHeading eyebrow="FLEET OPTIONS" title="Single & Double" accent="Seater Quad Bikes" />
-            <div className="td-text-blocks">
-              <h3 style={{ color: '#fff', fontSize: '24px', marginBottom: '15px' }}>Single Seater Quad Bikes</h3>
-              <p>Embark on an independent desert journey with <strong>Speed Desert Adventure</strong>, Dubai's premier destination for single-seater quad bike tours. Tailored for thrill-seekers who prefer to explore at their own pace, our tours put you in complete control as you navigate the expansive red dunes. Recognized for combining excitement with competitive pricing, our single-rider experiences are perfect for both seasoned riders and confident beginners.</p>
 
-              <h3 style={{ color: '#fff', fontSize: '24px', marginBottom: '15px', marginTop: '40px' }}>Double Seater Quad Bikes</h3>
-              <p>Share the exhilaration of the Dubai desert with someone special on our double-seater quad bike tours. Perfect for couples or friends, these tours offer a fantastic opportunity to bond while exploring the majestic landscape together. We prioritize your safety and enjoyment, ensuring every aspect of the tour is designed for a comfortable and memorable shared adventure.</p>
-            </div>
-          </div>
 
-          <div style={{ marginTop: '80px', marginBottom: '40px' }}>
-            <SectionHeading eyebrow="PREPARATION" title="Essential Tips" accent="Before Your Tour" />
-            <div className="td-text-blocks">
-              <p>Whether it's your first time riding or you're a seasoned off-roader, here is what you need to know to ensure your quad biking trip is safe and spectacular:</p>
-              <ul style={{ color: '#ccc', lineHeight: '1.6', margin: 0, padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px' }}>
-                {[
-                  { title: 'Dress Appropriately', desc: 'Choose long sleeves, comfortable pants, and mandatory closed-toe shoes to protect against the sun and sand.' },
-                  { title: 'Master the Basics', desc: 'Pay close attention during the brief training session to familiarize yourself with starting, operating, and safely stopping your quad bike.' },
-                  { title: 'Follow the Rules', desc: 'Safety is paramount. Always listen to your guide\'s instructions and avoid risky maneuvers on challenging terrains.' },
-                  { title: 'Sun Protection', desc: 'The desert climate is harsh. Drink plenty of water, apply high-SPF sunscreen, and wear a hat or scarf to guard against sunburn.' },
-                  { title: 'Respect Environment', desc: 'Stick to the marked trails to avoid harming local flora and fauna, preserving the pristine nature of the Dubai desert.' },
-                  { title: 'Capture the Moment', desc: 'Bring your camera! There will be plenty of designated scenic stops to snap incredible photos of the majestic red dunes.' }
-                ].map((tip, i) => (
-                  <li key={i} style={{ listStyle: 'none', background: '#111', padding: '20px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                    <strong style={{ color: '#e11924', fontSize: '18px' }}><span style={{ color: '#fff', marginRight: '6px' }}>{i + 1}.</span> {tip.title}</strong>
-                    <span style={{ fontSize: '15px' }}>{tip.desc}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+
         </div>
 
         <aside className="td-sidebar">
@@ -221,6 +192,40 @@ export default function QuadBike620cc() {
             </ul>
           </div>
         </aside>
+      </section>
+
+      <section className="td-fleet-options" style={{ padding: '0 5%', maxWidth: '1200px', margin: '40px auto 80px' }}>
+        <SectionHeading eyebrow="FLEET OPTIONS" title="Single & Double" accent="Seater Quad Bikes" align="center" />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '40px', marginTop: '40px' }}>
+          <div style={{ background: '#111', padding: '30px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+            <h3 style={{ color: '#fff', fontSize: '24px', marginBottom: '15px' }}>Single Seater Quad Bikes</h3>
+            <p style={{ color: '#ccc', lineHeight: '1.6' }}>Embark on an independent desert journey with <strong>Speed Desert Adventure</strong>, Dubai's premier destination for single-seater quad bike tours. Tailored for thrill-seekers who prefer to explore at their own pace, our tours put you in complete control as you navigate the expansive red dunes. Recognized for combining excitement with competitive pricing, our single-rider experiences are perfect for both seasoned riders and confident beginners.</p>
+          </div>
+          <div style={{ background: '#111', padding: '30px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+            <h3 style={{ color: '#fff', fontSize: '24px', marginBottom: '15px' }}>Double Seater Quad Bikes</h3>
+            <p style={{ color: '#ccc', lineHeight: '1.6' }}>Share the exhilaration of the Dubai desert with someone special on our double-seater quad bike tours. Perfect for couples or friends, these tours offer a fantastic opportunity to bond while exploring the majestic landscape together. We prioritize your safety and enjoyment, ensuring every aspect of the tour is designed for a comfortable and memorable shared adventure.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="td-essential-tips" style={{ padding: '40px 5%', maxWidth: '1200px', margin: '0 auto 40px' }}>
+        <SectionHeading eyebrow="PREPARATION" title="Essential Tips" accent="Before Your Tour" align="center" />
+        <p style={{ textAlign: 'center', color: '#ccc', maxWidth: '800px', margin: '0 auto 40px', lineHeight: '1.6' }}>Whether it's your first time riding or you're a seasoned off-roader, here is what you need to know to ensure your quad biking trip is safe and spectacular:</p>
+        <ul style={{ color: '#ccc', lineHeight: '1.6', margin: 0, padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
+          {[
+            { title: 'Dress Appropriately', desc: 'Choose long sleeves, comfortable pants, and mandatory closed-toe shoes to protect against the sun and sand.' },
+            { title: 'Master the Basics', desc: 'Pay close attention during the brief training session to familiarize yourself with starting, operating, and safely stopping your quad bike.' },
+            { title: 'Follow the Rules', desc: 'Safety is paramount. Always listen to your guide\'s instructions and avoid risky maneuvers on challenging terrains.' },
+            { title: 'Sun Protection', desc: 'The desert climate is harsh. Drink plenty of water, apply high-SPF sunscreen, and wear a hat or scarf to guard against sunburn.' },
+            { title: 'Respect Environment', desc: 'Stick to the marked trails to avoid harming local flora and fauna, preserving the pristine nature of the Dubai desert.' },
+            { title: 'Capture the Moment', desc: 'Bring your camera! There will be plenty of designated scenic stops to snap incredible photos of the majestic red dunes.' }
+          ].map((tip, i) => (
+            <li key={i} style={{ listStyle: 'none', background: '#111', padding: '25px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <strong style={{ color: '#e11924', fontSize: '19px' }}><span style={{ color: '#fff', marginRight: '6px' }}>{i + 1}.</span> {tip.title}</strong>
+              <span style={{ fontSize: '15px' }}>{tip.desc}</span>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section className="td-ticket-prices">
