@@ -95,9 +95,17 @@ export default function QuadBike620cc() {
           </div>
         </div>
 
-        <div className="td-gallery">
-          <motion.img src="/red-buggy.jpeg" alt="Quad Bike" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} />
-          <motion.img src="/tour-red.png" alt="Quad driving" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} />
+        <div className="td-gallery-slider-wrapper" style={{ overflow: 'hidden', width: '100%', position: 'relative', marginTop: '40px' }}>
+          <div className="td-gallery-slider" style={{ display: 'flex', width: 'max-content', gap: '20px' }}>
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num, idx) => (
+              <img 
+                key={idx} 
+                src={`/gallery/img-g2-${num}.jpeg`} 
+                alt={`Quad Bike Tour ${num}`} 
+                style={{ height: '280px', width: '420px', objectFit: 'cover', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }} 
+              />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -111,68 +119,9 @@ export default function QuadBike620cc() {
             <p>For those who find magic in the day's end, our <strong>Sunset Quad Biking adventure</strong> is a must. It combines the exhilaration of quad biking with the stunning vistas of the desert at dusk, offering a truly spellbinding experience. Our tours utilize powerful and dependable quad bikes, guaranteeing top performance as you navigate through diverse desert terrains. These tours are perfect for both seasoned riders and beginners eager to explore. With self-drive options available, you can take the reins of your adventure, steering through the sands to create an unforgettable journey that's uniquely yours.</p>
           </div>
 
-          <div style={{ marginTop: '80px' }}>
-            <SectionHeading eyebrow="ATV RENTALS DUBAI" title="Premium Dubai Desert" accent="Quad Biking Tours" />
-            <div className="td-text-blocks">
-              <p>Experience the thrill of an off-road desert safari at your preferred time with <strong>Speed Desert Adventure's</strong> top-rated ATV rentals in Dubai. Whether you crave the crisp morning breeze, the breathtaking golden hour sunset, or a starlit night ride, our custom quad bike tours are designed around your schedule.</p>
-              <p>We offer powerful 620cc quad bikes with single or double-seater options, perfect for solo riders or couples looking for a memorable desert excursion. With flexible packages starting at just AED 50, our ATV adventures suit every budget. Book your ultimate Dubai desert quad biking tour today and let us create an unforgettable experience.</p>
-            </div>
 
-            <div className="tour-types-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginTop: '40px' }}>
-              <div className="tour-type-card" style={{ background: '#111', padding: '30px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
-                <h4 style={{ color: '#e11924', fontSize: '22px', marginBottom: '15px' }}>Morning Quad Bike Tour</h4>
-                <p style={{ color: '#ccc', fontSize: '15px', lineHeight: '1.6' }}>Kick off your day with an energizing morning quad bike tour across Dubai's sweeping sand dunes. Enjoy the refreshing desert breeze and peaceful, uncrowded trails under the gentle morning sun. This off-road ATV adventure is perfect for all skill levels, providing an exhilarating start to your Dubai vacation.</p>
-              </div>
-              <div className="tour-type-card" style={{ background: '#111', padding: '30px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
-                <h4 style={{ color: '#e11924', fontSize: '22px', marginBottom: '15px' }}>Evening ATV Adventure</h4>
-                <p style={{ color: '#ccc', fontSize: '15px', lineHeight: '1.6' }}>Immerse yourself in the magic of the desert at dusk with our evening ATV adventure. As the sun sets, casting a golden glow over the expansive red dunes, you'll experience cooler temperatures and a truly unique off-road ride. Ideal for adventurers seeking to escape the midday heat.</p>
-              </div>
-              <div className="tour-type-card" style={{ background: '#111', padding: '30px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
-                <h4 style={{ color: '#e11924', fontSize: '22px', marginBottom: '15px' }}>Sunset Quad Biking Safari</h4>
-                <p style={{ color: '#ccc', fontSize: '15px', lineHeight: '1.6' }}>Discover the true beauty of the Arabian desert with our sunset quad biking safari. Navigate the majestic dunes bathed in the warm, vibrant colors of the setting sun. This ATV tour perfectly blends high-octane thrills with stunning scenery, offering incredible photo opportunities.</p>
-              </div>
-            </div>
-          </div>
 
-          <div style={{ marginTop: '80px' }}>
-            <SectionHeading eyebrow="IMPORTANT INFORMATION" title="Quad Bike Guide:" accent="Safety & Refreshments" />
-            <div className="td-text-blocks">
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
-                  <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Hydration & Refreshments</strong>
-                  <span style={{ color: '#ccc', lineHeight: '1.6' }}>We provide complimentary bottled water during all our Dubai desert quad biking tours. Staying hydrated in the desert heat is crucial for maintaining your energy and ensuring a comfortable off-road adventure.</span>
-                </li>
-                <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
-                  <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Uncompromising Safety Standards</strong>
-                  <span style={{ color: '#ccc', lineHeight: '1.6' }}>Your safety is our top priority at Speed Desert Adventure. We enforce strict safety protocols for all ATV rentals to guarantee a secure and thrilling experience.</span>
-                </li>
-                <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
-                  <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Thorough ATV Training</strong>
-                  <span style={{ color: '#ccc', lineHeight: '1.6' }}>Every tour kicks off with a comprehensive briefing. You'll learn how to properly handle the 620cc quad bike and understand all vital off-road safety procedures.</span>
-                </li>
-                <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
-                  <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Protective Gear Included</strong>
-                  <span style={{ color: '#ccc', lineHeight: '1.6' }}>We supply all essential safety gear, including high-quality helmets, goggles, and gloves, ensuring maximum protection while you conquer the dunes.</span>
-                </li>
-                <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
-                  <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Expert Desert Guides</strong>
-                  <span style={{ color: '#ccc', lineHeight: '1.6' }}>Our seasoned guides lead every safari, enforcing best practices and offering immediate support throughout your quad biking journey.</span>
-                </li>
-                <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
-                  <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Age & Health Considerations</strong>
-                  <span style={{ color: '#ccc', lineHeight: '1.6' }}>We welcome adventurers from age 4 and up. However, for safety reasons, we do not recommend our tours for pregnant women or individuals with severe back, joint, or heart conditions.</span>
-                </li>
-                <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
-                  <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Strict Behavioral & Safety Policies</strong>
-                  <span style={{ color: '#ccc', lineHeight: '1.6' }}>We enforce a strict zero-tolerance policy for intoxication. All riders must adhere to guide instructions; reckless driving is strictly prohibited to ensure the safety of all guests.</span>
-                </li>
-                <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
-                  <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Tour Customization</strong>
-                  <span style={{ color: '#ccc', lineHeight: '1.6' }}>Customize your adventure with private or group tour options. We are happy to accommodate special requests, including specific scenic stops for photography.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+
 
 
 
@@ -192,6 +141,67 @@ export default function QuadBike620cc() {
             </ul>
           </div>
         </aside>
+      </section>
+
+      <section className="td-quad-guide" style={{ padding: '0 5%', maxWidth: '1200px', margin: '80px auto' }}>
+        <SectionHeading eyebrow="IMPORTANT INFORMATION" title="Quad Bike Guide:" accent="Safety & Refreshments" align="center" />
+        <ul style={{ listStyle: 'none', padding: 0, margin: '40px 0 0 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '20px' }}>
+          <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
+            <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Hydration & Refreshments</strong>
+            <span style={{ color: '#ccc', lineHeight: '1.6' }}>We provide complimentary bottled water during all our Dubai desert quad biking tours. Staying hydrated in the desert heat is crucial for maintaining your energy and ensuring a comfortable off-road adventure.</span>
+          </li>
+          <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
+            <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Uncompromising Safety Standards</strong>
+            <span style={{ color: '#ccc', lineHeight: '1.6' }}>Your safety is our top priority at Speed Desert Adventure. We enforce strict safety protocols for all ATV rentals to guarantee a secure and thrilling experience.</span>
+          </li>
+          <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
+            <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Thorough ATV Training</strong>
+            <span style={{ color: '#ccc', lineHeight: '1.6' }}>Every tour kicks off with a comprehensive briefing. You'll learn how to properly handle the 620cc quad bike and understand all vital off-road safety procedures.</span>
+          </li>
+          <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
+            <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Protective Gear Included</strong>
+            <span style={{ color: '#ccc', lineHeight: '1.6' }}>We supply all essential safety gear, including high-quality helmets, goggles, and gloves, ensuring maximum protection while you conquer the dunes.</span>
+          </li>
+          <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
+            <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Expert Desert Guides</strong>
+            <span style={{ color: '#ccc', lineHeight: '1.6' }}>Our seasoned guides lead every safari, enforcing best practices and offering immediate support throughout your quad biking journey.</span>
+          </li>
+          <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
+            <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Age & Health Considerations</strong>
+            <span style={{ color: '#ccc', lineHeight: '1.6' }}>We welcome adventurers from age 4 and up. However, for safety reasons, we do not recommend our tours for pregnant women or individuals with severe back, joint, or heart conditions.</span>
+          </li>
+          <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
+            <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Strict Behavioral & Safety Policies</strong>
+            <span style={{ color: '#ccc', lineHeight: '1.6' }}>We enforce a strict zero-tolerance policy for intoxication. All riders must adhere to guide instructions; reckless driving is strictly prohibited to ensure the safety of all guests.</span>
+          </li>
+          <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
+            <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Tour Customization</strong>
+            <span style={{ color: '#ccc', lineHeight: '1.6' }}>Customize your adventure with private or group tour options. We are happy to accommodate special requests, including specific scenic stops for photography.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section className="td-premium-tours" style={{ padding: '0 5%', maxWidth: '1200px', margin: '80px auto' }}>
+        <SectionHeading eyebrow="ATV RENTALS DUBAI" title="Premium Dubai Desert" accent="Quad Biking Tours" align="center" />
+        <div className="td-text-blocks" style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto' }}>
+          <p>Experience the thrill of an off-road desert safari at your preferred time with <strong>Speed Desert Adventure's</strong> top-rated ATV rentals in Dubai. Whether you crave the crisp morning breeze, the breathtaking golden hour sunset, or a starlit night ride, our custom quad bike tours are designed around your schedule.</p>
+          <p>We offer powerful 620cc quad bikes with single or double-seater options, perfect for solo riders or couples looking for a memorable desert excursion. With flexible packages starting at just AED 50, our ATV adventures suit every budget. Book your ultimate Dubai desert quad biking tour today and let us create an unforgettable experience.</p>
+        </div>
+
+        <div className="tour-types-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '30px', marginTop: '50px' }}>
+          <div className="tour-type-card" style={{ background: '#111', padding: '40px 30px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)', textAlign: 'center' }}>
+            <h4 style={{ color: '#e11924', fontSize: '22px', marginBottom: '15px' }}>Morning Quad Bike Tour</h4>
+            <p style={{ color: '#ccc', fontSize: '15px', lineHeight: '1.6' }}>Kick off your day with an energizing morning quad bike tour across Dubai's sweeping sand dunes. Enjoy the refreshing desert breeze and peaceful, uncrowded trails under the gentle morning sun. This off-road ATV adventure is perfect for all skill levels, providing an exhilarating start to your Dubai vacation.</p>
+          </div>
+          <div className="tour-type-card" style={{ background: '#111', padding: '40px 30px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)', textAlign: 'center' }}>
+            <h4 style={{ color: '#e11924', fontSize: '22px', marginBottom: '15px' }}>Evening ATV Adventure</h4>
+            <p style={{ color: '#ccc', fontSize: '15px', lineHeight: '1.6' }}>Immerse yourself in the magic of the desert at dusk with our evening ATV adventure. As the sun sets, casting a golden glow over the expansive red dunes, you'll experience cooler temperatures and a truly unique off-road ride. Ideal for adventurers seeking to escape the midday heat.</p>
+          </div>
+          <div className="tour-type-card" style={{ background: '#111', padding: '40px 30px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)', textAlign: 'center' }}>
+            <h4 style={{ color: '#e11924', fontSize: '22px', marginBottom: '15px' }}>Sunset Quad Biking Safari</h4>
+            <p style={{ color: '#ccc', fontSize: '15px', lineHeight: '1.6' }}>Discover the true beauty of the Arabian desert with our sunset quad biking safari. Navigate the majestic dunes bathed in the warm, vibrant colors of the setting sun. This ATV tour perfectly blends high-octane thrills with stunning scenery, offering incredible photo opportunities.</p>
+          </div>
+        </div>
       </section>
 
       <section className="td-fleet-options" style={{ padding: '0 5%', maxWidth: '1200px', margin: '40px auto 80px' }}>

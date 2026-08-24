@@ -5337,3 +5337,16 @@ a {
 .gallery-item:hover img {
   transform: scale(1.05);
 }
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.td-gallery-slider {
+  animation: scroll-left 40s linear infinite;
+}
+
+.td-gallery-slider:hover {
+  animation-play-state: paused;
+}
