@@ -158,6 +158,51 @@ export default function QuadBike620cc() {
                   <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Expert Desert Guides</strong>
                   <span style={{ color: '#ccc', lineHeight: '1.6' }}>Our seasoned guides lead every safari, enforcing best practices and offering immediate support throughout your quad biking journey.</span>
                 </li>
+                <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
+                  <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Age & Health Considerations</strong>
+                  <span style={{ color: '#ccc', lineHeight: '1.6' }}>We welcome adventurers from age 4 and up. However, for safety reasons, we do not recommend our tours for pregnant women or individuals with severe back, joint, or heart conditions.</span>
+                </li>
+                <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
+                  <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Strict Behavioral & Safety Policies</strong>
+                  <span style={{ color: '#ccc', lineHeight: '1.6' }}>We enforce a strict zero-tolerance policy for intoxication. All riders must adhere to guide instructions; reckless driving is strictly prohibited to ensure the safety of all guests.</span>
+                </li>
+                <li style={{ background: 'rgba(255,255,255,0.02)', padding: '20px', borderRadius: '8px', borderLeft: '3px solid #e11924' }}>
+                  <strong style={{ color: '#fff', fontSize: '18px', display: 'block', marginBottom: '8px' }}>Tour Customization</strong>
+                  <span style={{ color: '#ccc', lineHeight: '1.6' }}>Customize your adventure with private or group tour options. We are happy to accommodate special requests, including specific scenic stops for photography.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div style={{ marginTop: '80px' }}>
+            <SectionHeading eyebrow="FLEET OPTIONS" title="Single & Double" accent="Seater Quad Bikes" />
+            <div className="td-text-blocks">
+              <h3 style={{ color: '#fff', fontSize: '24px', marginBottom: '15px' }}>Single Seater Quad Bikes</h3>
+              <p>Embark on an independent desert journey with <strong>Speed Desert Adventure</strong>, Dubai's premier destination for single-seater quad bike tours. Tailored for thrill-seekers who prefer to explore at their own pace, our tours put you in complete control as you navigate the expansive red dunes. Recognized for combining excitement with competitive pricing, our single-rider experiences are perfect for both seasoned riders and confident beginners.</p>
+
+              <h3 style={{ color: '#fff', fontSize: '24px', marginBottom: '15px', marginTop: '40px' }}>Double Seater Quad Bikes</h3>
+              <p>Share the exhilaration of the Dubai desert with someone special on our double-seater quad bike tours. Perfect for couples or friends, these tours offer a fantastic opportunity to bond while exploring the majestic landscape together. We prioritize your safety and enjoyment, ensuring every aspect of the tour is designed for a comfortable and memorable shared adventure.</p>
+            </div>
+          </div>
+
+          <div style={{ marginTop: '80px', marginBottom: '40px' }}>
+            <SectionHeading eyebrow="PREPARATION" title="Essential Tips" accent="Before Your Tour" />
+            <div className="td-text-blocks">
+              <p>Whether it's your first time riding or you're a seasoned off-roader, here is what you need to know to ensure your quad biking trip is safe and spectacular:</p>
+              <ul style={{ color: '#ccc', lineHeight: '1.6', margin: 0, padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px' }}>
+                {[
+                  { title: 'Dress Appropriately', desc: 'Choose long sleeves, comfortable pants, and mandatory closed-toe shoes to protect against the sun and sand.' },
+                  { title: 'Master the Basics', desc: 'Pay close attention during the brief training session to familiarize yourself with starting, operating, and safely stopping your quad bike.' },
+                  { title: 'Follow the Rules', desc: 'Safety is paramount. Always listen to your guide\'s instructions and avoid risky maneuvers on challenging terrains.' },
+                  { title: 'Sun Protection', desc: 'The desert climate is harsh. Drink plenty of water, apply high-SPF sunscreen, and wear a hat or scarf to guard against sunburn.' },
+                  { title: 'Respect Environment', desc: 'Stick to the marked trails to avoid harming local flora and fauna, preserving the pristine nature of the Dubai desert.' },
+                  { title: 'Capture the Moment', desc: 'Bring your camera! There will be plenty of designated scenic stops to snap incredible photos of the majestic red dunes.' }
+                ].map((tip, i) => (
+                  <li key={i} style={{ listStyle: 'none', background: '#111', padding: '20px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    <strong style={{ color: '#e11924', fontSize: '18px' }}><span style={{ color: '#fff', marginRight: '6px' }}>{i + 1}.</span> {tip.title}</strong>
+                    <span style={{ fontSize: '15px' }}>{tip.desc}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -218,6 +263,36 @@ export default function QuadBike620cc() {
               </svg>
               <span>{inclusion}</span>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="td-faq-section" style={{ padding: '80px 5%', maxWidth: '1200px', margin: '0 auto' }}>
+        <SectionHeading title="Frequently Asked" accent="Questions" align="center" />
+        <div className="faq-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(450px, 1fr))', gap: '20px', marginTop: '40px' }}>
+          {[
+            { q: "How safe is a quad bike?", a: "At Speed Desert Adventure, safety is our top priority. Our quad bikes are meticulously maintained, and every tour includes a comprehensive safety briefing, professional protective gear (helmet, goggles, gloves), and the guidance of an expert desert instructor." },
+            { q: "How can I go quad biking in Dubai?", a: "It's easy! Simply book a tour with Speed Desert Adventure online or via WhatsApp. We offer convenient pick-up and drop-off services from your hotel, taking you straight to the stunning red dunes for your adventure." },
+            { q: "How much does quad biking in Dubai cost?", a: "Our packages are competitively priced to suit various budgets. For example, our Early Bird and Afternoon Quad Bike tours start from as low as AED 50, while premium packages like the Yamaha 700cc Raptor are available from AED 400." },
+            { q: "Are quad bikes legal in Dubai?", a: "Yes, riding quad bikes is completely legal in designated desert areas. We operate in fully authorized zones in the Dubai desert, ensuring a safe, legal, and thrilling off-road experience." },
+            { q: "What age is appropriate for Dubai desert quad bike?", a: "We welcome young adventurers starting from the age of 4 for passenger rides. For driving a quad bike independently, riders typically need to be at least 16 years old, depending on the specific vehicle and package chosen." },
+            { q: "How many cc is a quad bike?", a: "Our primary fleet for this tour features powerful 620cc quad bikes, offering the perfect balance of speed and control. We also offer 700cc Yamaha Raptors for experienced thrill-seekers looking for extra power." },
+            { q: "What should I wear before I go quad biking in Dubai?", a: "We strongly recommend wearing comfortable, breathable clothing such as long pants and long-sleeved shirts to protect against the sun and sand. Sturdy, closed-toe shoes are mandatory for your safety." },
+            { q: "Is a quad bike difficult to ride?", a: "Not at all! Quad bikes are fully automatic and very easy to operate. Our expert guides provide a thorough training session before you start, making it perfect for both beginners and seasoned riders." },
+            { q: "Is a license required to ride the quad bike?", a: "No, you do not need a driving license to ride our quad bikes in the desert. Our off-road tracks do not require a standard road license." },
+            { q: "What is the time duration of quad biking in Dubai desert?", a: "The actual riding time for most of our standard quad bike tours is 60 minutes. However, the total experience—including hotel transfers, safety briefings, and extra activities like camel riding and sandboarding—can take between 3 to 4 hours." },
+            { q: "How to pay for quad biking in Dubai?", a: "We offer flexible payment options for your convenience. You can pay securely online during the booking process, or choose to pay in cash or via card directly at our desert camp." },
+            { q: "What is the difference between a quad bike and an ATV?", a: "The terms are often used interchangeably! ATV stands for All-Terrain Vehicle, and a quad bike is simply a four-wheeled type of ATV. Both refer to the same thrilling off-road vehicles we use for our desert tours." }
+          ].map((faq, i) => (
+            <details key={i} style={{ background: '#111', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)', padding: '20px', cursor: 'pointer', height: 'fit-content' }}>
+              <summary style={{ color: '#fff', fontSize: '18px', fontWeight: 'bold', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                {faq.q}
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#e11924" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ minWidth: '20px' }}>
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </summary>
+              <p style={{ color: '#ccc', marginTop: '15px', lineHeight: '1.6', fontSize: '15px' }}>{faq.a}</p>
+            </details>
           ))}
         </div>
       </section>
