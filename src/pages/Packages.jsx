@@ -47,12 +47,12 @@ const packagesData = [
     category: 'Quad Bike',
     options: [
       { 
-        title: '620cc Quad Bike', link: '/tour/620cc-quad-bike', image: '/620cc.jpeg',
+        title: '620cc Quad Bike', link: '/tour/620cc-quad-bike', image: '/gallery/img-3.jpeg',
         price: '200 AED', copy: 'Feel the adrenaline with our powerful 620cc Quad Bike.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Yamaha 700cc Raptor', link: '/tour/yamaha-700cc-raptor', image: '/700cc.jpeg',
+        title: 'Yamaha 700cc Raptor', link: '/tour/yamaha-700cc-raptor', image: '/gallery/img-7.jpeg',
         price: '400 AED', copy: 'Conquer the dunes with the ultimate Yamaha 700cc Raptor.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
