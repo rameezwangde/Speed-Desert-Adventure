@@ -4597,13 +4597,14 @@ a {
 .contact-hero-photo {
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, #050505 5%, transparent 60%), url('/red-buggy.jpeg') center/cover no-repeat;
-  opacity: 0.5;
+  background: url('/gallery/contact-hero.jpg') center/cover no-repeat;
+  opacity: 1;
 }
 
 .contact-hero-copy {
   position: relative;
   z-index: 2;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
 }
 
 .contact-hero-copy span {
