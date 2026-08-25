@@ -72,8 +72,8 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Red Dunes Buggy Ride', link: '/contact', image: '/gallery/img-g2-7.jpeg',
-        price: '400 AED', copy: 'Conquer the iconic red dunes of the Arabian Desert for a truly unforgettable off-road experience.',
+        title: 'Red Dunes Buggy Ride', link: '/contact', image: '/red.png',
+        price: '400 AED', copy: 'Take on the towering red sand dunes with our specially crafted Red Dunes Buggy Ride.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
@@ -102,12 +102,12 @@ const packagesData = [
     category: 'Combo Package',
     options: [
       { 
-        title: 'Desert Combo: Sharing Safari + Quad', link: '/tour/safari-quad', image: '/1-hour.jpg',
+        title: 'Desert Combo: Sharing Safari + Quad', link: '/tour/safari-quad', image: '/quad-girls.png',
         price: '99 AED / Person', copy: 'Double the thrill with our combo desert safari and quad bike ride.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Desert Combo: Sharing Safari + Dune Buggy', link: '/tour/safari-buggy', image: '/2-hour.png',
+        title: 'Desert Combo: Sharing Safari + Dune Buggy', link: '/tour/safari-buggy', image: '/sharing-buggy.png',
         price: '299 AED / Person', copy: 'Double the thrill with our combo desert safari and dune buggy tour.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Shared Transfer', transfer: 'Free Pick & Drop'
       },
