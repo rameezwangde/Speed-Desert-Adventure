@@ -17,12 +17,12 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Stage 4 Stunner: RZR PRO R Ultimate EPS', link: '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps', image: '/polaris-buggy.jpg',
+        title: 'Stage 4 Stunner: RZR PRO R Ultimate EPS', link: '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps', image: '/stage4-stunner.png',
         price: '1399 AED', copy: 'Enjoy unparalleled off-road thrills in Dubai\'s vast dunes.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: '2 & 4 Seater Dune Buggy Can-Am Maverick R X RS 26', link: '/tour/can-am-maverick-r-x-rs', image: '/blue-buggy.png',
+        title: '2 & 4 Seater Dune Buggy Can-Am Maverick R X RS 26', link: '/tour/can-am-maverick-r-x-rs', image: '/canam2.jpeg',
         price: '899 AED', copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
         duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
@@ -42,17 +42,17 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Self-Drive Buggy Tours', link: '/contact', image: '/gallery/img-g2-1.jpeg',
+        title: 'Self-Drive Buggy Tours', link: '/contact', image: '/self-drive.png',
         price: '400 AED', copy: 'Take the wheel of a powerful off-road buggy and conquer the majestic red dunes of the Arabian Desert at your own pace.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Group Buggy Tours', link: '/contact', image: '/gallery/img-g2-2.jpeg',
+        title: 'Group Buggy Tours', link: '/contact', image: '/grp.jpeg',
         price: '400 AED', copy: "Perfect for corporate events, birthday celebrations, or friends' getaways.",
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Family & Kids Buggy Rides', link: '/contact', image: '/gallery/img-g2-3.jpeg',
+        title: 'Family & Kids Buggy Rides', link: '/contact', image: '/fam.png',
         price: '400 AED', copy: 'Journey together through the golden dunes of the Arabian Desert in complete safety and comfort.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
