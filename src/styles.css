@@ -5346,7 +5346,3 @@ a {
 .td-gallery-slider {
   animation: scroll-left 40s linear infinite;
 }
-
-.td-gallery-slider:hover {
-  animation-play-state: paused;
-}
