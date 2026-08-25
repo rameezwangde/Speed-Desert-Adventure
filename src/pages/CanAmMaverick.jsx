@@ -88,18 +88,7 @@ export default function CanAmMaverick() {
           </div>
         </div>
 
-        <div className="td-gallery-slider-wrapper" style={{ overflow: 'hidden', width: '100%', position: 'relative', marginTop: '40px' }}>
-          <div className="td-gallery-slider" style={{ display: 'flex', width: 'max-content', gap: '20px' }}>
-            {[1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4].map((num, idx) => (
-              <img 
-                key={idx} 
-                src={`/gallery/img-g2-${num}.jpeg`} 
-                alt={`Can-Am Maverick Tour ${num}`} 
-                style={{ height: '280px', width: '420px', objectFit: 'cover', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }} 
-              />
-            ))}
-          </div>
-        </div>
+
       </section>
 
       <section className="td-content-section">

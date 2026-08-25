@@ -4962,7 +4962,7 @@ a {
 }
 
 .td-hero {
-  padding: 140px 6vw 60px;
+  padding: 140px 6vw 20px;
   border-bottom: 1px solid #1a1a1a;
 }
 
@@ -5020,7 +5020,6 @@ a {
 .td-quick-stats {
   display: flex;
   gap: 40px;
-  margin-bottom: 60px;
   padding: 30px 40px;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid #1a1a1a;
@@ -5204,7 +5203,7 @@ a {
 
 @media(max-width: 768px) {
   .td-hero {
-    padding: 120px 24px 40px;
+    padding: 120px 24px 20px;
   }
 
   .td-hero-header {
