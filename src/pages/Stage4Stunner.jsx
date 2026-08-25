@@ -94,30 +94,12 @@ export default function Stage4Stunner() {
                 <div className="td-gallery-slider-wrapper">
           <div className="td-gallery-slider">
             <div className="td-gallery-track">
-              {[
-                '/gallery/img-g2-1.jpeg', 
-                '/gallery/img-g2-14.jpeg', 
-                '/gallery/img-g2-31.jpeg', 
-                '/gallery/img-g2-42.jpeg', 
-                '/gallery/img-g2-53.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-75.jpeg',
-                '/gallery/img-g2-86.jpeg'
-              ].map((src, i) => (
+              {Array.from({ length: 26 }, (_, i) => `/gallery/img-g2-${i + 64}.jpeg`).map((src, i) => (
                 <div className="td-gallery-item" key={`orig-${i}`}>
                   <img src={src} alt="Tour Gallery" loading="lazy" />
                 </div>
               ))}
-              {[
-                '/gallery/img-g2-1.jpeg', 
-                '/gallery/img-g2-14.jpeg', 
-                '/gallery/img-g2-31.jpeg', 
-                '/gallery/img-g2-42.jpeg', 
-                '/gallery/img-g2-53.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-75.jpeg',
-                '/gallery/img-g2-86.jpeg'
-              ].map((src, i) => (
+              {Array.from({ length: 26 }, (_, i) => `/gallery/img-g2-${i + 64}.jpeg`).map((src, i) => (
                 <div className="td-gallery-item" key={`dup-${i}`}>
                   <img src={src} alt="Tour Gallery" loading="lazy" />
                 </div>
