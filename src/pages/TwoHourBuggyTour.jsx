@@ -84,11 +84,39 @@ export default function TwoHourBuggyTour() {
           </div>
         </div>
 
-        <div className="td-gallery">
-          <motion.img src="/2-hour.png" alt="2 Hour Buggy Ride" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} />
-          <motion.img src="/tour-four-seat.png" alt="Group buggy tour" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.1 }} />
-          <motion.img src="/polaris-buggy.jpg" alt="Polaris buggy in desert" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }} />
-          <motion.img src="/tour-red.png" alt="Desert ride" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.3 }} />
+                <div className="td-gallery-slider-wrapper">
+          <div className="td-gallery-slider">
+            <div className="td-gallery-track">
+              {[
+                '/gallery/img-g2-1.jpeg', 
+                '/gallery/img-g2-14.jpeg', 
+                '/gallery/img-g2-31.jpeg', 
+                '/gallery/img-g2-42.jpeg', 
+                '/gallery/img-g2-53.jpeg',
+                '/gallery/img-g2-64.jpeg',
+                '/gallery/img-g2-75.jpeg',
+                '/gallery/img-g2-86.jpeg'
+              ].map((src, i) => (
+                <div className="td-gallery-item" key={`orig-${i}`}>
+                  <img src={src} alt="Tour Gallery" loading="lazy" />
+                </div>
+              ))}
+              {[
+                '/gallery/img-g2-1.jpeg', 
+                '/gallery/img-g2-14.jpeg', 
+                '/gallery/img-g2-31.jpeg', 
+                '/gallery/img-g2-42.jpeg', 
+                '/gallery/img-g2-53.jpeg',
+                '/gallery/img-g2-64.jpeg',
+                '/gallery/img-g2-75.jpeg',
+                '/gallery/img-g2-86.jpeg'
+              ].map((src, i) => (
+                <div className="td-gallery-item" key={`dup-${i}`}>
+                  <img src={src} alt="Tour Gallery" loading="lazy" />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
