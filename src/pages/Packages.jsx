@@ -22,6 +22,11 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
+        title: '2 & 4 Seater Dune Buggy Can-Am Maverick R X RS 26', link: '/tour/can-am-maverick-r-x-rs', image: '/blue-buggy.png',
+        price: '899 AED', copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
+        duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
         title: '4 Seater Early Bird Dune Buggy Tour (Couples)', link: '/contact', image: '/tour-four-seat.png',
         price: '400 AED', copy: 'Join our Early Bird Buggy Tour for an exciting desert adventure!',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
@@ -35,11 +40,6 @@ const packagesData = [
         title: 'Night Riders: Dune Buggy Dubai Adventure', link: '/contact', image: '/5.jpeg',
         price: '400 AED', copy: 'Experience the desert like never before with our Night Riders Buggy Adventure.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
-      },
-      { 
-        title: '2 & 4 Seater Dune Buggy Can-Am Maverick R X RS 26', link: '/tour/can-am-maverick-r-x-rs', image: '/blue-buggy.png',
-        price: '899 AED', copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
-        duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
         title: 'Self-Drive Buggy Tours', link: '/contact', image: '/gallery/img-g2-1.jpeg',
@@ -122,7 +122,7 @@ export default function PackagesPage() {
   }, [])
 
   return (
-    <main className="packages-page" style={{ paddingTop: '160px', minHeight: '100vh', background: '#050505', paddingBottom: '120px' }}>
+    <main className="packages-page" style={{ paddingTop: '160px', minHeight: '100vh', background: '#050505', paddingBottom: '60px' }}>
       <div className="packages-container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 5vw' }}>
         
         <div style={{ textAlign: 'center', marginBottom: '80px' }}>
@@ -137,7 +137,7 @@ export default function PackagesPage() {
           </motion.p>
         </div>
 
-        <div className="packages-grid-wrapper" style={{ display: 'flex', flexDirection: 'column', gap: '80px' }}>
+        <div className="packages-grid-wrapper" style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
           {packagesData.map((cat, i) => (
             <div key={i} className="package-category-section">
               <motion.h3 
