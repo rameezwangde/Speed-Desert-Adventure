@@ -194,7 +194,7 @@ export default function PackagesPage() {
                       </div>
                       <div className="nhc-actions">
                         <a href="#book" className="btn-primary">BOOK NOW</a>
-                        <a href={opt.link || "#details"} style={{ display: 'none', pointerEvents: 'auto', zIndex: 10, position: 'relative' }} className="btn-secondary">TOUR DETAILS</a>
+                        <a href="#!" className="btn-secondary" style={{ opacity: 0.5, pointerEvents: 'none', cursor: 'not-allowed' }}>TOUR DETAILS</a>
                       </div>
                     </div>
                   </motion.article>
