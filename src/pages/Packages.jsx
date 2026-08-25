@@ -40,6 +40,46 @@ const packagesData = [
         title: '2 & 4 Seater Dune Buggy Can-Am Maverick R X RS 26', link: '/tour/can-am-maverick-r-x-rs', image: '/blue-buggy.png',
         price: '899 AED', copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
         duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Self-Drive Buggy Tours', link: '/contact', image: '/gallery/img-g2-1.jpeg',
+        price: '400 AED', copy: 'Take the wheel of a powerful off-road buggy and conquer the majestic red dunes of the Arabian Desert at your own pace.',
+        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Group Buggy Tours', link: '/contact', image: '/gallery/img-g2-2.jpeg',
+        price: '400 AED', copy: "Perfect for corporate events, birthday celebrations, or friends' getaways.",
+        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Family & Kids Buggy Rides', link: '/contact', image: '/gallery/img-g2-3.jpeg',
+        price: '400 AED', copy: 'Journey together through the golden dunes of the Arabian Desert in complete safety and comfort.',
+        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Couples Buggy Tours', link: '/contact', image: '/gallery/img-g2-4.jpeg',
+        price: '400 AED', copy: 'Experience the desert like never before with our Couple Buggy Tours, created for those who love both adventure and each other.',
+        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Night Buggy Tours', link: '/contact', image: '/gallery/img-g2-5.jpeg',
+        price: '400 AED', copy: 'Experience the magic of the Arabian Desert under a blanket of stars with our Night Buggy Tours.',
+        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Custom Buggy Packages', link: '/contact', image: '/gallery/img-g2-6.jpeg',
+        price: '400 AED', copy: "Whether you're celebrating a special occasion or hosting an event, we'll tailor every detail to match your vision.",
+        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Red Dunes Buggy Ride', link: '/contact', image: '/gallery/img-g2-7.jpeg',
+        price: '400 AED', copy: 'Conquer the iconic red dunes of the Arabian Desert for a truly unforgettable off-road experience.',
+        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Private Buggy Tours', link: '/contact', image: '/gallery/img-g2-8.jpeg',
+        price: '400 AED', copy: 'Enjoy a dedicated personal guide and customizable routes that let you explore the dunes exactly how you want.',
+        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       }
     ]
   },
