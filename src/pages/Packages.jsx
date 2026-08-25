@@ -122,21 +122,36 @@ export default function PackagesPage() {
   }, [])
 
   return (
-    <main className="packages-page" style={{ paddingTop: '160px', minHeight: '100vh', background: '#050505', paddingBottom: '60px' }}>
-      <div className="packages-container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 5vw' }}>
-        
-        <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+    <main className="packages-page" style={{ minHeight: '100vh', background: '#050505', paddingBottom: '60px' }}>
+      
+      <section className="packages-hero" style={{ 
+        position: 'relative', 
+        width: '100%', 
+        height: '60vh', 
+        minHeight: '450px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundImage: 'url(/gallery/packages-hero.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        paddingTop: '100px'
+      }}>
+        <div style={{ textAlign: 'center', zIndex: 2, padding: '0 5vw' }}>
           <SectionHeading eyebrow="OUR EXPERIENCES" title="Select Your" accent="Adventure" align="center" />
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            style={{ color: '#aaa', fontSize: '18px', maxWidth: '600px', margin: '30px auto 0', lineHeight: '1.6' }}
+            style={{ color: '#e0e0e0', fontSize: '18px', maxWidth: '600px', margin: '20px auto 0', lineHeight: '1.6', textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}
           >
             Choose from our selection of premium off-road experiences. Explore buggy tours, quad bikes, or combo packages for the ultimate desert thrill.
           </motion.p>
         </div>
+      </section>
 
+      <div className="packages-container" style={{ maxWidth: '1200px', margin: '30px auto 0', padding: '0 5vw' }}>
+        
         <div className="packages-grid-wrapper" style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
           {packagesData.map((cat, i) => (
             <div key={i} className="package-category-section">
