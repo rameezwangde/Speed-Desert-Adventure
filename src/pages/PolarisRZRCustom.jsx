@@ -92,22 +92,7 @@ export default function PolarisRZRCustom() {
         </div>
 
 
-                <div className="td-gallery-slider-wrapper">
-          <div className="td-gallery-slider">
-            <div className="td-gallery-track">
-              {Array.from({ length: 21 }, (_, i) => `/gallery/img-g2-${i + 45}.jpeg`).map((src, i) => (
-                <div className="td-gallery-item" key={`orig-${i}`}>
-                  <img src={src} alt="Tour Gallery" loading="lazy" />
-                </div>
-              ))}
-              {Array.from({ length: 21 }, (_, i) => `/gallery/img-g2-${i + 45}.jpeg`).map((src, i) => (
-                <div className="td-gallery-item" key={`dup-${i}`}>
-                  <img src={src} alt="Tour Gallery" loading="lazy" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+
       </section>
 
       <section className="td-content-section">
