@@ -67,7 +67,7 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Custom Buggy Packages', link: '/contact', image: '/gallery/img-g2-6.jpeg',
+        title: 'Custom Buggy Packages', link: '/contact', image: '/custom-buggy.png',
         price: '400 AED', copy: "Whether you're celebrating a special occasion or hosting an event, we'll tailor every detail to match your vision.",
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
