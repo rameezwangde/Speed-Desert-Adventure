@@ -34,7 +34,7 @@ const tours = [
     transfer: '300 AED', 
     image: '/polaris-rzr-custom.png',
     link: '/tour/polaris-rzr-custom'
-  },
+  }
 ]
 
 export default function TourHighlights() {

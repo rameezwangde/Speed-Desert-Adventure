@@ -6,23 +6,71 @@ const packagesData = [
   {
     category: 'Buggy Tours',
     options: [
-      { name: 'Can-Am Maverick', link: '/tour/can-am-maverick', bg: 'linear-gradient(135deg, #111 0%, #222 100%)' },
-      { name: 'Polaris RZR', link: '/tour/polaris-rzr-custom', bg: 'linear-gradient(135deg, #111 0%, #1a1a1a 100%)' },
-      { name: 'Stage 4 Stunner', link: '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps', bg: 'linear-gradient(135deg, #180808 0%, #111 100%)' },
+      { 
+        title: 'Can-Am Maverick XRS 26 Dune Buggy', link: '/tour/can-am-maverick-xrs-26', image: '/image.png', 
+        price: '700-900 AED', copy: "Dominate Dubai's red dunes with the 2026 Can-Am Maverick XRS.",
+        duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Polaris RZR Dune Buggy Tour (Custom)', link: '/tour/polaris-rzr-custom', image: '/polaris-rzr-custom.png',
+        price: '400 AED', copy: 'Embark on an exciting desert journey, from solo to group adventures.',
+        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Stage 4 Stunner: RZR PRO R Ultimate EPS', link: '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps', image: '/polaris-buggy.jpg',
+        price: '1399 AED', copy: 'Enjoy unparalleled off-road thrills in Dubai\'s vast dunes.',
+        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: '4 Seater Early Bird Dune Buggy Tour (Couples)', link: '/contact', image: '/tour-four-seat.png',
+        price: '400 AED', copy: 'Join our Early Bird Buggy Tour for an exciting desert adventure!',
+        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Red Dunes Afternoon Buggy Tour (Family)', link: '/contact', image: '/buggy-duo.jpg',
+        price: '400 AED', copy: 'Explore the famous Red Dunes of Dubai during the magical golden hours.',
+        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Night Riders: Dune Buggy Dubai Adventure', link: '/contact', image: '/5.jpeg',
+        price: '400 AED', copy: 'Experience the desert like never before with our Night Riders Buggy Adventure.',
+        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: '2 & 4 Seater Dune Buggy Can-Am Maverick R X RS 26', link: '/tour/can-am-maverick-r-x-rs', image: '/blue-buggy.png',
+        price: '899 AED', copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
+        duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
+      }
     ]
   },
   {
     category: 'Quad Bike',
     options: [
-      { name: '620cc Quad Bike', link: '/tour/620cc-quad-bike', bg: 'linear-gradient(135deg, #0a0a0a 0%, #1c1c1c 100%)' },
-      { name: 'Yamaha 700cc', link: '/tour/yamaha-700cc-raptor', bg: 'linear-gradient(135deg, #111 0%, #180808 100%)' },
+      { 
+        title: '620cc Quad Bike', link: '/tour/620cc-quad-bike', image: '/620cc.jpeg',
+        price: '200 AED', copy: 'Feel the adrenaline with our powerful 620cc Quad Bike.',
+        duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Yamaha 700cc Raptor', link: '/tour/yamaha-700cc-raptor', image: '/700cc.jpeg',
+        price: '400 AED', copy: 'Conquer the dunes with the ultimate Yamaha 700cc Raptor.',
+        duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
+      },
     ]
   },
   {
     category: 'Combo Package',
     options: [
-      { name: 'Desert Safari + Quad', link: '/tour/safari-quad', bg: 'linear-gradient(135deg, #222 0%, #050505 100%)' },
-      { name: 'Desert Safari + Buggy', link: '/tour/safari-buggy', bg: 'linear-gradient(135deg, #180808 0%, #222 100%)' },
+      { 
+        title: 'Desert Combo: Sharing Safari + Quad', link: '/tour/safari-quad', image: '/1-hour.jpg',
+        price: '99 AED / Person', copy: 'Double the thrill with our combo desert safari and quad bike ride.',
+        duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
+      },
+      { 
+        title: 'Desert Combo: Sharing Safari + Dune Buggy', link: '/tour/safari-buggy', image: '/2-hour.png',
+        price: '299 AED / Person', copy: 'Double the thrill with our combo desert safari and dune buggy tour.',
+        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Shared Transfer', transfer: 'Free Pick & Drop'
+      },
     ]
   }
 ]
@@ -61,56 +109,40 @@ export default function PackagesPage() {
                 {cat.category}
               </motion.h3>
               
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '30px' }}>
+              <div className="hourly-grid">
                 {cat.options.map((opt, j) => (
-                  <motion.a 
-                    key={j}
-                    href={opt.link}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: j * 0.1 }}
-                    className="package-card"
-                    style={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      justifyContent: 'space-between',
-                      height: '240px',
-                      padding: '30px',
-                      background: opt.bg,
-                      textDecoration: 'none',
-                      borderRadius: '8px',
-                      position: 'relative',
-                      overflow: 'hidden',
-                      border: '1px solid rgba(255,255,255,0.05)',
-                    }}
-                  >
-                    <div className="package-card-content" style={{ position: 'relative', zIndex: 2 }}>
-                      <span style={{ color: '#e11924', fontSize: '12px', fontWeight: '800', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-                        {cat.category}
-                      </span>
-                      <h4 style={{ color: '#fff', fontSize: '28px', marginTop: '15px', lineHeight: '1.2' }}>
-                        {opt.name}
-                      </h4>
+                  <motion.article className="hourly-card" key={j} initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .25 }} transition={{ delay: j * .12, duration: .7, ease: [.22,1,.36,1] }}>
+                    <div className="nhc-image-wrap">
+                      <img src={opt.image} alt={opt.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
+                      <div className="nhc-price">{opt.price}</div>
                     </div>
-                    
-                    <div className="package-card-arrow" style={{ alignSelf: 'flex-end', position: 'relative', zIndex: 2 }}>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                      </svg>
+                    <div className="nhc-body">
+                      <h3 className="nhc-title">{opt.title}</h3>
+                      <p style={{ color: '#999', fontSize: '16px', lineHeight: '1.4', textAlign: 'center', marginBottom: '25px' }}>{opt.copy}</p>
+                      
+                      <div className="nhc-specs">
+                        <div className="nhc-spec">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path d="M12 6v6l4 2" strokeWidth="2" strokeLinecap="round"/></svg>
+                          <small>Duration</small>
+                          <strong>{opt.duration}</strong>
+                        </div>
+                        <div className="nhc-spec">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" strokeWidth="2"/><circle cx="9" cy="7" r="4" strokeWidth="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" strokeWidth="2"/><path d="M16 3.13a4 4 0 0 1 0 7.75" strokeWidth="2"/></svg>
+                          <small>Seats</small>
+                          <strong>{opt.seats}</strong>
+                        </div>
+                        <div className="nhc-spec">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" strokeWidth="2"/><circle cx="7" cy="17" r="2" strokeWidth="2"/><path d="M9 17h6" strokeWidth="2"/><circle cx="17" cy="17" r="2" strokeWidth="2"/></svg>
+                          <small>{opt.transferType}</small>
+                          <strong>{opt.transfer}</strong>
+                        </div>
+                      </div>
+                      <div className="nhc-actions">
+                        <a href="#book" className="btn-primary">BOOK NOW</a>
+                        <a href={opt.link || "#details"} style={{ pointerEvents: 'auto', zIndex: 10, position: 'relative' }} className="btn-secondary">TOUR DETAILS</a>
+                      </div>
                     </div>
-
-                    {/* Hover overlay */}
-                    <div className="package-card-hover" style={{
-                      position: 'absolute',
-                      inset: 0,
-                      background: 'radial-gradient(circle at 100% 100%, rgba(225,25,36,0.15) 0%, transparent 60%)',
-                      opacity: 0,
-                      transition: 'opacity 0.4s ease',
-                      zIndex: 1
-                    }}></div>
-                  </motion.a>
+                  </motion.article>
                 ))}
               </div>
             </div>
