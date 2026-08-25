@@ -10,7 +10,7 @@ const tours = [
     seats: '2 & 4 Seaters', 
     transferType: 'Private Transfer (4x4)',
     transfer: '300 AED', 
-    image: '/blue-buggy.png',
+    image: '/image.png',
     link: '/tour/can-am-maverick-xrs-26'
   },
   { 
@@ -32,7 +32,7 @@ const tours = [
     seats: '1, 2 & 4 Seaters', 
     transferType: 'Private Transfer (4x4)',
     transfer: '300 AED', 
-    image: '/polaris-buggy.jpg',
+    image: '/polaris-rzr-custom.png',
     link: '/tour/polaris-rzr-custom'
   },
 ]
