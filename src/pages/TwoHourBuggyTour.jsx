@@ -87,28 +87,32 @@ export default function TwoHourBuggyTour() {
           <div className="td-gallery-slider">
             <div className="td-gallery-track">
               {[
-                '/gallery/img-g2-1.jpeg', 
-                '/gallery/img-g2-14.jpeg', 
-                '/gallery/img-g2-31.jpeg', 
-                '/gallery/img-g2-42.jpeg', 
-                '/gallery/img-g2-53.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-75.jpeg',
-                '/gallery/img-g2-86.jpeg'
+                '/gallery/img-g2-88.jpeg',
+                '/gallery/img-g2-89.jpeg',
+                '/gallery/img-g2-90.jpeg',
+                '/gallery/img-g2-91.jpeg',
+                '/gallery/img-g2-92.jpeg',
+                '/gallery/img-g2-93.jpeg',
+                '/gallery/img-g2-94.jpeg',
+                '/gallery/img-g2-95.jpeg',
+                '/gallery/img-g2-96.jpeg',
+                '/gallery/img-g2-97.jpeg'
               ].map((src, i) => (
                 <div className="td-gallery-item" key={`orig-${i}`}>
                   <img src={src} alt="Tour Gallery" loading="lazy" />
                 </div>
               ))}
               {[
-                '/gallery/img-g2-1.jpeg', 
-                '/gallery/img-g2-14.jpeg', 
-                '/gallery/img-g2-31.jpeg', 
-                '/gallery/img-g2-42.jpeg', 
-                '/gallery/img-g2-53.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-75.jpeg',
-                '/gallery/img-g2-86.jpeg'
+                '/gallery/img-g2-88.jpeg',
+                '/gallery/img-g2-89.jpeg',
+                '/gallery/img-g2-90.jpeg',
+                '/gallery/img-g2-91.jpeg',
+                '/gallery/img-g2-92.jpeg',
+                '/gallery/img-g2-93.jpeg',
+                '/gallery/img-g2-94.jpeg',
+                '/gallery/img-g2-95.jpeg',
+                '/gallery/img-g2-96.jpeg',
+                '/gallery/img-g2-97.jpeg'
               ].map((src, i) => (
                 <div className="td-gallery-item" key={`dup-${i}`}>
                   <img src={src} alt="Tour Gallery" loading="lazy" />
