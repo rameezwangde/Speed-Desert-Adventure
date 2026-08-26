@@ -33,9 +33,8 @@ const tripInclusions = [
   "Children's Play Area",
   'Photo Stop / Opportunities',
   'Souvenir Opportunities',
-  'Male / Female Mosques',
-  'Men Washroom',
-  'Ladies Washroom',
+  'Prayer room- male / female',
+  'Washroom- male / female',
   'Sandboarding'
 ]
 
