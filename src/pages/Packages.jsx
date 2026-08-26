@@ -42,7 +42,7 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Self-Drive Buggy Tours', link: '/contact', image: '/self-drive.png',
+        title: 'Self-Drive Buggy Tours', link: '/tour/self-drive-buggy-tours', image: '/self-drive.png',
         price: '400 AED', copy: 'Take the wheel of a powerful off-road buggy and conquer the majestic red dunes of the Arabian Desert at your own pace.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
