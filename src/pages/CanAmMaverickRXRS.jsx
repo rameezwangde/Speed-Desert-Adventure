@@ -81,7 +81,44 @@ export default function CanAmMaverickRXRS() {
           </div>
         </div>
 
-
+        <div className="td-gallery-slider-wrapper">
+          <div className="td-gallery-slider">
+            <div className="td-gallery-track">
+              {[
+                '/gallery/img-g2-49.jpeg',
+                '/gallery/img-g2-50.jpeg',
+                '/gallery/img-g2-51.jpeg',
+                '/gallery/img-g2-52.jpeg',
+                '/gallery/img-g2-53.jpeg',
+                '/gallery/img-g2-54.jpeg',
+                '/gallery/img-g2-55.jpeg',
+                '/gallery/img-g2-56.jpeg',
+                '/gallery/img-g2-57.jpeg',
+                '/gallery/img-g2-58.jpeg'
+              ].map((src, i) => (
+                <div className="td-gallery-item" key={`orig-${i}`}>
+                  <img src={src} alt="Tour Gallery" loading="lazy" />
+                </div>
+              ))}
+              {[
+                '/gallery/img-g2-49.jpeg',
+                '/gallery/img-g2-50.jpeg',
+                '/gallery/img-g2-51.jpeg',
+                '/gallery/img-g2-52.jpeg',
+                '/gallery/img-g2-53.jpeg',
+                '/gallery/img-g2-54.jpeg',
+                '/gallery/img-g2-55.jpeg',
+                '/gallery/img-g2-56.jpeg',
+                '/gallery/img-g2-57.jpeg',
+                '/gallery/img-g2-58.jpeg'
+              ].map((src, i) => (
+                <div className="td-gallery-item" key={`dup-${i}`}>
+                  <img src={src} alt="Tour Gallery" loading="lazy" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="td-content-section">
