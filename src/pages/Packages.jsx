@@ -52,7 +52,7 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Family & Kids Buggy Rides', link: '/contact', image: '/fam.png',
+        title: 'Family & Kids Buggy Rides', link: '/tour/family-buggy-tours', image: '/fam.png',
         price: '400 AED', copy: 'Journey together through the golden dunes of the Arabian Desert in complete safety and comfort.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },

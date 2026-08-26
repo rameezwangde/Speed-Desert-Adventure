@@ -32,6 +32,7 @@ import RedDunesAfternoonBuggyTour from './pages/RedDunesAfternoonBuggyTour'
 import NightRidersBuggyTour from './pages/NightRidersBuggyTour'
 import SelfDriveBuggyTours from './pages/SelfDriveBuggyTours'
 import GroupBuggyTours from './pages/GroupBuggyTours'
+import FamilyBuggyTours from './pages/FamilyBuggyTours'
 import GalleryPage from './pages/Gallery'
 
 import PackagesPage from './pages/Packages'
@@ -64,6 +65,7 @@ export default function App() {
   const isNightRidersBuggyTour = window.location.pathname.replace(/\/$/, '') === '/tour/night-riders-buggy-tour'
   const isSelfDriveBuggyTours = window.location.pathname.replace(/\/$/, '') === '/tour/self-drive-buggy-tours'
   const isGroupBuggyTours = window.location.pathname.replace(/\/$/, '') === '/tour/group-buggy-tours'
+  const isFamilyBuggyTours = window.location.pathname.replace(/\/$/, '') === '/tour/family-buggy-tours'
   const [introOpen, setIntroOpen] = useState(false)
   const [heroReady, setHeroReady] = useState(false)
 
@@ -91,6 +93,7 @@ export default function App() {
   if (isNightRidersBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><NightRidersBuggyTour/><Footer/><WhatsAppFloat/></div></div>
   if (isSelfDriveBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><SelfDriveBuggyTours/><Footer/><WhatsAppFloat/></div></div>
   if (isGroupBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><GroupBuggyTours/><Footer/><WhatsAppFloat/></div></div>
+  if (isFamilyBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><FamilyBuggyTours/><Footer/><WhatsAppFloat/></div></div>
   if (isSafariQuadTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariQuad/><Footer/><WhatsAppFloat/></div></div>
   if (isSafariBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariBuggy/><Footer/><WhatsAppFloat/></div></div>
   if (isCanAmMaverickCategory) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverick/><Footer/><WhatsAppFloat/></div></div>
