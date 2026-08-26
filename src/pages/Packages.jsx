@@ -47,7 +47,7 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Group Buggy Tours', link: '/contact', image: '/grp.jpeg',
+        title: 'Group Buggy Tours', link: '/tour/group-buggy-tours', image: '/grp.jpeg',
         price: '400 AED', copy: "Perfect for corporate events, birthday celebrations, or friends' getaways.",
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
