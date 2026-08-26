@@ -3051,16 +3051,23 @@ a {
 
 .nhc-spec {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  text-align: center
+  text-align: left;
+  gap: 12px;
 }
 
 .nhc-spec svg {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   stroke: #d71920;
-  margin-bottom: 8px
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.nhc-spec div {
+  display: flex;
+  flex-direction: column;
 }
 
 .nhc-spec small {
