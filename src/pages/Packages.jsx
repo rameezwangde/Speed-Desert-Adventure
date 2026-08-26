@@ -57,12 +57,12 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Couples Buggy Tours', link: '/contact', image: '/couples-quad.png',
+        title: 'Couples Buggy Tours', link: '/tour/couples-buggy-tours', image: '/couples-quad.png',
         price: '400 AED', copy: 'Experience the desert like never before with our Couple Buggy Tours, created for those who love both adventure and each other.',
         duration: '1-hour', seats: '2 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Night Buggy Tours', link: '/contact', image: '/night.png',
+        title: 'Night Buggy Tours', link: '/tour/night-buggy-tours', image: '/night.png',
         price: '400 AED', copy: 'Experience the magic of the Arabian Desert under a blanket of stars with our Night Buggy Tours.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
