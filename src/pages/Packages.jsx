@@ -32,7 +32,7 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Red Dunes Afternoon Buggy Tour (Family)', link: '/contact', image: '/buggy-duo.jpg',
+        title: 'Red Dunes Afternoon Buggy Tour (Family)', link: '/tour/red-dunes-afternoon', image: '/buggy-duo.jpg',
         price: '400 AED', copy: 'Explore the famous Red Dunes of Dubai during the magical golden hours.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },

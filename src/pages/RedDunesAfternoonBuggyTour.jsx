@@ -38,15 +38,15 @@ const tripInclusions = [
 
 const detailsTable = [
   { label: 'Ticket Price', value: 'AED 400.00' },
-  { label: 'Tour Timing', value: '06:00 am to 11:00 am' },
+  { label: 'Seating Options', value: '1, 2 & 4 Seater' },
   { label: 'Duration', value: '1-Hour Buggy Drive' },
-  { label: 'Seating Options', value: '1, 2 & 4 Seater Options' },
+  { label: 'Tour Timing', value: '12:00 pm to 05:00 pm' },
   { label: 'Booking Requirements', value: 'Minimum age of rider: 16+ years' }
 ]
 
-export default function EarlyBirdBuggyTour() {
+export default function RedDunesAfternoonBuggyTour() {
   useEffect(() => {
-    document.title = 'Early Bird Buggy Tour | Speed Desert Adventure'
+    document.title = 'Red Dunes Afternoon Buggy Tour | Speed Desert Adventure'
     window.scrollTo(0, 0)
   }, [])
 
@@ -58,7 +58,7 @@ export default function EarlyBirdBuggyTour() {
           Back to Packages
         </a>
         <div className="td-hero-header">
-          <SectionHeading eyebrow="4 SEATER" title="EARLY BIRD" accent="BUGGY TOUR" align="center" />
+          <SectionHeading eyebrow="RED DUNES AFTERNOON" title="BUGGY" accent="TOUR" align="center" />
           <div className="td-hero-price">
             <span className="price-label">AED 400</span>
             <BrushButton href="/#book">Book Now</BrushButton>
@@ -93,32 +93,32 @@ export default function EarlyBirdBuggyTour() {
           <div className="td-gallery-slider">
             <div className="td-gallery-track">
               {[
-                '/gallery/img-g2-59.jpeg',
-                '/gallery/img-g2-60.jpeg',
-                '/gallery/img-g2-61.jpeg',
-                '/gallery/img-g2-62.jpeg',
-                '/gallery/img-g2-63.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-65.jpeg',
-                '/gallery/img-g2-66.jpeg',
-                '/gallery/img-g2-67.jpeg',
-                '/gallery/img-g2-68.jpeg'
+                '/gallery/img-g2-69.jpeg',
+                '/gallery/img-g2-70.jpeg',
+                '/gallery/img-g2-71.jpeg',
+                '/gallery/img-g2-72.jpeg',
+                '/gallery/img-g2-73.jpeg',
+                '/gallery/img-g2-74.jpeg',
+                '/gallery/img-g2-75.jpeg',
+                '/gallery/img-g2-76.jpeg',
+                '/gallery/img-g2-77.jpeg',
+                '/gallery/img-g2-78.jpeg'
               ].map((src, i) => (
                 <div className="td-gallery-item" key={`orig-${i}`}>
                   <img src={src} alt="Tour Gallery" loading="lazy" />
                 </div>
               ))}
               {[
-                '/gallery/img-g2-59.jpeg',
-                '/gallery/img-g2-60.jpeg',
-                '/gallery/img-g2-61.jpeg',
-                '/gallery/img-g2-62.jpeg',
-                '/gallery/img-g2-63.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-65.jpeg',
-                '/gallery/img-g2-66.jpeg',
-                '/gallery/img-g2-67.jpeg',
-                '/gallery/img-g2-68.jpeg'
+                '/gallery/img-g2-69.jpeg',
+                '/gallery/img-g2-70.jpeg',
+                '/gallery/img-g2-71.jpeg',
+                '/gallery/img-g2-72.jpeg',
+                '/gallery/img-g2-73.jpeg',
+                '/gallery/img-g2-74.jpeg',
+                '/gallery/img-g2-75.jpeg',
+                '/gallery/img-g2-76.jpeg',
+                '/gallery/img-g2-77.jpeg',
+                '/gallery/img-g2-78.jpeg'
               ].map((src, i) => (
                 <div className="td-gallery-item" key={`dup-${i}`}>
                   <img src={src} alt="Tour Gallery" loading="lazy" />
@@ -131,14 +131,12 @@ export default function EarlyBirdBuggyTour() {
 
       <section className="td-content-section">
         <div className="td-main-content">
-          <SectionHeading eyebrow="About" title="Early Bird Buggy" accent="Package" />
+          <SectionHeading eyebrow="About" title="Red Dunes Afternoon" accent="Buggy Package" />
           
           <div className="td-text-blocks">
-            <p>Kick off your day with the unparalleled excitement of our Early Bird Buggy Tour, perfectly tailored for adventurers eager to witness the enchanting beauty of the Red Dunes at sunrise. Take command of a Polaris RZR 1000cc Sport, a vehicle engineered for peak performance, complete with a Bluetooth sound system to enhance your ride with your favorite tracks as you navigate the shifting sands.</p>
+            <p>Feel the excitement of Dubai's desert on our Red Dunes Afternoon Buggy Tour. Hop into a Polaris RZR 1000cc Sport buggy, complete with a Bluetooth sound system, and set off on a guided tour across the golden sands and soaring dunes. Our seasoned guides will provide a personalized and secure journey during this exclusive one-hour adventure.</p>
             
-            <p>This private tour is the epitome of adrenaline and exclusivity, guided by seasoned professionals who not only prioritize your safety but also provide intriguing insights into the desert's unique ecosystem and geological wonders. Experience the thrill of speeding through the dunes as the early morning sun bathes the sands in a golden glow, creating a perfect backdrop for an unforgettable adventure.</p>
-
-            <p>Embrace the thrill and tranquility of the desert at dawn on this intimate and exhilarating journey, where every moment promises breathtaking views and heart-pounding excitement. Secure your spot on our Early Bird Buggy Tour and create memories that will last a lifetime, experiencing the magic of Dubai's desert like never before!</p>
+            <p>Enjoy the ride with complete peace of mind in our high-performance buggies, which are rigorously maintained to ensure your utmost safety and comfort. With flexible booking options available to accommodate your busy schedule, there's never been a better time to book your spot for an unforgettable journey. Secure your tour today and explore the stunning natural beauty of Dubai's desert landscape!</p>
           </div>
         </div>
 
@@ -158,12 +156,12 @@ export default function EarlyBirdBuggyTour() {
       </section>
 
       <section className="td-ticket-prices">
-        <SectionHeading title="Early Bird Buggy" accent="Ticket Price & Timing" align="center" />
+        <SectionHeading title="Red Dunes Afternoon" accent="Ticket Price & Timing" align="center" />
         <div className="table-wrapper td-table" style={{ maxWidth: '800px', margin: '40px auto 0' }}>
           <table className="custom-table" style={{ minWidth: '100%' }}>
             <thead>
               <tr>
-                <th>Early Bird Buggy Package Details</th>
+                <th>Red Dunes Afternoon Buggy Tour Details</th>
                 <th>Information</th>
               </tr>
             </thead>
@@ -181,11 +179,9 @@ export default function EarlyBirdBuggyTour() {
 
       <section style={{ background: 'rgba(255,255,255,0.02)', padding: '40px 5%' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>Kickstart your morning with an invigorating Early Bird Buggy Tour, the perfect adventure for solo thrill-seekers, couples, or small groups. Choose from a range of dune buggies, including 1-seater, 2-seater, and 4-seater options, to tailor your experience to your personal or group needs. This private tour offers you an exclusive journey through the vast and stunning landscape of Dubai's Red Dunes, providing a serene and uninterrupted desert adventure.</p>
-          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>Before embarking on your adventure, relax in our climate-controlled comfort lounge. Safety is our priority, so all necessary gear, including helmets and goggles, is provided to ensure your experience is both thrilling and secure. For those looking to enrich their desert experience, we offer optional free sandboarding and short camel rides, allowing you to immerse yourself fully in the Arabian desert culture.</p>
-          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>Capture the breathtaking beauty of the early morning desert with a photo session on the high dunes, where the early sun bathes the sands in a spectacular golden light. Our flexible pricing options cater to different preferences and budgets, ensuring there's a perfect fit for everyone.</p>
-          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>Enhance your tour with optional private transfers and enjoy complimentary refreshments to make your desert excursion even more enjoyable. Whether you're in for a fast-paced thrill, a serene escape, or a comprehensive desert tour, the Early Bird Buggy Tour offers a unique and memorable adventure.</p>
-          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px' }}>Don't miss out on the chance to navigate a high-performance buggy through the mesmerizing landscapes of Dubai's desert. Book your spot today for a personalized, adrenaline-fueled morning filled with stunning scenery and unforgettable moments!</p>
+          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>Are you up for tackling the dynamic terrains of Dubai's desert? Our Dune Buggy Adventure is perfect for thrill-seekers, whether you're flying solo or cruising with friends or family. Choose from our 1-seater, 2-seater, or 4-seater buggies, all equipped with the robust Polaris RZR 1000XP SPORT model, engineered for both excitement and comfort on the sandy trails.</p>
+          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>Safety and comfort are at the heart of our tours. Experience a private adventure exclusive to your group, with no outsiders. Our experienced instructors will lead you through the dunes, providing top-notch guidance and tips to maximize your enjoyment behind the wheel. Each buggy also features a Bluetooth sound system, so you can choose the perfect soundtrack for your desert escapade.</p>
+          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px' }}>Enhance your outing with some traditional desert activities. Enjoy complimentary sandboarding and a quick camel ride, both wonderful additions to your dune buggy experience. Before and after your adventure, unwind in our climate-controlled lounge and stay refreshed with complimentary bottled water. Set off on your desert journey with us and make memories that will last a lifetime!</p>
         </div>
       </section>
 
@@ -206,7 +202,7 @@ export default function EarlyBirdBuggyTour() {
       
       <section style={{ padding: '60px 5% 80px', maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
         <SectionHeading eyebrow="More Options" title="Recommended" accent="Tours" align="center" />
-        <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginTop: '20px' }}>Bringing more people along? Go for our <strong>4 Seater Dune Buggy Polaris RZR Tour</strong> for a fun group ride. For thrill-seekers who want more power and control, the <strong>Can-Am Maverick Buggy Tour</strong> delivers an intense off-road experience.</p>
+        <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginTop: '20px' }}>Bringing more people along? Go for our <strong>4 Seater Dune Buggy Polaris RZR Tour</strong> for a fun group ride. For thrill-seekers who want more power and control, the <strong>Can-Am Maverick Buggy Dubai</strong> delivers an intense off-road experience.</p>
       </section>
 
     </main>
