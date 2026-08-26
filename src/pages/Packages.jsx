@@ -194,7 +194,11 @@ export default function PackagesPage() {
                       </div>
                       <div className="nhc-actions">
                         <a href="#book" className="btn-primary">BOOK NOW</a>
-                        <a href="#!" className="btn-secondary" style={{ opacity: 0.5, pointerEvents: 'none', cursor: 'not-allowed' }}>TOUR DETAILS</a>
+                        {opt.link.startsWith('/tour/') ? (
+                          <a href={opt.link} className="btn-secondary">TOUR DETAILS</a>
+                        ) : (
+                          <a href="#!" className="btn-secondary" style={{ opacity: 0.5, pointerEvents: 'none', cursor: 'not-allowed' }}>TOUR DETAILS</a>
+                        )}
                       </div>
                     </div>
                   </motion.article>
