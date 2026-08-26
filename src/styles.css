@@ -5345,6 +5345,8 @@ a {
 
 .td-gallery-slider {
   animation: scroll-left 40s linear infinite;
+  width: max-content;
+  display: flex;
 }
 
 .td-gallery-slider-wrapper {
