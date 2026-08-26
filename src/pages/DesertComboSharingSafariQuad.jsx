@@ -87,16 +87,42 @@ export default function DesertComboSharingSafariQuad() {
           </div>
         </div>
 
-        <div className="td-gallery-slider-wrapper" style={{ overflow: 'hidden', width: '100%', position: 'relative', marginTop: '40px' }}>
-          <div className="td-gallery-slider" style={{ display: 'flex', width: 'max-content', gap: '20px' }}>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num, idx) => (
-              <img 
-                key={idx} 
-                src={`/gallery/img-g2-${num}.jpeg`} 
-                alt={`Desert Safari Tour ${num}`} 
-                style={{ height: '280px', width: '420px', objectFit: 'cover', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }} 
-              />
-            ))}
+        <div className="td-gallery-slider-wrapper">
+          <div className="td-gallery-slider">
+            <div className="td-gallery-track">
+              {[
+                '/gallery/img-g2-89.jpeg',
+                '/gallery/img-g2-8.jpeg',
+                '/gallery/img-3.jpeg',
+                '/gallery/img-7.jpeg',
+                '/gallery/img-g2-1.jpeg',
+                '/gallery/img-g2-14.jpeg',
+                '/gallery/img-g2-31.jpeg',
+                '/gallery/img-g2-42.jpeg',
+                '/gallery/img-g2-45.jpeg',
+                '/gallery/img-g2-46.jpeg'
+              ].map((src, i) => (
+                <div className="td-gallery-item" key={`orig-${i}`}>
+                  <img src={src} alt="Tour Gallery" loading="lazy" />
+                </div>
+              ))}
+              {[
+                '/gallery/img-g2-89.jpeg',
+                '/gallery/img-g2-8.jpeg',
+                '/gallery/img-3.jpeg',
+                '/gallery/img-7.jpeg',
+                '/gallery/img-g2-1.jpeg',
+                '/gallery/img-g2-14.jpeg',
+                '/gallery/img-g2-31.jpeg',
+                '/gallery/img-g2-42.jpeg',
+                '/gallery/img-g2-45.jpeg',
+                '/gallery/img-g2-46.jpeg'
+              ].map((src, i) => (
+                <div className="td-gallery-item" key={`dup-${i}`}>
+                  <img src={src} alt="Tour Gallery" loading="lazy" />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

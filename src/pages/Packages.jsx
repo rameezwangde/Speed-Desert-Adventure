@@ -37,8 +37,8 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Night Riders: Dune Buggy Dubai Adventure', link: '/contact', image: '/5.jpeg',
-        price: '400 AED', copy: 'Experience the desert like never before with our Night Riders Buggy Adventure.',
+        title: 'Night Riders: Dune Buggy Dubai Adventure', link: '/tour/night-riders-buggy-tour', image: '/5.jpeg',
+        price: '400 AED', copy: 'Experience the thrill of navigating the desert under the starry night sky.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
