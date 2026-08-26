@@ -35,6 +35,9 @@ import GroupBuggyTours from './pages/GroupBuggyTours'
 import FamilyBuggyTours from './pages/FamilyBuggyTours'
 import CouplesBuggyTours from './pages/CouplesBuggyTours'
 import NightBuggyTours from './pages/NightBuggyTours'
+import CustomBuggyPackages from './pages/CustomBuggyPackages'
+import RedDunesBuggyRide from './pages/RedDunesBuggyRide'
+import PrivateBuggyTours from './pages/PrivateBuggyTours'
 import GalleryPage from './pages/Gallery'
 
 import PackagesPage from './pages/Packages'
@@ -70,6 +73,9 @@ export default function App() {
   const isFamilyBuggyTours = window.location.pathname.replace(/\/$/, '') === '/tour/family-buggy-tours'
   const isCouplesBuggyTours = window.location.pathname.replace(/\/$/, '') === '/tour/couples-buggy-tours'
   const isNightBuggyTours = window.location.pathname.replace(/\/$/, '') === '/tour/night-buggy-tours'
+  const isCustomBuggyPackages = window.location.pathname.replace(/\/$/, '') === '/tour/custom-buggy-packages'
+  const isRedDunesBuggyRide = window.location.pathname.replace(/\/$/, '') === '/tour/red-dunes-buggy-ride'
+  const isPrivateBuggyTours = window.location.pathname.replace(/\/$/, '') === '/tour/private-buggy-tours'
   const [introOpen, setIntroOpen] = useState(false)
   const [heroReady, setHeroReady] = useState(false)
 
@@ -100,6 +106,9 @@ export default function App() {
   if (isFamilyBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><FamilyBuggyTours/><Footer/><WhatsAppFloat/></div></div>
   if (isCouplesBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><CouplesBuggyTours/><Footer/><WhatsAppFloat/></div></div>
   if (isNightBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><NightBuggyTours/><Footer/><WhatsAppFloat/></div></div>
+  if (isCustomBuggyPackages) return <div className="site"><div className="page-shell"><Navbar ready /><CustomBuggyPackages/><Footer/><WhatsAppFloat/></div></div>
+  if (isRedDunesBuggyRide) return <div className="site"><div className="page-shell"><Navbar ready /><RedDunesBuggyRide/><Footer/><WhatsAppFloat/></div></div>
+  if (isPrivateBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><PrivateBuggyTours/><Footer/><WhatsAppFloat/></div></div>
   if (isSafariQuadTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariQuad/><Footer/><WhatsAppFloat/></div></div>
   if (isSafariBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariBuggy/><Footer/><WhatsAppFloat/></div></div>
   if (isCanAmMaverickCategory) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverick/><Footer/><WhatsAppFloat/></div></div>
