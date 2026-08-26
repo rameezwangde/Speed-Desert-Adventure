@@ -27,6 +27,7 @@ import Stage4Stunner from './pages/Stage4Stunner'
 import ThirtyMinBuggyRide from './pages/ThirtyMinBuggyRide'
 import OneHourBuggyTour from './pages/OneHourBuggyTour'
 import TwoHourBuggyTour from './pages/TwoHourBuggyTour'
+import EarlyBirdBuggyTour from './pages/EarlyBirdBuggyTour'
 import GalleryPage from './pages/Gallery'
 
 import PackagesPage from './pages/Packages'
@@ -54,6 +55,7 @@ export default function App() {
   const isThirtyMinBuggyRide = window.location.pathname.replace(/\/$/, '') === '/tour/30-minute-dune-buggy-ride'
   const isOneHourBuggyTour = window.location.pathname.replace(/\/$/, '') === '/tour/1-hour-dune-buggy-tour'
   const isTwoHourBuggyTour = window.location.pathname.replace(/\/$/, '') === '/tour/2-hour-dune-buggy-adventure'
+  const isEarlyBirdBuggyTour = window.location.pathname.replace(/\/$/, '') === '/tour/early-bird-buggy-tour'
   const [introOpen, setIntroOpen] = useState(false)
   const [heroReady, setHeroReady] = useState(false)
 
@@ -76,6 +78,7 @@ export default function App() {
   if (isPolarisRZRCustomTour) return <div className="site"><div className="page-shell"><Navbar ready /><PolarisRZRCustom/><Footer/><WhatsAppFloat/></div></div>
   if (isStage4Stunner) return <div className="site"><div className="page-shell"><Navbar ready /><Stage4Stunner/><Footer/><WhatsAppFloat/></div></div>
   if (isThirtyMinBuggyRide) return <div className="site"><div className="page-shell"><Navbar ready /><ThirtyMinBuggyRide/><Footer/><WhatsAppFloat/></div></div>
+  if (isEarlyBirdBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><EarlyBirdBuggyTour/><Footer/><WhatsAppFloat/></div></div>
   if (isSafariQuadTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariQuad/><Footer/><WhatsAppFloat/></div></div>
   if (isSafariBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariBuggy/><Footer/><WhatsAppFloat/></div></div>
   if (isCanAmMaverickCategory) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverick/><Footer/><WhatsAppFloat/></div></div>

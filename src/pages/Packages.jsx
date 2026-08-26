@@ -27,7 +27,7 @@ const packagesData = [
         duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: '4 Seater Early Bird Dune Buggy Tour (Couples)', link: '/contact', image: '/tour-four-seat.png',
+        title: '4 Seater Early Bird Dune Buggy Tour (Couples)', link: '/tour/early-bird-buggy-tour', image: '/tour-four-seat.png',
         price: '400 AED', copy: 'Join our Early Bird Buggy Tour for an exciting desert adventure!',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
