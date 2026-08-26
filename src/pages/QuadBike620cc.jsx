@@ -99,28 +99,32 @@ export default function QuadBike620cc() {
           <div className="td-gallery-slider">
             <div className="td-gallery-track">
               {[
-                '/gallery/img-g2-1.jpeg', 
-                '/gallery/img-g2-14.jpeg', 
-                '/gallery/img-g2-31.jpeg', 
-                '/gallery/img-g2-42.jpeg', 
-                '/gallery/img-g2-53.jpeg',
+                '/gallery/img-g2-57.jpeg',
+                '/gallery/img-g2-58.jpeg',
+                '/gallery/img-g2-59.jpeg',
+                '/gallery/img-g2-60.jpeg',
+                '/gallery/img-g2-61.jpeg',
+                '/gallery/img-g2-62.jpeg',
+                '/gallery/img-g2-63.jpeg',
                 '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-75.jpeg',
-                '/gallery/img-g2-86.jpeg'
+                '/gallery/img-g2-65.jpeg',
+                '/gallery/img-g2-66.jpeg'
               ].map((src, i) => (
                 <div className="td-gallery-item" key={`orig-${i}`}>
                   <img src={src} alt="Tour Gallery" loading="lazy" />
                 </div>
               ))}
               {[
-                '/gallery/img-g2-1.jpeg', 
-                '/gallery/img-g2-14.jpeg', 
-                '/gallery/img-g2-31.jpeg', 
-                '/gallery/img-g2-42.jpeg', 
-                '/gallery/img-g2-53.jpeg',
+                '/gallery/img-g2-57.jpeg',
+                '/gallery/img-g2-58.jpeg',
+                '/gallery/img-g2-59.jpeg',
+                '/gallery/img-g2-60.jpeg',
+                '/gallery/img-g2-61.jpeg',
+                '/gallery/img-g2-62.jpeg',
+                '/gallery/img-g2-63.jpeg',
                 '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-75.jpeg',
-                '/gallery/img-g2-86.jpeg'
+                '/gallery/img-g2-65.jpeg',
+                '/gallery/img-g2-66.jpeg'
               ].map((src, i) => (
                 <div className="td-gallery-item" key={`dup-${i}`}>
                   <img src={src} alt="Tour Gallery" loading="lazy" />
