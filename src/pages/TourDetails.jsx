@@ -5,8 +5,8 @@ import BrushButton from '../components/BrushButton'
 
 const tourInfo = [
   'Private Transfer (Optional)',
-  'Can-Am Maverick XRS 26 Dune Buggy',
-  '200 Horse power',
+  'Can-Am Maverick XR (245 HP Stage 4)',
+  '245 Horsepower (Stage 4)',
   '1-Hour Buggy Drive',
   'Self Drive Dune Buggy',
   'Climate-Controlled Comfort Lounge',
@@ -55,7 +55,7 @@ export default function TourDetails() {
         <div className="td-hero-header">
           <SectionHeading eyebrow="2 & 4 SEATER DUNE BUGGY" title="CAN-AM MAVERICK" accent="XRS 26" align="center" />
           <div className="td-hero-price">
-            <span className="price-label">AED 700-900</span>
+            <span className="price-label">AED 1000 - 1800</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function TourDetails() {
             <tbody>
               <tr>
                 <td><strong>Ticket Price</strong></td>
-                <td>700 AED – 900 AED</td>
+                <td>1000 AED (1 Hr) – 1800 AED (2 Hrs)</td>
               </tr>
               <tr>
                 <td><strong>Seating Options</strong></td>

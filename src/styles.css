@@ -3054,7 +3054,7 @@ a {
   flex-direction: row;
   align-items: center;
   text-align: left;
-  gap: 12px;
+  gap: 8px;
 }
 
 .nhc-spec svg {
@@ -3068,6 +3068,7 @@ a {
 .nhc-spec div {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .nhc-spec small {

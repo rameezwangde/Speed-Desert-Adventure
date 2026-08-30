@@ -7,9 +7,9 @@ const packagesData = [
     category: 'Buggy Tours',
     options: [
       { 
-        title: 'Can-Am Maverick XRS 26 Dune Buggy', link: '/tour/can-am-maverick-xrs-26', image: '/image.png', 
-        price: '700-900 AED', copy: "Dominate Dubai's red dunes with the 2026 Can-Am Maverick XRS.",
-        duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
+        title: 'Can-Am Maverick XR (245 HP Stage 4)', link: '/tour/can-am-maverick-xrs-26', image: '/image.png', 
+        price: '1000 AED', copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR. 1 hr: 1000 AED | 2 hrs: 1800 AED.",
+        duration: '1 - 2 Hours', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
         title: 'Polaris RZR Dune Buggy Tour (Custom)', link: '/tour/polaris-rzr-custom', image: '/polaris-rzr-custom.png',
