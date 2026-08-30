@@ -12,9 +12,9 @@ const packagesData = [
         duration: '1 - 2 Hours', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Polaris RZR Dune Buggy Tour (Custom)', link: '/tour/polaris-rzr-custom', image: '/polaris-rzr-custom.png',
-        price: '400 AED', copy: 'Embark on an exciting desert journey, from solo to group adventures.',
-        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
+        title: 'Polaris RZR 1000 CC (145 HP)', link: '/tour/polaris-rzr-custom', image: '/polaris-rzr-custom.png',
+        price: '400 AED', copy: 'Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.',
+        duration: '1 - 2 Hours', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
         title: 'Stage 4 Stunner: RZR PRO R Ultimate EPS', link: '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps', image: '/stage4-stunner.png',

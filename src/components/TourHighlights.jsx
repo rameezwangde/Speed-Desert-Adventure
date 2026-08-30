@@ -26,9 +26,9 @@ const tours = [
   },
   { 
     price: '400 AED', 
-    title: 'Polaris RZR Dune Buggy Tour (Custom)', 
-    copy: 'Embark on an exciting desert journey, from solo to group adventures.',
-    duration: '1-hour', 
+    title: 'Polaris RZR 1000 CC (145 HP)', 
+    copy: 'Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.',
+    duration: '1 - 2 Hours', 
     seats: '1, 2 & 4 Seaters', 
     transferType: 'Private Transfer',
     transfer: '300 AED', 

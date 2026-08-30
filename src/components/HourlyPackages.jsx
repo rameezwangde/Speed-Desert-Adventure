@@ -13,7 +13,7 @@ const hourly = [
     link: '/tour/30-minute-dune-buggy-ride'
   },
   { 
-    price: '800 AED / Person', 
+    price: '1000 AED', 
     title: '1-Hour Dune Buggy Tour Dubai', 
     features: ['1-Hour Buggy Ride', 'Hotel Pick-Up', 'Free Camel Ride'],
     duration: '1-hour',
@@ -24,9 +24,9 @@ const hourly = [
     link: '/tour/1-hour-dune-buggy-tour'
   },
   { 
-    price: '1400 AED / Person', 
-    title: '2-Hour Dune Buggy Adventure Dubai', 
-    features: ['Hotel Pick-Up', 'Free Camel Ride', '2-Hour Buggy Ride'],
+    price: '1800 AED', 
+    title: '2-Hour Can-Am Maverick R (245 HP) Tour', 
+    features: ['2-Hour Buggy Ride (245 HP)', 'Hotel Pick-Up', 'Free Camel Ride'],
     duration: '2-hours',
     seats: '1, 2 & 4 Seaters',
     transfer: '300 AED',

@@ -35,8 +35,9 @@ const tripInclusions = [
 ]
 
 const packages = [
-  { name: '25 Can-Am Maverick XRS Dune Buggy', seats: '2 & 4 Seater', time: '1-hour', price: 'AED 700 - 1000' },
-  { name: '25 Can-Am Maverick R X RS Dune Buggy', seats: '2 & 4 Seater', time: '1-hour', price: 'AED 899 - 1200' }
+  { name: 'Can-Am Maverick X3 (200 HP)', seats: '2 & 4 Seater', time: '60 min / 2 hrs', price: 'AED 800 (1 Hr) - 1400 (2 Hrs)' },
+  { name: 'Can-Am Maverick XR (245 HP Stage 4)', seats: '2 & 4 Seater', time: '60 min / 2 hrs', price: 'AED 1000 (1 Hr) - 1800 (2 Hrs)' },
+  { name: '2026 Can-Am Maverick R X RS', seats: '2 & 4 Seater', time: '1-hour', price: 'AED 1000' }
 ]
 
 export default function CanAmMaverick() {

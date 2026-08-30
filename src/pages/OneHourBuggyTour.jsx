@@ -5,7 +5,7 @@ import BrushButton from '../components/BrushButton'
 
 const tourInfo = [
   'Private Transfer (Optional)',
-  'Polaris RZR / Can-Am Maverick',
+  'Can-Am Maverick X3 (200 HP)',
   '1-Hour Buggy Drive',
   'Self Drive Dune Buggy',
   'Climate-Controlled Comfort Lounge',
@@ -54,7 +54,7 @@ export default function OneHourBuggyTour() {
         <div className="td-hero-header">
           <SectionHeading eyebrow="IMMERSIVE DESERT ADVENTURE" title="1-HOUR" accent="DUNE BUGGY TOUR DUBAI" align="center" />
           <div className="td-hero-price">
-            <span className="price-label">AED 800</span>
+            <span className="price-label">AED 1000</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>

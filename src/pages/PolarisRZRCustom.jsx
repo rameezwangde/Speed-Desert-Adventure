@@ -39,7 +39,7 @@ const packages = [
   { name: 'Red Dunes Afternoon Buggy Tour (Family)', seats: '1, 2 & 4 Seaters', time: '1-hour', price: 'AED 400.00' },
   { name: 'Desert Combo: Sharing Safari + Dune Buggy', seats: '1, 2 & 4 Seaters', time: '1-hour', price: 'AED 299.00' },
   { name: 'Night Riders: Dune Buggy Dubai Adventure', seats: '1, 2 & 4 Seaters', time: '1-hour', price: 'AED 400.00' },
-  { name: '2-4 Seater Dune Buggy Polaris RZR Tour (Custom)', seats: '1, 2 & 4 Seaters', time: '1-hour', price: 'AED 400.00' }
+  { name: 'Polaris RZR 1000 CC (145 HP) Tour', seats: '1, 2 & 4 Seaters', time: '1-hour / 2-hours', price: 'AED 400.00 (1 Hr) - AED 700.00 (2 Hrs)' }
 ]
 
 export default function PolarisRZRCustom() {
