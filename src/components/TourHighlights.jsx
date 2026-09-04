@@ -15,7 +15,7 @@ const tours = [
   },
   { 
     price: '1000 AED', 
-    title: "Can-am Buggy Maverick R X rs: '26 Smart-Shox!", 
+    title: "Can-am Buggy Maverick R X rs MAX: Smart-Shox!", 
     copy: 'Immerse yourself in our Night Riders Buggy Adventure for a unique desert experience.',
     duration: '1-hour', 
     seats: '2 & 4 Seaters', 

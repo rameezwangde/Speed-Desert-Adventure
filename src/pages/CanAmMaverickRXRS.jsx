@@ -50,7 +50,7 @@ export default function CanAmMaverickRXRS() {
           Back to Tours
         </a>
         <div className="td-hero-header">
-          <SectionHeading eyebrow="26 CAN-AM MAVERICK R X RS" title="SMART-SHOX" accent="DUNE BUGGY TOUR" align="center" />
+          <SectionHeading eyebrow="CAN-AM MAVERICK R X RS" title="SMART-SHOX" accent="DUNE BUGGY TOUR" align="center" />
           <div className="td-hero-price">
             <span className="price-label">AED 1000</span>
             <BrushButton href="/#book">Book Now</BrushButton>
