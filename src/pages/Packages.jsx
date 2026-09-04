@@ -107,8 +107,8 @@ const packagesData = [
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Desert Combo: Sharing Safari + Dune Buggy', link: '/tour/safari-buggy', image: '/sharing-buggy.png',
-        price: '299 AED / Person', copy: 'Double the thrill with our combo desert safari and dune buggy tour.',
+        title: 'DESERT COMBO: sharing safari + can-am X3', link: '/tour/safari-buggy', image: '/sharing-buggy.png',
+        price: '499 AED / Person', copy: 'Double the thrill with our combo desert safari and Can-Am X3 ride, including a dinner show + BBQ dinner.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Shared Transfer', transfer: 'Free Pick & Drop'
       },
     ]

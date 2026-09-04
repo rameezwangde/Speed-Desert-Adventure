@@ -25,7 +25,7 @@ export default function PricingBooking() {
           <tbody>
             <tr><td>Can-Am Maverick R MAX X rs '26</td><td>2-4 seater</td><td>2 persons</td><td>60 MIN Buggy Drive</td><td>AED 1000-1300</td></tr>
             <tr><td>Can-Am Maverick X3</td><td>2-4 seater</td><td>2 persons</td><td>60 MIN Buggy Drive</td><td>AED 700-900</td></tr>
-            <tr><td>Desert Combo: Sharing Safari + Dune Buggy</td><td>1-seater</td><td>1 person</td><td>30-Minute Dune Buggy Ride</td><td>AED 299</td></tr>
+            <tr><td>DESERT COMBO: sharing safari + can-am X3 (dinner show + bbq dinner)</td><td>1-seater</td><td>1 person</td><td>30-Minute Can-Am X3 Ride</td><td>AED 499</td></tr>
             <tr><td>Early Bird Buggy tour</td><td>1, 2 & 4 seater</td><td>1-4 persons</td><td>60 MIN Buggy Drive</td><td>AED 400</td></tr>
             <tr><td>Night Riders: Dune Buggy Dubai Adventure</td><td>1, 2 & 4 seater</td><td>1-4 persons</td><td>60 MIN Buggy Drive</td><td>AED 400</td></tr>
             <tr><td>Red Dunes Afternoon Buggy</td><td>1, 2 & 4 seater</td><td>1-4 persons</td><td>60 MIN Buggy Drive</td><td>AED 400</td></tr>
