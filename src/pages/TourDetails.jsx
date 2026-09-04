@@ -5,7 +5,7 @@ import BrushButton from '../components/BrushButton'
 
 const tourInfo = [
   'Private Transfer (Optional)',
-  'Can-Am Maverick XR (245 HP Stage 4)',
+  'Can-Am Maverick XR MAX (245 HP Stage 4)',
   '245 Horsepower (Stage 4)',
   '1-Hour Buggy Drive',
   'Self Drive Dune Buggy',

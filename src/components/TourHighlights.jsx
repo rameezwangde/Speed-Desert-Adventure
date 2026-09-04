@@ -4,8 +4,8 @@ import SectionHeading from './SectionHeading'
 const tours = [
   { 
     price: '1000 AED', 
-    title: 'Can-Am Maverick XR (245 HP Stage 4)', 
-    copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR. 1 hr: 1000 AED | 2 hrs: 1800 AED.",
+    title: 'Can-Am Maverick XR MAX (245 HP Stage 4)', 
+    copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR MAX. 1 hr: 1000 AED | 2 hrs: 1800 AED.",
     duration: '1 - 2 Hours', 
     seats: '2 & 4 Seaters', 
     transferType: 'Private Transfer',
