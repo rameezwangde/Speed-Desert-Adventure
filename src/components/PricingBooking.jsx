@@ -3,9 +3,9 @@ import SectionHeading from './SectionHeading'
 export default function PricingBooking() {
   return (
     <section className="pricing-section" id="pricing">
-      <div className="pricing-grid-bg"/>
+      <div className="pricing-grid-bg" />
       <SectionHeading eyebrow="SPEED DESERT ADVENTURE" title="Dune Buggy Rental Dubai" accent="Prices & Packages" />
-      
+
       <div className="pricing-intro">
         <p>Looking for the best dune buggy rental prices in Dubai? <strong>Speed Desert Adventure</strong> offers flexible, budget-friendly packages tailored to your off-road needs. With starting rates from just <strong>AED 299</strong> to premium experiences up to <strong>AED 1399</strong>, our pricing depends on your choice of vehicle, seating capacity, and ride duration.</p>
         <p>Drive the desert in style with our elite fleet of <strong>2026-model off-road buggies</strong>. Whether you choose the high-adrenaline <strong>Can-Am Maverick</strong> or the rugged <strong>Polaris RZR</strong>, we guarantee a safe, exhilarating, and premium desert safari experience for all our guests.</p>
@@ -25,7 +25,7 @@ export default function PricingBooking() {
           <tbody>
             <tr><td>Can-Am Maverick R MAX X rs '26</td><td>2-4 seater</td><td>2 persons</td><td>60 MIN Buggy Drive</td><td>AED 1000-1300</td></tr>
             <tr><td>Can-Am Maverick X3</td><td>2-4 seater</td><td>2 persons</td><td>60 MIN Buggy Drive</td><td>AED 700-900</td></tr>
-            <tr><td>DESERT COMBO: sharing safari + can-am X3 (dinner show + bbq dinner)</td><td>1-seater</td><td>1 person</td><td>30-Minute Can-Am X3 Ride</td><td>AED 499</td></tr>
+            <tr><td>DESERT COMBO: sharing safari + can-am X3 (dinner show + bbq dinner)</td><td>2-4 seater</td><td>1 person</td><td>30-Minute Can-Am X3 Ride</td><td>AED 499</td></tr>
             <tr><td>Early Bird Buggy tour</td><td>1, 2 & 4 seater</td><td>1-4 persons</td><td>60 MIN Buggy Drive</td><td>AED 400</td></tr>
             <tr><td>Night Riders: Dune Buggy Dubai Adventure</td><td>1, 2 & 4 seater</td><td>1-4 persons</td><td>60 MIN Buggy Drive</td><td>AED 400</td></tr>
             <tr><td>Red Dunes Afternoon Buggy</td><td>1, 2 & 4 seater</td><td>1-4 persons</td><td>60 MIN Buggy Drive</td><td>AED 400</td></tr>
