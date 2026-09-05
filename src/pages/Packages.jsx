@@ -40,7 +40,7 @@ const packagesData = [
         duration: '1-hour', seats: '2 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Night Buggy Tours (MAX for 4 Seater)', link: '/tour/night-buggy-tours', image: '/night.png',
+        title: 'Dirt Bike 450CC WITH COMPLETE BIKE KIT', link: '/tour/night-buggy-tours', image: '/night.png',
         price: '400 AED', copy: 'Experience the magic of the Arabian Desert under a blanket of stars with our Night Buggy Tours.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
@@ -66,7 +66,7 @@ const packagesData = [
     options: [
       { 
         title: '620cc Quad Bike', link: '/tour/620cc-quad-bike', image: '/gallery/img-3.jpeg',
-        price: '200 AED', copy: 'Feel the adrenaline with our powerful 620cc Quad Bike.',
+        price: '100 AED', copy: 'Feel the adrenaline with our powerful 620cc Quad Bike.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
@@ -81,14 +81,10 @@ const packagesData = [
     options: [
       { 
         title: 'Desert Combo: Sharing Safari + Quad', link: '/tour/safari-quad', image: '/quad-girls.png',
-        price: '99 AED / Person', copy: 'Double the thrill with our combo desert safari and quad bike ride.',
+        price: '250 AED', copy: 'Double the thrill with our combo desert safari and quad bike ride.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
-      { 
-        title: 'DESERT COMBO: sharing safari + can-am X3 (MAX for 4 Seater)', link: '/tour/safari-buggy', image: '/sharing-buggy.png',
-        price: '499 AED / Person', copy: 'Double the thrill with our combo desert safari and can-am X3 ride, including a dinner show + BBQ dinner.',
-        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Shared Transfer', transfer: 'Free Pick & Drop'
-      },
+
     ]
   }
 ]
