@@ -8,7 +8,7 @@ const packagesData = [
     options: [
       { 
         title: 'Can-Am Maverick XR MAX (245 HP Stage 4) (MAX for 4 Seater)', link: '/tour/can-am-maverick-xrs-26', image: '/image.png', 
-        price: '1000 AED', copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR MAX. 1 hr: 1000 AED | 2 hrs: 1800 AED.",
+        price: '1300 AED', copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR MAX. 1 hr: 1300 AED | 2 hrs: 1800 AED.",
         duration: '1 - 2 Hours', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
@@ -18,8 +18,8 @@ const packagesData = [
       },
 
       { 
-        title: '2 & 4 Seater Dune Buggy Can-Am Maverick R X RS 26 (MAX for 4 Seater)', link: '/tour/can-am-maverick-r-x-rs', image: '/canam2.jpeg',
-        price: '899 AED', copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
+        title: '2 & 4 Seater Dune Buggy Can-Am Maverick X3 (200 HP) (MAX for 4 Seater)', link: '/tour/can-am-maverick-r-x-rs', image: '/canam2.jpeg',
+        price: '800 AED', copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
         duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
