@@ -178,7 +178,7 @@ export default function TourDetails() {
       <section className="td-recommended-tours">
         <SectionHeading title="Recommended" accent="Tours" align="center" />
         <div className="td-recommended-content">
-          <p>Bringing more people along? Go for our <a href="/#tour-highlights">4 Seater Dune Buggy Polaris RZR Tour</a> for a fun group ride. For thrill-seekers who want more power and control, the <a href="/#tour-highlights">Can-Am Maverick Buggy Dubai</a> delivers an intense off-road experience.</p>
+          <p>Bringing more people along? Go for our <a href="/#tour-highlights">4 Seater MAX Dune Buggy Polaris RZR Tour</a> for a fun group ride. For thrill-seekers who want more power and control, the <a href="/#tour-highlights">Can-Am Maverick Buggy Dubai</a> delivers an intense off-road experience.</p>
         </div>
       </section>
     </main>

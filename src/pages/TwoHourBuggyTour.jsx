@@ -212,7 +212,7 @@ export default function TwoHourBuggyTour() {
       <section className="td-recommended-tours">
         <SectionHeading title="Recommended" accent="Tours" align="center" />
         <div className="td-recommended-content">
-          <p>Bringing more people along? Go for our <a href="/tour/polaris-rzr-custom">2-4 Seater Dune Buggy Polaris RZR Tour</a> for a fun group ride. For thrill-seekers who want more power and control, the <a href="/tour/can-am-maverick-r-x-rs">2 & 4 Seater Dune Buggy Can-Am Maverick R X RS</a> delivers an intense off-road experience.</p>
+          <p>Bringing more people along? Go for our <a href="/tour/polaris-rzr-custom">2-4 Seater MAX Dune Buggy Polaris RZR Tour</a> for a fun group ride. For thrill-seekers who want more power and control, the <a href="/tour/can-am-maverick-r-x-rs">2 & 4 Seater MAX Dune Buggy Can-Am Maverick R X RS</a> delivers an intense off-road experience.</p>
         </div>
       </section>
     </main>

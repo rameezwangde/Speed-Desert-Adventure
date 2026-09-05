@@ -25,7 +25,7 @@ const hourly = [
   },
   { 
     price: '1800 AED', 
-    title: '2-Hour Can-Am Maverick R (245 HP) Tour', 
+    title: '2-Hour Can-Am Maverick R MAX (245 HP) Tour', 
     features: ['2-Hour Buggy Ride (245 HP)', 'Hotel Pick-Up', 'Free Camel Ride'],
     duration: '2-hours',
     seats: '1, 2 & 4 Seaters',

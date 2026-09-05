@@ -12,22 +12,22 @@ const packagesData = [
         duration: '1 - 2 Hours', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Polaris RZR 1000 CC (145 HP)', link: '/tour/polaris-rzr-custom', image: '/polaris-rzr-custom.png',
-        price: '400 AED', copy: 'Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.',
+        title: 'Polaris RZR MAX 1000 CC (145 HP)', link: '/tour/polaris-rzr-custom', image: '/polaris-rzr-custom.png',
+        price: '400 AED', copy: 'Embark on an exciting desert journey with the 145 HP Polaris RZR MAX 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.',
         duration: '1 - 2 Hours', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Stage 4 Stunner: RZR PRO R Ultimate EPS', link: '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps', image: '/stage4-stunner.png',
+        title: 'Stage 4 Stunner: RZR MAX PRO R Ultimate EPS', link: '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps', image: '/stage4-stunner.png',
         price: '1399 AED', copy: 'Enjoy unparalleled off-road thrills in Dubai\'s vast dunes.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: '2 & 4 Seater Dune Buggy Can-Am Maverick R X RS 26', link: '/tour/can-am-maverick-r-x-rs', image: '/canam2.jpeg',
+        title: '2 & 4 Seater MAX Dune Buggy Can-Am Maverick R X RS 26', link: '/tour/can-am-maverick-r-x-rs', image: '/canam2.jpeg',
         price: '899 AED', copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
         duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: '4 Seater Early Bird Dune Buggy Tour (Couples)', link: '/tour/early-bird-buggy-tour', image: '/tour-four-seat.png',
+        title: '4 Seater MAX Early Bird Dune Buggy Tour (Couples)', link: '/tour/early-bird-buggy-tour', image: '/tour-four-seat.png',
         price: '400 AED', copy: 'Join our Early Bird Buggy Tour for an exciting desert adventure!',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
@@ -107,8 +107,8 @@ const packagesData = [
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'DESERT COMBO: sharing safari + can-am X3', link: '/tour/safari-buggy', image: '/sharing-buggy.png',
-        price: '499 AED / Person', copy: 'Double the thrill with our combo desert safari and Can-Am X3 ride, including a dinner show + BBQ dinner.',
+        title: 'DESERT COMBO: sharing safari + can-am X3 MAX', link: '/tour/safari-buggy', image: '/sharing-buggy.png',
+        price: '499 AED / Person', copy: 'Double the thrill with our combo desert safari and Can-Am X3 MAX ride, including a dinner show + BBQ dinner.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Shared Transfer', transfer: 'Free Pick & Drop'
       },
     ]

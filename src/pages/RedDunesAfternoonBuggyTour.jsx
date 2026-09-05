@@ -202,7 +202,7 @@ export default function RedDunesAfternoonBuggyTour() {
       
       <section style={{ padding: '60px 5% 80px', maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
         <SectionHeading eyebrow="More Options" title="Recommended" accent="Tours" align="center" />
-        <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginTop: '20px' }}>Bringing more people along? Go for our <strong>4 Seater Dune Buggy Polaris RZR Tour</strong> for a fun group ride. For thrill-seekers who want more power and control, the <strong>Can-Am Maverick Buggy Dubai</strong> delivers an intense off-road experience.</p>
+        <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginTop: '20px' }}>Bringing more people along? Go for our <strong>4 Seater MAX Dune Buggy Polaris RZR Tour</strong> for a fun group ride. For thrill-seekers who want more power and control, the <strong>Can-Am Maverick Buggy Dubai</strong> delivers an intense off-road experience.</p>
       </section>
 
     </main>

@@ -5,7 +5,7 @@ import BrushButton from '../components/BrushButton'
 
 const tourInfo = [
   'Private Transfer (Optional)',
-  'Stage 4 320 PK Beast: RZR PRO R Ultimate EPS',
+  'Stage 4 320 PK Beast: RZR MAX PRO R Ultimate EPS',
   '1-Hour Buggy Drive',
   'Self Drive Dune Buggy',
   'Private Tour',
@@ -47,7 +47,7 @@ const detailsTable = [
 
 export default function Stage4Stunner() {
   useEffect(() => {
-    document.title = 'Stage 4 Stunner: RZR PRO R Ultimate EPS | Speed Desert Adventure'
+    document.title = 'Stage 4 Stunner: RZR MAX PRO R Ultimate EPS | Speed Desert Adventure'
     window.scrollTo(0, 0)
   }, [])
 
@@ -59,7 +59,7 @@ export default function Stage4Stunner() {
           Back to Packages
         </a>
         <div className="td-hero-header">
-          <SectionHeading eyebrow="STAGE 4 STUNNER:" title="RZR PRO R ULTIMATE" accent="EPS TOUR DUBAI" align="center" />
+          <SectionHeading eyebrow="STAGE 4 STUNNER:" title="RZR MAX PRO R ULTIMATE" accent="EPS TOUR DUBAI" align="center" />
           <div className="td-hero-price">
             <span className="price-label">AED 1399</span>
             <BrushButton href="/#book">Book Now</BrushButton>
@@ -133,10 +133,10 @@ export default function Stage4Stunner() {
 
       <section className="td-content-section">
         <div className="td-main-content">
-          <SectionHeading eyebrow="Book Stage 4 Stunner:" title="RZR PRO R Ultimate EPS" accent="" />
+          <SectionHeading eyebrow="Book Stage 4 Stunner:" title="RZR MAX PRO R Ultimate EPS" accent="" />
           
           <div className="td-text-blocks">
-            <p>Get set for an electrifying trip across Dubai's famed Red Dunes with our premier <strong>Stage 4 320 PK Beast: RZR PRO R Ultimate EPS</strong> buggy tour! This exclusive, private adventure means you won't have to share your ride with anyone else. Seize the controls of our top-of-the-line buggy, outfitted with a Bluetooth sound system, and brace yourself for a high-octane hour exploring the desert.</p>
+            <p>Get set for an electrifying trip across Dubai's famed Red Dunes with our premier <strong>Stage 4 320 PK Beast: RZR MAX PRO R Ultimate EPS</strong> buggy tour! This exclusive, private adventure means you won't have to share your ride with anyone else. Seize the controls of our top-of-the-line buggy, outfitted with a Bluetooth sound system, and brace yourself for a high-octane hour exploring the desert.</p>
             
             <p>With our seasoned guides by your side, you'll be well taken care of as you maneuver through the breathtaking desert vistas. You're free to tailor your tour with photo stops whenever you wish, ensuring you can capture the stunning views to remember forever.</p>
 
@@ -182,12 +182,12 @@ export default function Stage4Stunner() {
       </section>
       
       <section className="td-ticket-prices">
-        <SectionHeading title="Stage 4 Stunner: RZR PRO R" accent="Ticket Price & Timing" align="center" />
+        <SectionHeading title="Stage 4 Stunner: RZR MAX PRO R" accent="Ticket Price & Timing" align="center" />
         <div className="table-wrapper td-table" style={{ maxWidth: '800px', margin: '40px auto 0' }}>
           <table className="custom-table" style={{ minWidth: '100%' }}>
             <thead>
               <tr>
-                <th>Stage 4 Stunner: RZR PRO R Ultimate EPS Details</th>
+                <th>Stage 4 Stunner: RZR MAX PRO R Ultimate EPS Details</th>
                 <th>Information</th>
               </tr>
             </thead>
@@ -205,7 +205,7 @@ export default function Stage4Stunner() {
 
       <section style={{ background: 'rgba(255,255,255,0.02)', padding: '60px 5%', marginTop: '60px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>Gear up for an incredible ride across Dubai's famous Red Dunes with our top-tier Stage 4 320 PK Beast: RZR PRO R Ultimate EPS buggy tour! This is a completely private experience, meaning you get the whole adventure to yourself without sharing the buggy. Jump into the driver's seat of our cutting-edge buggy, complete with a Bluetooth sound system, and set off for a heart-pounding hour-long journey through the desert.</p>
+          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>Gear up for an incredible ride across Dubai's famous Red Dunes with our top-tier Stage 4 320 PK Beast: RZR MAX PRO R Ultimate EPS buggy tour! This is a completely private experience, meaning you get the whole adventure to yourself without sharing the buggy. Jump into the driver's seat of our cutting-edge buggy, complete with a Bluetooth sound system, and set off for a heart-pounding hour-long journey through the desert.</p>
           <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>Our skilled guides will accompany you every step of the way, ensuring your safety as you explore the awe-inspiring landscapes. You have the freedom to customize your journey, stopping for photos at your leisure to capture the stunning vistas.</p>
           <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px' }}>Trust in the power and comfort of our high-performance buggies, engineered for top-notch performance and smooth riding. Thanks to our flexible booking options, it's easy to add this thrilling experience to your Dubai itinerary.</p>
         </div>
@@ -228,7 +228,7 @@ export default function Stage4Stunner() {
       
       <section style={{ padding: '60px 5% 80px', maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
         <SectionHeading eyebrow="More Options" title="Recommended" accent="Tours" align="center" />
-        <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginTop: '20px' }}>Bringing more people along? Go for our <strong>4 Seater Dune Buggy Polaris RZR Tour</strong> for a fun group ride. For thrill-seekers who want more power and control, the <strong>Can-Am Maverick Buggy Tour</strong> delivers an intense off-road experience.</p>
+        <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginTop: '20px' }}>Bringing more people along? Go for our <strong>4 Seater MAX Dune Buggy Polaris RZR Tour</strong> for a fun group ride. For thrill-seekers who want more power and control, the <strong>Can-Am Maverick Buggy Tour</strong> delivers an intense off-road experience.</p>
       </section>
 
       <section className="td-faq-section" style={{ padding: '20px 5% 80px', maxWidth: '1200px', margin: '0 auto' }}>
