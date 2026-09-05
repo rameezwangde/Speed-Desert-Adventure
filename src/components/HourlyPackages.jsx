@@ -14,7 +14,7 @@ const hourly = [
   },
   { 
     price: '1000 AED', 
-    title: '1-Hour Dune Buggy Tour Dubai', 
+    title: '1-Hour Dune Buggy Tour Dubai (MAX for 4 Seater)', 
     features: ['1-Hour Buggy Ride', 'Hotel Pick-Up', 'Free Camel Ride'],
     duration: '1-hour',
     seats: '1, 2 & 4 Seaters',
@@ -25,7 +25,7 @@ const hourly = [
   },
   { 
     price: '1800 AED', 
-    title: '2-Hour Can-Am Maverick R MAX (245 HP) Tour', 
+    title: '2-Hour Can-Am Maverick R MAX (245 HP) Tour (MAX for 4 Seater)', 
     features: ['2-Hour Buggy Ride (245 HP)', 'Hotel Pick-Up', 'Free Camel Ride'],
     duration: '2-hours',
     seats: '1, 2 & 4 Seaters',

@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading'
 const tours = [
   { 
     price: '1000 AED', 
-    title: 'Can-Am Maverick XR MAX (245 HP Stage 4)', 
+    title: 'Can-Am Maverick XR MAX (245 HP Stage 4) (MAX for 4 Seater)', 
     copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR MAX. 1 hr: 1000 AED | 2 hrs: 1800 AED.",
     duration: '1 - 2 Hours', 
     seats: '2 & 4 Seaters', 
@@ -15,7 +15,7 @@ const tours = [
   },
   { 
     price: '1000 AED', 
-    title: "Can-am Buggy Maverick R X rs MAX: Smart-Shox!", 
+    title: "Can-am Buggy Maverick R X rs MAX: Smart-Shox! (MAX for 4 Seater)", 
     copy: 'Immerse yourself in our Night Riders Buggy Adventure for a unique desert experience.',
     duration: '1-hour', 
     seats: '2 & 4 Seaters', 
@@ -26,8 +26,8 @@ const tours = [
   },
   { 
     price: '400 AED', 
-    title: 'Polaris RZR MAX 1000 CC (145 HP)', 
-    copy: 'Embark on an exciting desert journey with the 145 HP Polaris RZR MAX 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.',
+    title: 'Polaris RZR 1000 CC (145 HP) (MAX for 4 Seater)', 
+    copy: 'Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.',
     duration: '1 - 2 Hours', 
     seats: '1, 2 & 4 Seaters', 
     transferType: 'Private Transfer',

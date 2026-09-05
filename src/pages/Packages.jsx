@@ -7,52 +7,52 @@ const packagesData = [
     category: 'Buggy Tours',
     options: [
       { 
-        title: 'Can-Am Maverick XR MAX (245 HP Stage 4)', link: '/tour/can-am-maverick-xrs-26', image: '/image.png', 
+        title: 'Can-Am Maverick XR MAX (245 HP Stage 4) (MAX for 4 Seater)', link: '/tour/can-am-maverick-xrs-26', image: '/image.png', 
         price: '1000 AED', copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR MAX. 1 hr: 1000 AED | 2 hrs: 1800 AED.",
         duration: '1 - 2 Hours', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Polaris RZR MAX 1000 CC (145 HP)', link: '/tour/polaris-rzr-custom', image: '/polaris-rzr-custom.png',
-        price: '400 AED', copy: 'Embark on an exciting desert journey with the 145 HP Polaris RZR MAX 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.',
+        title: 'Polaris RZR 1000 CC (145 HP) (MAX for 4 Seater)', link: '/tour/polaris-rzr-custom', image: '/polaris-rzr-custom.png',
+        price: '400 AED', copy: 'Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.',
         duration: '1 - 2 Hours', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Stage 4 Stunner: RZR MAX PRO R Ultimate EPS', link: '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps', image: '/stage4-stunner.png',
+        title: 'Stage 4 Stunner: RZR PRO R Ultimate EPS (MAX for 4 Seater)', link: '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps', image: '/stage4-stunner.png',
         price: '1399 AED', copy: 'Enjoy unparalleled off-road thrills in Dubai\'s vast dunes.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: '2 & 4 Seater MAX Dune Buggy Can-Am Maverick R X RS 26', link: '/tour/can-am-maverick-r-x-rs', image: '/canam2.jpeg',
+        title: '2 & 4 Seater Dune Buggy Can-Am Maverick R X RS 26 (MAX for 4 Seater)', link: '/tour/can-am-maverick-r-x-rs', image: '/canam2.jpeg',
         price: '899 AED', copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
         duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: '4 Seater MAX Early Bird Dune Buggy Tour (Couples)', link: '/tour/early-bird-buggy-tour', image: '/tour-four-seat.png',
+        title: '4 Seater Early Bird Dune Buggy Tour (Couples) (MAX for 4 Seater)', link: '/tour/early-bird-buggy-tour', image: '/tour-four-seat.png',
         price: '400 AED', copy: 'Join our Early Bird Buggy Tour for an exciting desert adventure!',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Red Dunes Afternoon Buggy Tour (Family)', link: '/tour/red-dunes-afternoon', image: '/buggy-duo.jpg',
+        title: 'Red Dunes Afternoon Buggy Tour (Family) (MAX for 4 Seater)', link: '/tour/red-dunes-afternoon', image: '/buggy-duo.jpg',
         price: '400 AED', copy: 'Explore the famous Red Dunes of Dubai during the magical golden hours.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Night Riders: Dune Buggy Dubai Adventure', link: '/tour/night-riders-buggy-tour', image: '/5.jpeg',
+        title: 'Night Riders: Dune Buggy Dubai Adventure (MAX for 4 Seater)', link: '/tour/night-riders-buggy-tour', image: '/5.jpeg',
         price: '400 AED', copy: 'Experience the thrill of navigating the desert under the starry night sky.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Self-Drive Buggy Tours', link: '/tour/self-drive-buggy-tours', image: '/self-drive.png',
+        title: 'Self-Drive Buggy Tours (MAX for 4 Seater)', link: '/tour/self-drive-buggy-tours', image: '/self-drive.png',
         price: '400 AED', copy: 'Take the wheel of a powerful off-road buggy and conquer the majestic red dunes of the Arabian Desert at your own pace.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Group Buggy Tours', link: '/tour/group-buggy-tours', image: '/grp.jpeg',
+        title: 'Group Buggy Tours (MAX for 4 Seater)', link: '/tour/group-buggy-tours', image: '/grp.jpeg',
         price: '400 AED', copy: "Perfect for corporate events, birthday celebrations, or friends' getaways.",
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Family & Kids Buggy Rides', link: '/tour/family-buggy-tours', image: '/fam.png',
+        title: 'Family & Kids Buggy Rides (MAX for 4 Seater)', link: '/tour/family-buggy-tours', image: '/fam.png',
         price: '400 AED', copy: 'Journey together through the golden dunes of the Arabian Desert in complete safety and comfort.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
@@ -62,22 +62,22 @@ const packagesData = [
         duration: '1-hour', seats: '2 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Night Buggy Tours', link: '/tour/night-buggy-tours', image: '/night.png',
+        title: 'Night Buggy Tours (MAX for 4 Seater)', link: '/tour/night-buggy-tours', image: '/night.png',
         price: '400 AED', copy: 'Experience the magic of the Arabian Desert under a blanket of stars with our Night Buggy Tours.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Custom Buggy Packages', link: '/tour/custom-buggy-packages', image: '/custom-buggy.png',
+        title: 'Custom Buggy Packages (MAX for 4 Seater)', link: '/tour/custom-buggy-packages', image: '/custom-buggy.png',
         price: '400 AED', copy: "Whether you're celebrating a special occasion or hosting an event, we'll tailor every detail to match your vision.",
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Red Dunes Buggy Ride', link: '/tour/red-dunes-buggy-ride', image: '/red.png',
+        title: 'Red Dunes Buggy Ride (MAX for 4 Seater)', link: '/tour/red-dunes-buggy-ride', image: '/red.png',
         price: '400 AED', copy: 'Take on the towering red sand dunes with our specially crafted Red Dunes Buggy Ride.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'Private Buggy Tours', link: '/tour/private-buggy-tours', image: '/gallery/img-g2-8.jpeg',
+        title: 'Private Buggy Tours (MAX for 4 Seater)', link: '/tour/private-buggy-tours', image: '/gallery/img-g2-8.jpeg',
         price: '400 AED', copy: 'Enjoy a dedicated personal guide and customizable routes that let you explore the dunes exactly how you want.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       }
@@ -107,8 +107,8 @@ const packagesData = [
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 
-        title: 'DESERT COMBO: sharing safari + can-am X3 MAX', link: '/tour/safari-buggy', image: '/sharing-buggy.png',
-        price: '499 AED / Person', copy: 'Double the thrill with our combo desert safari and Can-Am X3 MAX ride, including a dinner show + BBQ dinner.',
+        title: 'DESERT COMBO: sharing safari + can-am X3 (MAX for 4 Seater)', link: '/tour/safari-buggy', image: '/sharing-buggy.png',
+        price: '499 AED / Person', copy: 'Double the thrill with our combo desert safari and can-am X3 ride, including a dinner show + BBQ dinner.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Shared Transfer', transfer: 'Free Pick & Drop'
       },
     ]
