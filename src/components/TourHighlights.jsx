@@ -3,9 +3,9 @@ import SectionHeading from './SectionHeading'
 
 const tours = [
   { 
-    price: '1000 AED', 
+    price: '1300 AED', 
     title: 'Can-Am Maverick XR MAX (245 HP Stage 4) (MAX for 4 Seater)', 
-    copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR MAX. 1 hr: 1000 AED | 2 hrs: 1800 AED.",
+    copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR MAX. 1 hr: 1300 AED | 2 hrs: 1800 AED.",
     duration: '1 - 2 Hours', 
     seats: '2 & 4 Seaters', 
     transferType: 'Private Transfer',
@@ -14,7 +14,7 @@ const tours = [
     link: '/tour/can-am-maverick-xrs-26'
   },
   { 
-    price: '1000 AED', 
+    price: '1300 AED', 
     title: "Can-am Buggy Maverick R X rs MAX: Smart-Shox! (MAX for 4 Seater)", 
     copy: 'Immerse yourself in our Night Riders Buggy Adventure for a unique desert experience.',
     duration: '1-hour', 

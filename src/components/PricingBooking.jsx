@@ -50,7 +50,7 @@ export default function PricingBooking() {
             </tr>
           </thead>
           <tbody>
-            <tr><td>Polaris RZR Dune Buggy</td><td></td><td>Polaris RZR SPORT EPS</td><td>1000 CC</td><td>200 AED</td><td>400 AED</td><td>600 AED</td><td>700 AED</td></tr>
+
             <tr><td>Polaris RZR Dune Buggy</td><td>2 Seater</td><td>Polaris RZR SPORT EPS</td><td>1000 CC</td><td>200 AED</td><td>400 AED</td><td>600 AED</td><td>700 AED</td></tr>
             <tr><td>Polaris RZR Dune Buggy</td><td>4 Seater</td><td>Polaris RZR SPORT EPS</td><td>1000 CC</td><td>200 AED</td><td>400 AED</td><td>600 AED</td><td>700 AED</td></tr>
           </tbody>
