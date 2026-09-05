@@ -22,16 +22,7 @@ const packagesData = [
         price: '800 AED', copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
         duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
-      { 
-        title: '4 Seater Early Bird Dune Buggy Tour (Couples) (MAX for 4 Seater)', link: '/tour/early-bird-buggy-tour', image: '/tour-four-seat.png',
-        price: '400 AED', copy: 'Join our Early Bird Buggy Tour for an exciting desert adventure!',
-        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
-      },
-      { 
-        title: 'Red Dunes Afternoon Buggy Tour (Family) (MAX for 4 Seater)', link: '/tour/red-dunes-afternoon', image: '/buggy-duo.jpg',
-        price: '400 AED', copy: 'Explore the famous Red Dunes of Dubai during the magical golden hours.',
-        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
-      },
+
       { 
         title: 'Night Riders: Dune Buggy Dubai Adventure (MAX for 4 Seater)', link: '/tour/night-riders-buggy-tour', image: '/5.jpeg',
         price: '400 AED', copy: 'Experience the thrill of navigating the desert under the starry night sky.',
@@ -42,16 +33,7 @@ const packagesData = [
         price: '400 AED', copy: 'Take the wheel of a powerful off-road buggy and conquer the majestic red dunes of the Arabian Desert at your own pace.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
-      { 
-        title: 'Group Buggy Tours (MAX for 4 Seater)', link: '/tour/group-buggy-tours', image: '/grp.jpeg',
-        price: '400 AED', copy: "Perfect for corporate events, birthday celebrations, or friends' getaways.",
-        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
-      },
-      { 
-        title: 'Family & Kids Buggy Rides (MAX for 4 Seater)', link: '/tour/family-buggy-tours', image: '/fam.png',
-        price: '400 AED', copy: 'Journey together through the golden dunes of the Arabian Desert in complete safety and comfort.',
-        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
-      },
+
       { 
         title: 'Couples Buggy Tours', link: '/tour/couples-buggy-tours', image: '/couples-quad.png',
         price: '400 AED', copy: 'Experience the desert like never before with our Couple Buggy Tours, created for those who love both adventure and each other.',
