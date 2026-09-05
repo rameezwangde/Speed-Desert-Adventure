@@ -73,8 +73,8 @@ export default function PricingBooking() {
             </tr>
           </thead>
           <tbody>
-            <tr><td>Can-Am Maverick R XRS</td><td>1-2 Persons</td><td>Maverick R XRS (240 HP)</td><td>1000 CC</td><td>600 AED</td><td>899 AED</td><td>1,500 AED</td><td>1,898 AED</td></tr>
-            <tr><td>Can-Am Maverick R XRS</td><td>Up to 4 Persons</td><td>Maverick R XRS (240 HP)</td><td>1000 CC</td><td>700 AED</td><td>1,200 AED</td><td>1,900 AED</td><td>2,500 AED</td></tr>
+            <tr><td>Can-Am Maverick R XRS</td><td>1-2 Persons</td><td>Maverick R XRS (245 HP)</td><td>1000 CC</td><td>600 AED</td><td>899 AED</td><td>1,500 AED</td><td>1,898 AED</td></tr>
+            <tr><td>Can-Am Maverick R XRS MAX</td><td>Up to 4 Persons</td><td>Maverick R XRS MAX (245 HP)</td><td>1000 CC</td><td>700 AED</td><td>1,200 AED</td><td>1,900 AED</td><td>2,500 AED</td></tr>
             <tr><td>Can-Am Maverick XRS 26</td><td>1-2 Persons</td><td>Maverick XRS 26 (200 HP)</td><td>1000 CC</td><td>400 AED</td><td>700 AED</td><td>1,200 AED</td><td>1,650 AED</td></tr>
           </tbody>
         </table>
