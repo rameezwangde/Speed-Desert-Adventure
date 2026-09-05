@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading'
 const hourly = [
   { 
     price: '400 AED / Person', 
-    title: '30-Minute Dune Buggy Ride Dubai', 
+    title: '30 Min Dune Buggy Maverick X3 (MAX for 4 Seater)', 
     features: ['30-Minute Buggy Ride', 'Hotel Pick-Up', 'Free Camel Ride'],
     duration: '30 mins',
     seats: '1, 2 & 4 Seaters',
