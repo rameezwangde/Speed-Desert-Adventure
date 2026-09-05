@@ -16,11 +16,7 @@ const packagesData = [
         price: '400 AED', copy: 'Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.',
         duration: '1 - 2 Hours', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
-      { 
-        title: 'Stage 4 Stunner: RZR PRO R Ultimate EPS (MAX for 4 Seater)', link: '/tour/stage-4-stunner-rzr-pro-r-ultimate-eps', image: '/stage4-stunner.png',
-        price: '1399 AED', copy: 'Enjoy unparalleled off-road thrills in Dubai\'s vast dunes.',
-        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
-      },
+
       { 
         title: '2 & 4 Seater Dune Buggy Can-Am Maverick R X RS 26 (MAX for 4 Seater)', link: '/tour/can-am-maverick-r-x-rs', image: '/canam2.jpeg',
         price: '899 AED', copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
