@@ -44,21 +44,8 @@ const packagesData = [
         price: '400 AED', copy: 'Experience the magic of the Arabian Desert under a blanket of stars with our Night Buggy Tours.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
-      { 
-        title: 'Custom Buggy Packages (MAX for 4 Seater)', link: '/tour/custom-buggy-packages', image: '/custom-buggy.png',
-        price: '400 AED', copy: "Whether you're celebrating a special occasion or hosting an event, we'll tailor every detail to match your vision.",
-        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
-      },
-      { 
-        title: 'Red Dunes Buggy Ride (MAX for 4 Seater)', link: '/tour/red-dunes-buggy-ride', image: '/red.png',
-        price: '400 AED', copy: 'Take on the towering red sand dunes with our specially crafted Red Dunes Buggy Ride.',
-        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
-      },
-      { 
-        title: 'Private Buggy Tours (MAX for 4 Seater)', link: '/tour/private-buggy-tours', image: '/gallery/img-g2-8.jpeg',
-        price: '400 AED', copy: 'Enjoy a dedicated personal guide and customizable routes that let you explore the dunes exactly how you want.',
-        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transfer: '300 AED'
-      }
+
+
     ]
   },
   {
