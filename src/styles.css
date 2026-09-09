@@ -5401,6 +5401,18 @@ a {
   gap: 18px;
 }
 
+@media (max-width: 1000px) {
+  .nav-right-actions {
+    gap: 8px;
+  }
+
+  .lang-toggle-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+    gap: 5px;
+  }
+}
+
 .lang-selector-container {
   position: relative;
   z-index: 60;

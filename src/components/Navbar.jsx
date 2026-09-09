@@ -35,8 +35,8 @@ export default function Navbar({ ready }) {
       <div className="nav-right-actions">
         <LanguageSelector />
         <BrushButton className="nav-cta">{t('nav.bookYourRide')}</BrushButton>
+        <button className="menu-button" onClick={() => setOpen(true)} aria-label={t('nav.openMenu')}><i/><i/><i/></button>
       </div>
-      <button className="menu-button" onClick={() => setOpen(true)} aria-label={t('nav.openMenu')}><i/><i/><i/></button>
       <AnimatePresence>
         {open && <motion.div className="mobile-menu" initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }} transition={{ ease: [.22,1,.36,1], duration: .55 }}>
           <button className="menu-close" onClick={() => setOpen(false)} aria-label={t('nav.closeMenu')}>×</button>
