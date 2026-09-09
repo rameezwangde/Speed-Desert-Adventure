@@ -25,7 +25,7 @@ const packagesData = [
 
       { 
         title: 'Night Riders: Dune Buggy Dubai Adventure (MAX for 4 Seater)', link: '/tour/night-riders-buggy-tour', image: '/5.jpeg',
-        price: '400 AED', copy: 'Experience the thrill of navigating the desert under the starry night sky.',
+        price: '1300 AED', copy: 'Experience the thrill of navigating the desert under the starry night sky.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transfer: '300 AED'
       },
       { 

@@ -16,8 +16,8 @@ const tours = [
   { 
     price: '1300 AED', 
     title: "Can-am Buggy Maverick R X rs MAX: Smart-Shox! (MAX for 4 Seater)", 
-    copy: 'Immerse yourself in our Night Riders Buggy Adventure for a unique desert experience.',
-    duration: '1-hour', 
+    copy: "Immerse yourself in our buggy adventure for a unique desert experience. 1 hr: 1300 AED | 2 hrs: 1800 AED.",
+    duration: '1 - 2 Hours', 
     seats: '2 & 4 Seaters', 
     transferType: 'Private Transfer',
     transfer: '300 AED', 

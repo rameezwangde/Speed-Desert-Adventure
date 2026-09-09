@@ -52,7 +52,7 @@ export default function CanAmMaverickRXRS() {
         <div className="td-hero-header">
           <SectionHeading eyebrow="CAN-AM MAVERICK R X RS" title="SMART-SHOX" accent="DUNE BUGGY TOUR" align="center" />
           <div className="td-hero-price">
-            <span className="price-label">AED 1000</span>
+            <span className="price-label">AED 1300</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -62,7 +62,7 @@ export default function CanAmMaverickRXRS() {
             <svg viewBox="0 0 24 24" fill="none" stroke="#e11924"><circle cx="12" cy="12" r="10" strokeWidth="2" /><path d="M12 6v6l4 2" strokeWidth="2" strokeLinecap="round" /></svg>
             <div>
               <small>Duration</small>
-              <strong>1-Hour</strong>
+              <strong>1 - 2 Hours</strong>
             </div>
           </div>
           <div className="td-stat">
@@ -175,7 +175,7 @@ export default function CanAmMaverickRXRS() {
             <tbody>
               <tr>
                 <td><strong>Ticket Price</strong></td>
-                <td>899 AED – 1200 AED</td>
+                <td>1 hr: 1300 AED | 2 hrs: 1800 AED</td>
               </tr>
               <tr>
                 <td><strong>Seating Options</strong></td>
@@ -183,7 +183,7 @@ export default function CanAmMaverickRXRS() {
               </tr>
               <tr>
                 <td><strong>Duration</strong></td>
-                <td>1-Hour Buggy Drive</td>
+                <td>1 - 2 Hours Buggy Drive</td>
               </tr>
               <tr>
                 <td><strong>Tour Timing</strong></td>
