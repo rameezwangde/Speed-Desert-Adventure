@@ -3,11 +3,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import BrushButton from './BrushButton'
 import LanguageSelector from './LanguageSelector'
 import { useLanguage } from '../context/LanguageContext'
-import { useCurrency } from '../context/CurrencyContext'
 
 export default function Navbar({ ready }) {
   const { t } = useLanguage()
-  const { setIsConverterOpen } = useCurrency()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -35,15 +33,6 @@ export default function Navbar({ ready }) {
         {links.map(link => <a className={(link.href === '/' && location.pathname === '/') || link.href === location.pathname ? 'active' : ''} key={link.href} href={link.href}>{link.label}</a>)}
       </nav>
       <div className="nav-right-actions">
-        <button 
-          className="nav-curr-btn" 
-          onClick={() => setIsConverterOpen(true)}
-          title="Convert AED to other currencies"
-          type="button"
-        >
-          <span className="nav-curr-icon">💱</span>
-          <span className="nav-curr-text">CURRENCY</span>
-        </button>
         <LanguageSelector />
         <BrushButton className="nav-cta">{t('nav.bookYourRide')}</BrushButton>
         <button className="menu-button" onClick={() => setOpen(true)} aria-label={t('nav.openMenu')}><i/><i/><i/></button>
@@ -52,15 +41,6 @@ export default function Navbar({ ready }) {
         {open && <motion.div className="mobile-menu" initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }} transition={{ ease: [.22,1,.36,1], duration: .55 }}>
           <button className="menu-close" onClick={() => setOpen(false)} aria-label={t('nav.closeMenu')}>×</button>
           <span className="mobile-index">{t('nav.menu')}</span>
-          <div className="mobile-actions-row">
-            <button 
-              className="mobile-curr-btn" 
-              onClick={() => { setOpen(false); setIsConverterOpen(true); }}
-              type="button"
-            >
-              <span>💱</span> Check Other Currencies
-            </button>
-          </div>
           <LanguageSelector isMobile={true} />
           {links.map((link, i) => <a key={link.href} onClick={() => setOpen(false)} href={link.href}><small>0{i + 1}</small>{link.label}</a>)}
           <BrushButton>{t('nav.bookYourRide')}</BrushButton>
