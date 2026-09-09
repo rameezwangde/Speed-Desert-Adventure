@@ -52,7 +52,7 @@ const packagesData = [
     category: 'Quad Bike',
     options: [
       { 
-        title: '620cc Quad Bike', link: '/tour/620cc-quad-bike', image: '/gallery/img-3.jpeg',
+        title: '620cc Quad Bike', link: '/tour/620cc-quad-bike', image: '/620cc.jpeg',
         price: '100 AED', copy: 'Feel the adrenaline with our powerful 620cc Quad Bike.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transfer: '300 AED'
       },
