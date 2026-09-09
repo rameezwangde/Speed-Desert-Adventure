@@ -1,15 +1,18 @@
 import { motion } from 'framer-motion'
 import { useLanguage } from '../context/LanguageContext'
+import { useCurrency } from '../context/CurrencyContext'
 import { formatMultiPrice } from '../utils/currency'
 
 export default function TourHighlights() {
   const { t } = useLanguage()
+  const { openConverter } = useCurrency()
 
   const tours = [
     { 
+      rawAed: 1300,
       price: formatMultiPrice(1300), 
       title: t('highlights.card1Title'), 
-      copy: `Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR MAX. 1 hr: ${formatMultiPrice(1300)} | 2 hrs: ${formatMultiPrice(1800)}.`,
+      copyKey: 'highlights.card1Copy',
       duration: '1 - 2 Hours', 
       seats: '2 & 4 Seaters', 
       transferType: t('highlights.privateTransfer'),
@@ -18,9 +21,10 @@ export default function TourHighlights() {
       link: '/tour/can-am-maverick-xrs-26'
     },
     { 
+      rawAed: 1300,
       price: formatMultiPrice(1300), 
       title: t('highlights.card2Title'), 
-      copy: `Immerse yourself in our buggy adventure for a unique desert experience. 1 hr: ${formatMultiPrice(1300)} | 2 hrs: ${formatMultiPrice(1800)}.`,
+      copyKey: 'highlights.card2Copy',
       duration: '1 - 2 Hours', 
       seats: '2 & 4 Seaters', 
       transferType: t('highlights.privateTransfer'),
@@ -29,9 +33,10 @@ export default function TourHighlights() {
       link: '/tour/can-am-maverick-r-x-rs'
     },
     { 
+      rawAed: 400,
       price: formatMultiPrice(400), 
       title: t('highlights.card3Title'), 
-      copy: `Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: ${formatMultiPrice(400)} | 2 hrs: ${formatMultiPrice(700)}.`,
+      copyKey: 'highlights.card3Copy',
       duration: '1 - 2 Hours', 
       seats: '1, 2 & 4 Seaters', 
       transferType: t('highlights.privateTransfer'),
@@ -61,11 +66,22 @@ export default function TourHighlights() {
           <motion.article className="hourly-card" key={i} initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .25 }} transition={{ delay: i * .12, duration: .7, ease: [.22,1,.36,1] }}>
             <div className="nhc-image-wrap">
               <img src={tour.image} alt={tour.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
-              <div className="nhc-price">{tour.price}</div>
+              <div className="nhc-price-box">
+                <span className="nhc-price">{tour.price}</span>
+                <button 
+                  type="button" 
+                  className="nhc-curr-toggle" 
+                  onClick={() => openConverter(tour.rawAed)}
+                  title="View in USD, EUR, GBP, RUB, SAR..."
+                >
+                  <span className="nhc-curr-icon">💱</span>
+                  <span>View other currencies</span>
+                </button>
+              </div>
             </div>
             <div className="nhc-body">
               <h3 className="nhc-title">{tour.title}</h3>
-              <p style={{ color: '#999', fontSize: '16px', lineHeight: '1.4', textAlign: 'center', marginBottom: '20px' }}>{tour.copy}</p>
+              <p style={{ color: '#999', fontSize: '16px', lineHeight: '1.4', textAlign: 'center', marginBottom: '20px' }}>{t(tour.copyKey)}</p>
               
               <div style={{ background: 'rgba(215, 25, 32, 0.1)', border: '1px solid rgba(215, 25, 32, 0.3)', color: '#d71920', padding: '8px 12px', borderRadius: '4px', textAlign: 'center', fontSize: '13px', fontWeight: 'bold', marginBottom: '20px', letterSpacing: '0.5px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style={{ width: '16px', height: '16px', marginRight: '8px' }}>

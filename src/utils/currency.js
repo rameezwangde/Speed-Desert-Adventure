@@ -1,31 +1,28 @@
-// Live AED conversion rates based on actual market exchange rates:
-// 1 AED ≈ 0.2723 USD (Pegged 3.6725 AED/USD)
-// 1 AED ≈ 0.234 EUR (~4.27 AED/EUR)
-// 1 AED ≈ 0.201 GBP (~4.98 AED/GBP)
+import { FX_RATES } from '../context/CurrencyContext'
+
 export const FX = {
   USD: 0.2723,
   EUR: 0.2340,
-  GBP: 0.2010
+  GBP: 0.2010,
+  RUB: 25.10,
+  SAR: 1.02,
+  INR: 23.40
 }
 
 /**
- * Formats AED price with multi-currency splash:
- * formatMultiPrice(1300) -> "1300 AED / $354 / €328 / £283"
- * formatMultiPrice("1300 AED") -> "1300 AED / $354 / €328 / £283"
- * formatMultiPrice(1300, { compact: true }) -> "1300 AED / $354 / €328 / £283"
+ * Formats price in AED only:
+ * formatAedPrice(1300) -> "1300 AED"
  */
-export function formatMultiPrice(aedVal) {
-  if (!aedVal) return ''
-  
-  // Extract number from string if needed
+export function formatAedPrice(aedVal) {
+  if (!aedVal && aedVal !== 0) return ''
   const num = typeof aedVal === 'number' ? aedVal : parseFloat(String(aedVal).replace(/[^0-9.]/g, ''))
   if (isNaN(num)) return aedVal
+  return `${num} AED`
+}
 
-  const usd = Math.round(num * FX.USD)
-  const eur = Math.round(num * FX.EUR)
-  const gbp = Math.round(num * FX.GBP)
-
-  return `${num} AED / $${usd} / €${eur} / £${gbp}`
+// Backwards compatibility alias
+export function formatMultiPrice(aedVal) {
+  return formatAedPrice(aedVal)
 }
 
 /**
@@ -34,6 +31,6 @@ export function formatMultiPrice(aedVal) {
 export function formatPriceString(str) {
   if (!str) return ''
   return str.replace(/(\d+)\s*AED/gi, (match, p1) => {
-    return formatMultiPrice(parseInt(p1, 10))
+    return `${p1} AED`
   })
 }

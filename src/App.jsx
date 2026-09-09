@@ -47,6 +47,8 @@ import DesertComboSharingSafariQuad from './pages/DesertComboSharingSafariQuad'
 import DesertComboSharingSafariBuggy from './pages/DesertComboSharingSafariBuggy'
 import CanAmMaverick from './pages/CanAmMaverick'
 
+import CurrencyConverterModal from './components/CurrencyConverterModal'
+
 export default function App() {
   const isQuadBike620ccTour = window.location.pathname.replace(/\/$/, '') === '/tour/620cc-quad-bike'
   const isYamaha700ccRaptorTour = window.location.pathname.replace(/\/$/, '') === '/tour/yamaha-700cc-raptor'
@@ -91,32 +93,32 @@ export default function App() {
     window.setTimeout(() => setHeroReady(true), 350)
   }
 
-  if (isQuadBike620ccTour) return <div className="site"><div className="page-shell"><Navbar ready /><QuadBike620cc/><Footer/><WhatsAppFloat/></div></div>
-  if (isYamaha700ccRaptorTour) return <div className="site"><div className="page-shell"><Navbar ready /><Yamaha700ccRaptor/><Footer/><WhatsAppFloat/></div></div>
-  if (isTourDetailsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TourDetailsPage/><Footer/><WhatsAppFloat/></div></div>
-  if (isCanAmMaverickRXRSTour) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverickRXRS/><Footer/><WhatsAppFloat/></div></div>
-  if (isPolarisRZRCustomTour) return <div className="site"><div className="page-shell"><Navbar ready /><PolarisRZRCustom/><Footer/><WhatsAppFloat/></div></div>
-  if (isStage4Stunner) return <div className="site"><div className="page-shell"><Navbar ready /><Stage4Stunner/><Footer/><WhatsAppFloat/></div></div>
-  if (isThirtyMinBuggyRide) return <div className="site"><div className="page-shell"><Navbar ready /><ThirtyMinBuggyRide/><Footer/><WhatsAppFloat/></div></div>
-  if (isEarlyBirdBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><EarlyBirdBuggyTour/><Footer/><WhatsAppFloat/></div></div>
-  if (isRedDunesAfternoonBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><RedDunesAfternoonBuggyTour/><Footer/><WhatsAppFloat/></div></div>
-  if (isNightRidersBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><NightRidersBuggyTour/><Footer/><WhatsAppFloat/></div></div>
-  if (isSelfDriveBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><SelfDriveBuggyTours/><Footer/><WhatsAppFloat/></div></div>
-  if (isGroupBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><GroupBuggyTours/><Footer/><WhatsAppFloat/></div></div>
-  if (isFamilyBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><FamilyBuggyTours/><Footer/><WhatsAppFloat/></div></div>
-  if (isCouplesBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><CouplesBuggyTours/><Footer/><WhatsAppFloat/></div></div>
-  if (isNightBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><NightBuggyTours/><Footer/><WhatsAppFloat/></div></div>
-  if (isCustomBuggyPackages) return <div className="site"><div className="page-shell"><Navbar ready /><CustomBuggyPackages/><Footer/><WhatsAppFloat/></div></div>
-  if (isRedDunesBuggyRide) return <div className="site"><div className="page-shell"><Navbar ready /><RedDunesBuggyRide/><Footer/><WhatsAppFloat/></div></div>
-  if (isPrivateBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><PrivateBuggyTours/><Footer/><WhatsAppFloat/></div></div>
-  if (isSafariQuadTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariQuad/><Footer/><WhatsAppFloat/></div></div>
-  if (isSafariBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariBuggy/><Footer/><WhatsAppFloat/></div></div>
-  if (isCanAmMaverickCategory) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverick/><Footer/><WhatsAppFloat/></div></div>
-  if (isPackagesPage) return <div className="site"><div className="page-shell"><Navbar ready /><PackagesPage/><Footer/><WhatsAppFloat/></div></div>
-  if (isAboutPage) return <div className="site"><div className="page-shell"><Navbar ready /><AboutPage/><Footer/><WhatsAppFloat/></div></div>
-  if (isContactPage) return <div className="site"><div className="page-shell"><Navbar ready /><ContactPage/><Footer/><WhatsAppFloat/></div></div>
-  if (isTestimonialsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TestimonialsPage/><Footer/><WhatsAppFloat/></div></div>
-  if (isGalleryPage) return <div className="site"><div className="page-shell"><Navbar ready /><GalleryPage/><Footer/><WhatsAppFloat/></div></div>
+  if (isQuadBike620ccTour) return <div className="site"><div className="page-shell"><Navbar ready /><QuadBike620cc/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isYamaha700ccRaptorTour) return <div className="site"><div className="page-shell"><Navbar ready /><Yamaha700ccRaptor/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isTourDetailsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TourDetailsPage/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isCanAmMaverickRXRSTour) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverickRXRS/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isPolarisRZRCustomTour) return <div className="site"><div className="page-shell"><Navbar ready /><PolarisRZRCustom/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isStage4Stunner) return <div className="site"><div className="page-shell"><Navbar ready /><Stage4Stunner/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isThirtyMinBuggyRide) return <div className="site"><div className="page-shell"><Navbar ready /><ThirtyMinBuggyRide/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isEarlyBirdBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><EarlyBirdBuggyTour/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isRedDunesAfternoonBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><RedDunesAfternoonBuggyTour/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isNightRidersBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><NightRidersBuggyTour/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isSelfDriveBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><SelfDriveBuggyTours/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isGroupBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><GroupBuggyTours/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isFamilyBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><FamilyBuggyTours/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isCouplesBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><CouplesBuggyTours/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isNightBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><NightBuggyTours/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isCustomBuggyPackages) return <div className="site"><div className="page-shell"><Navbar ready /><CustomBuggyPackages/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isRedDunesBuggyRide) return <div className="site"><div className="page-shell"><Navbar ready /><RedDunesBuggyRide/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isPrivateBuggyTours) return <div className="site"><div className="page-shell"><Navbar ready /><PrivateBuggyTours/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isSafariQuadTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariQuad/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isSafariBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><DesertComboSharingSafariBuggy/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isCanAmMaverickCategory) return <div className="site"><div className="page-shell"><Navbar ready /><CanAmMaverick/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isPackagesPage) return <div className="site"><div className="page-shell"><Navbar ready /><PackagesPage/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isAboutPage) return <div className="site"><div className="page-shell"><Navbar ready /><AboutPage/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isContactPage) return <div className="site"><div className="page-shell"><Navbar ready /><ContactPage/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isTestimonialsPage) return <div className="site"><div className="page-shell"><Navbar ready /><TestimonialsPage/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isGalleryPage) return <div className="site"><div className="page-shell"><Navbar ready /><GalleryPage/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
 
 
   return (
@@ -139,6 +141,7 @@ export default function App() {
         </main>
         <Footer />
         <WhatsAppFloat />
+        <CurrencyConverterModal />
       </div>
       <AnimatePresence>{introOpen && <IntroExperience onClose={closeIntro} />}</AnimatePresence>
     </div>

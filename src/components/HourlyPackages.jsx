@@ -1,13 +1,16 @@
 import { motion } from 'framer-motion'
 import SectionHeading from './SectionHeading'
 import { useLanguage } from '../context/LanguageContext'
+import { useCurrency } from '../context/CurrencyContext'
 import { formatMultiPrice } from '../utils/currency'
 
 export default function HourlyPackages() {
   const { t } = useLanguage()
+  const { openConverter } = useCurrency()
 
   const hourly = [
     { 
+      rawAed: 400,
       price: `${formatMultiPrice(400)} / ${t('common.person')}`, 
       title: t('hourly.item1Title'), 
       features: [t('hourly.item1F1'), t('hourly.item1F2'), t('hourly.item1F3')],
@@ -18,6 +21,7 @@ export default function HourlyPackages() {
       link: '/tour/30-minute-dune-buggy-ride'
     },
     { 
+      rawAed: 1000,
       price: formatMultiPrice(1000), 
       title: t('hourly.item2Title'), 
       features: [t('hourly.item2F1'), t('hourly.item2F2'), t('hourly.item2F3')],
@@ -29,6 +33,7 @@ export default function HourlyPackages() {
       link: '/tour/1-hour-dune-buggy-tour'
     },
     { 
+      rawAed: 1800,
       price: formatMultiPrice(1800), 
       title: t('hourly.item3Title'), 
       features: [t('hourly.item3F1'), t('hourly.item3F2'), t('hourly.item3F3')],
@@ -49,7 +54,18 @@ export default function HourlyPackages() {
             {item.popular && <div className="popular-badge">{t('hourly.mostPopular')}</div>}
             <div className="nhc-image-wrap">
               <img src={item.image} alt={item.title} loading="lazy" />
-              <div className="nhc-price">{item.price}</div>
+              <div className="nhc-price-box">
+                <span className="nhc-price">{item.price}</span>
+                <button 
+                  type="button" 
+                  className="nhc-curr-toggle" 
+                  onClick={() => openConverter(item.rawAed)}
+                  title="View in USD, EUR, GBP, RUB, SAR..."
+                >
+                  <span className="nhc-curr-icon">💱</span>
+                  <span>View other currencies</span>
+                </button>
+              </div>
             </div>
             <div className="nhc-body">
               <h3 className="nhc-title">{item.title}</h3>
