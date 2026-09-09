@@ -1,0 +1,270 @@
+export const fr = {
+  // Navigation & General
+  nav: {
+    home: 'Accueil',
+    aboutUs: 'À propos',
+    packages: 'Forfaits',
+    gallery: 'Galerie',
+    testimonials: 'Avis',
+    contact: 'Contact',
+    bookYourRide: 'Réserver votre tour',
+    menu: 'SDA / MENU',
+    openMenu: 'Ouvrir le menu',
+    closeMenu: 'Fermer le menu'
+  },
+  // Intro Modal
+  intro: {
+    eyebrow: "BIENVENUE DANS L'EXTRÊME",
+    title: 'Votre histoire dans le désert',
+    titleAccent: 'commence ici.',
+    subtitle: 'Puissance. Sable. Vitesse. Une expérience inoubliable.',
+    cta: "Entrer dans l'aventure",
+    skip: 'APPUYEZ SUR × POUR PASSER'
+  },
+  // Hero
+  hero: {
+    kicker: 'DOMPTEZ LES DUNES DE DUBAÏ',
+    title1: 'AVENTURES',
+    title2: 'ULTIMES.',
+    desc: "Libérez votre côté aventurier avec la meilleure location de buggys de Dubaï. Nous proposons des visites privées et partagées avec hospitalité VIP et transferts inclus. Roulez en toute confiance grâce à nos 15 ans d'expérience et notre licence officielle DTCM.",
+    explorePackages: 'Découvrir les forfaits'
+  },
+  // Hero Features Strip
+  heroFeatures: {
+    powerful: 'Buggys',
+    buggies: 'Puissants',
+    premium: 'Pistes',
+    desertTracks: 'Dans le désert',
+    safety: 'Sécurité',
+    guaranteed: 'Garantie',
+    expert: 'Guides',
+    guides: 'Experts',
+    adventure: "L'aventure",
+    awaitsYou: 'Vous attend'
+  },
+  // No Advance Payment Banner
+  paymentBanner: {
+    eyebrow: 'SANS AVANCE',
+    title: 'PAYEZ SUR',
+    titleAccent: 'PLACE !',
+    noHiddenFees: 'AUCUN FRAIS CACHÉ',
+    transparent: '100% TRANSPARENT',
+    fastBooking: 'RÉSERVATION FACILE & RAPIDE',
+    whatsappUs: 'WHATSAPP'
+  },
+  // About Preview Section
+  aboutPreview: {
+    tag: 'ÉAU / 25.2048° N',
+    eyebrow: 'Speed Desert Adventure',
+    title: 'Excursions buggy',
+    titleAccent: 'premium aux Émirats',
+    p1: 'Chez Speed Desert Adventure, nous offrons une expérience de location de buggy exceptionnelle à Dubaï. En tant qu\'opérateur local de premier plan, nous sommes spécialisés dans les safaris riches en adrénaline sur les spectaculaires Dunes Rouges d\'Al Badayer.',
+    p2: 'Ressentez le grand frisson aux commandes de nos buggys dernier cri : Can-Am Maverick et Polaris RZR équipés de moteurs 1000cc haute performance spécialement préparés pour le désert de Dubaï.',
+    p3: 'Personnalisez votre safari : excursions au lever du soleil, après-midi, coucher de soleil ou de nuit. Profitez de parcours privés ou partagés guidés par des professionnels passionnés.',
+    tag1: 'Visites guidées',
+    tag2: 'Buggys haute puissance',
+    tag3: 'Adapté aux débutants'
+  },
+  // Tour Highlights
+  highlights: {
+    eyebrow: 'CONÇUS POUR LES DUNES',
+    title: 'Speed Desert Adventure —',
+    accent: 'Nos circuits phares',
+    fullKey: 'CLÉ COMPLÈTE (MOTEUR DÉBRIDÉ, PLEINE PUISSANCE)',
+    duration: 'Durée',
+    seats: 'Places',
+    privateTransfer: 'Transfert privé',
+    bookNow: 'RÉSERVER',
+    tourDetails: 'DÉTAILS DU TOUR',
+    card1Title: 'Can-Am Maverick XR MAX (245 CH Stage 4) (jusqu\'à 4 places)',
+    card1Copy: 'Dominez les dunes rouges de Dubaï avec le Can-Am Maverick XR MAX de 245 CH. 1h : 1300 AED | 2h : 1800 AED.',
+    card2Title: 'Can-am Buggy Maverick R X rs MAX : Smart-Shox ! (jusqu\'à 4 places)',
+    card2Copy: 'Plongez dans notre aventure en buggy pour une expérience unique dans le désert. 1h : 1300 AED | 2h : 1800 AED.',
+    card3Title: 'Polaris RZR 1000 CC (145 CH) (jusqu\'à 4 places)',
+    card3Copy: 'Partez pour un voyage palpitant dans le désert avec le Polaris RZR 1000 CC de 145 CH. 1h : 400 AED | 2h : 700 AED.'
+  },
+  // Pricing Section & Tables
+  pricing: {
+    eyebrow: 'SPEED DESERT ADVENTURE',
+    title: 'Location de buggy à Dubaï',
+    accent: 'Tarifs et forfaits',
+    intro1: 'Vous recherchez les meilleurs prix de location de buggy à Dubaï ? Speed Desert Adventure propose des forfaits flexibles et avantageux de 299 AED à 1399 AED selon le véhicule et la durée.',
+    intro2: 'Parcourez le désert avec style grâce à notre flotte d\'élite 2026. Que vous choisissiez le puissant Can-Am Maverick ou le robuste Polaris RZR, nous garantissons une aventure palpitante et sécurisée.',
+    thPackages: 'Forfaits Buggy',
+    thSeater: 'Type de véhicule',
+    thPersons: 'Personnes',
+    thDuration: 'Durée',
+    thPrice: 'Prix',
+    thExperience: 'Expérience',
+    thCapacity: 'Capacité',
+    thModel: 'Modèle',
+    thEngine: 'Moteur',
+    th30Min: '30 Min',
+    th1Hour: '1 Heure',
+    th90Min: '90 Min',
+    th2Hours: '2 Heures',
+    polarisTitle: 'Tarifs des buggys Polaris RZR',
+    canamTitle: 'Tarifs des buggys Can-am Maverick',
+    rowEarlyBird: 'Tour Early Bird en Buggy (Polaris RZR 1000 CC)',
+    rowNightRiders: 'Night Riders : Aventure nocturne en buggy',
+    rowAfternoon: 'Tour d\'après-midi sur les Dunes Rouges',
+    rowSharedTransfer: 'Dunes Rouges Buggy + Transfert partagé',
+    rowCombo: 'COMBO DÉSERT : safari partagé + Can-Am X3 MAX (spectacle + dîner BBQ)'
+  },
+  // Hourly Packages
+  hourly: {
+    eyebrow: 'CHOISISSEZ VOTRE DURÉE. PILOTEZ VOTRE AVENTURE.',
+    title: 'Forfaits horaires',
+    accent: 'Sur mesure',
+    mostPopular: 'LE PLUS POPULAIRE',
+    fullKey: 'CLÉ COMPLÈTE (MOTEUR DÉBRIDÉ, PLEINE PUISSANCE)',
+    duration: 'Durée',
+    seats: 'Places',
+    privateTransfer: 'Transfert privé',
+    bookNow: 'RÉSERVER',
+    tourDetails: 'DÉTAILS DU TOUR',
+    item1Title: '30 Min Buggy Maverick X3 (jusqu\'à 4 places)',
+    item1F1: 'Balade en buggy de 30 minutes',
+    item1F2: 'Prise en charge à l\'hôtel',
+    item1F3: 'Balade à dos de chameau offerte',
+    item2Title: '1 Heure Buggy Tour Dubaï (jusqu\'à 4 places)',
+    item2F1: 'Balade en buggy d\'une heure',
+    item2F2: 'Prise en charge à l\'hôtel',
+    item2F3: 'Balade à dos de chameau offerte',
+    item3Title: '2 Heures Can-Am Maverick R MAX (245 CH) (jusqu\'à 4 places)',
+    item3F1: 'Balade en buggy de 2 heures (245 CH)',
+    item3F2: 'Prise en charge à l\'hôtel',
+    item3F3: 'Balade à dos de chameau offerte'
+  },
+  // Booking Process
+  bookingProcess: {
+    eyebrow: 'VOTRE CHEMIN VERS LES DUNES',
+    title: 'Comment réserver votre',
+    accent: 'Tour en buggy à Dubaï ?',
+    step1Title: 'Choisissez votre buggy',
+    step1Copy: 'Sélectionnez le format adapté à votre groupe.',
+    step2Title: 'Sélectionnez votre forfait',
+    step2Copy: 'Choisissez une durée et votre expérience préférée.',
+    step3Title: 'Confirmez votre créneau',
+    step3Copy: 'Partagez votre date et vos coordonnées.',
+    step4Title: 'Payez à l\'arrivée et roulez',
+    step4Copy: 'Arrivez, finalisez votre accueil et profitez !'
+  },
+  // Buggy Guide
+  buggyGuide: {
+    eyebrow: 'PRÉPAREZ-VOUS POUR LE TERRAIN',
+    title: 'Guide complet du',
+    accent: 'Buggy dans les dunes de Dubaï',
+    desc: 'Un guide pratique couvrant la préparation, la sécurité et la conduite dans le désert.',
+    q1: 'Qui peut conduire un buggy ?',
+    a1: 'Toute personne âgée de 16 ans et plus peut piloter nos buggys. Aucun permis spécifique n\'est requis car nos circuits se déroulent dans des zones désertiques privées et sécurisées.',
+    q2: 'Comment s\'habiller pour le tour ?',
+    a2: 'Nous recommandons des vêtements confortables et des chaussures fermées. Les lunettes de soleil sont indispensables. Les casques et lunettes de protection sont fournis.',
+    q3: 'Équipement de sécurité',
+    a3: 'Chaque tour comprend un équipement certifié : casques intégraux, lunettes de protection et harnais de sécurité. Les buggys sont dotés d\'une cage de retournement intégrale.',
+    q4: 'Conduire dans les dunes',
+    a4: 'Avant le départ, nos instructeurs expérimentés vous dispensent un briefing complet. Vous suivez ensuite votre guide sur un itinéraire sécurisé et palpitant.',
+    q5: 'Que faut-il apporter ?',
+    a5: 'Munissez-vous d\'une pièce d\'identité ou passeport, de crème solaire et de votre téléphone pour immortaliser vos souvenirs. Des rafraîchissements sont offerts.',
+    q6: 'Avant votre départ',
+    a6: 'Merci de vous présenter à notre camp 15 à 20 minutes avant le début de votre séance. Notre équipe vous accueillera dans notre salon climatisé.'
+  },
+  // Tour Includes
+  tourIncludes: {
+    eyebrow: 'ÉQUIPÉS ET PRÊTS',
+    title: 'Notre excursion en buggy',
+    accent: 'Comprend',
+    items: [
+      "Transfert privé et partagé",
+      "Polaris RZR 1000 cc XP SPORT",
+      "Can-Am Maverick R MAX X rs '26",
+      "Véhicule 4x4 tout-terrain",
+      "Salon VIP climatisé",
+      "Guide professionnel qualifié",
+      "Eau et boissons fraîches",
+      "Équipement de sécurité : Casque & Lunettes",
+      "Options matin, après-midi et nuit",
+      "30 minutes de franchissement des dunes rouges",
+      "Véhicule climatisé pour votre confort",
+      "Prise en charge et retour à l'hôtel",
+      "Chicha (dans l'espace lounge)",
+      "Dîner buffet barbecue",
+      "Tatouage au henné (pour les dames)",
+      "Véhicule d'assistance technique",
+      "Arceau complet et sièges baquets sécurisés",
+      "Buggys de 70cc à 1000cc",
+      "Zone d'initiation au pilotage",
+      "Eau et boissons gratuites",
+      "Spectacles : Cracheur de feu, Tanoura, Danse orientale",
+      "Système audio Bluetooth",
+      "Sandboarding gratuit",
+      "Balade à dos de chameau (5-10 min)",
+      "Arrêt photo inoubliable",
+      "Trousse de premiers secours",
+      "Parking gratuit",
+      "Sanitaires"
+    ]
+  },
+  // FAQ
+  faq: {
+    eyebrow: 'À SAVOIR AVANT DE PARTIR',
+    title: 'Foire aux',
+    accent: 'Questions',
+    q1: 'Ai-je besoin d\'un permis de conduire ?',
+    a1: 'Aucun permis de conduire n\'est nécessaire pour piloter nos buggys dans le désert. Les conducteurs doivent avoir 16 ans révolus. Les passagers de tout âge sont les bienvenus.',
+    q2: 'Faut-il payer à l\'avance ?',
+    a2: 'Non ! Speed Desert Adventure applique une politique de zéro avance. Vous réglez directement sur place à votre arrivée au camp.',
+    q3: 'Les débutants peuvent-ils conduire ?',
+    a3: 'Absolument ! Nos buggys automatiques sont très faciles à prendre en main. Une initiation complète vous est donnée avant de vous lancer.',
+    q4: 'Que dois-je porter ?',
+    a4: 'Portez des vêtements décontractés et des chaussures fermées (baskets). Évitez les écharpes flottantes pendant la conduite pour votre sécurité.',
+    q5: 'Les casques sont-ils fournis ?',
+    a5: 'Oui, des casques désinfectés, des masques anti-poussière et des lunettes de protection sont fournis gratuitement.',
+    q6: 'Les enfants peuvent-ils participer ?',
+    a6: 'Oui, les enfants peuvent participer en tant que passagers dans nos buggys 2 et 4 places avec un adulte conducteur.',
+    q7: 'Proposez-vous les transferts hôtel ?',
+    a7: 'Oui, nous proposons des transferts partagés et des transferts privés VIP porte-à-porte dans tout Dubaï et Sharjah.'
+  },
+  // Final CTA
+  finalCta: {
+    eyebrow: 'PRÊT À ROULER ?',
+    title: 'Le désert',
+    titleAccent: 'vous attend.',
+    desc: 'Choisissez votre buggy, réservez votre aventure et domptez les dunes de Dubaï avec Speed Desert Adventure.',
+    bookRide: 'Réserver votre tour',
+    viewPackages: 'Voir les forfaits'
+  },
+  // Footer
+  footer: {
+    tagline: 'Expériences tout-terrain haut de gamme à Dubaï et aux Émirats.',
+    whatsappUs: 'Contactez-nous sur WhatsApp ↗',
+    quickLinks: 'Liens rapides',
+    experiences: 'Expériences',
+    contact: 'Contact',
+    follow: 'Suivez l\'aventure',
+    coordinates: '25.2048° N / 55.2708° E — DUBAÏ, ÉAU',
+    copyright: 'Speed Desert Adventure',
+    terms: 'Conditions Générales',
+    privacy: 'Politique de Confidentialité',
+    exp1: 'Tours en Buggy',
+    exp2: 'Forfaits Horaires',
+    exp3: 'Expériences Privées',
+    exp4: 'Combos Safari Désert'
+  },
+  // Common Labels
+  common: {
+    hours: 'Heures',
+    hour: 'Heure',
+    mins: 'Mins',
+    person: 'Personne',
+    persons: 'Personnes',
+    seater: 'place',
+    seaters: 'places',
+    backToPackages: 'Retour aux forfaits',
+    backToTours: 'Retour aux circuits',
+    tourInfo: 'Informations sur le tour',
+    tripInclusions: 'Inclusions du voyage',
+    ticketPriceTiming: 'Tarifs et horaires',
+    recommendedTours: 'Circuits recommandés'
+  }
+}

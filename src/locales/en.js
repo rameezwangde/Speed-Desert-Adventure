@@ -1,0 +1,270 @@
+export const en = {
+  // Navigation & General
+  nav: {
+    home: 'Home',
+    aboutUs: 'About Us',
+    packages: 'Packages',
+    gallery: 'Gallery',
+    testimonials: 'Testimonials',
+    contact: 'Contact',
+    bookYourRide: 'Book your ride',
+    menu: 'SDA / MENU',
+    openMenu: 'Open menu',
+    closeMenu: 'Close menu'
+  },
+  // Intro Modal
+  intro: {
+    eyebrow: 'WELCOME TO THE EXTREME',
+    title: 'Your desert story',
+    titleAccent: 'starts here.',
+    subtitle: 'Power. Sand. Speed. One unforgettable ride.',
+    cta: 'Enter the adventure',
+    skip: 'PRESS × TO SKIP'
+  },
+  // Hero
+  hero: {
+    kicker: "CONQUER DUBAI'S DUNES",
+    title1: 'ULTIMATE',
+    title2: 'ADVENTURES.',
+    desc: "Unleash your adventurous side with Dubai's top-rated dune buggy rentals. We offer both private and shared tours complete with VIP hospitality and hassle-free transport. Ride with confidence knowing we bring over 15 years of trusted experience and official DTCM licensing.",
+    explorePackages: 'Explore packages'
+  },
+  // Hero Features Strip
+  heroFeatures: {
+    powerful: 'Powerful',
+    buggies: 'Buggies',
+    premium: 'Premium',
+    desertTracks: 'Desert tracks',
+    safety: 'Safety',
+    guaranteed: 'Guaranteed',
+    expert: 'Expert',
+    guides: 'Guides',
+    adventure: 'Adventure',
+    awaitsYou: 'Awaits you'
+  },
+  // No Advance Payment Banner
+  paymentBanner: {
+    eyebrow: 'NO ADVANCE PAYMENT',
+    title: 'PAY ON',
+    titleAccent: 'SPOT!',
+    noHiddenFees: 'NO HIDDEN FEES',
+    transparent: '100% TRANSPARENT',
+    fastBooking: 'FAST & EASY BOOKING',
+    whatsappUs: 'WHATSAPP US'
+  },
+  // About Preview Section
+  aboutPreview: {
+    tag: 'UAE / 25.2048° N',
+    eyebrow: 'Speed Desert Adventure',
+    title: 'Premium desert',
+    titleAccent: 'adventure tours UAE',
+    p1: 'At Speed Desert Adventure, we deliver the ultimate dune buggy rental experience in Dubai, UAE. As a premier local tour operator, we specialize in high-adrenaline desert safari buggy tours across the iconic Al Badayer Red Dunes. Whether you\'re seeking a thrilling off-road adventure or a scenic desert escape, our expertly guided tours offer the perfect blend of speed, safety, and unforgettable memories.',
+    p2: 'Experience the thrill of the desert in our premium fleet of late-model dune buggies. We feature the powerful Can-Am Maverick and the rugged Polaris RZR, equipped with high-performance 1000cc engines specifically tuned for Dubai\'s challenging terrain. From solo riders to families and large groups, Speed Desert Adventure has the perfect off-road vehicle to match your group size and comfort preferences.',
+    p3: 'Customize your Dubai desert safari with our flexible options, including morning, afternoon, sunset, and night dune buggy tours. Enjoy private or shared rides led by professional guides who tailor the pace to your experience level. We complete your journey with top-tier hospitality, providing sanitized safety gear, complimentary refreshments, and optional add-ons like sandboarding and camel rides. Choose Speed Desert Adventure for the most trusted, action-packed, and best-priced dune buggy tours in Dubai.',
+    tag1: 'Guided tours',
+    tag2: 'High-performance buggies',
+    tag3: 'Beginner friendly'
+  },
+  // Tour Highlights (3 featured cards)
+  highlights: {
+    eyebrow: 'BUILT FOR THE DUNES',
+    title: 'Speed Desert Adventure —',
+    accent: 'Tour Highlights',
+    fullKey: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
+    duration: 'Duration',
+    seats: 'Seats',
+    privateTransfer: 'Private Transfer',
+    bookNow: 'BOOK NOW',
+    tourDetails: 'TOUR DETAILS',
+    card1Title: 'Can-Am Maverick XR MAX (245 HP Stage 4) (MAX for 4 Seater)',
+    card1Copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR MAX. 1 hr: 1300 AED | 2 hrs: 1800 AED.",
+    card2Title: 'Can-am Buggy Maverick R X rs MAX: Smart-Shox! (MAX for 4 Seater)',
+    card2Copy: 'Immerse yourself in our buggy adventure for a unique desert experience. 1 hr: 1300 AED | 2 hrs: 1800 AED.',
+    card3Title: 'Polaris RZR 1000 CC (145 HP) (MAX for 4 Seater)',
+    card3Copy: 'Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.'
+  },
+  // Pricing Section & Tables
+  pricing: {
+    eyebrow: 'SPEED DESERT ADVENTURE',
+    title: 'Dune Buggy Rental Dubai',
+    accent: 'Prices & Packages',
+    intro1: 'Looking for the best dune buggy rental prices in Dubai? Speed Desert Adventure offers flexible, budget-friendly packages tailored to your off-road needs. With starting rates from just AED 299 to premium experiences up to AED 1399, our pricing depends on your choice of vehicle, seating capacity, and ride duration.',
+    intro2: 'Drive the desert in style with our elite fleet of 2026-model off-road buggies. Whether you choose the high-adrenaline Can-Am Maverick or the rugged Polaris RZR, we guarantee a safe, exhilarating, and premium desert safari experience for all our guests.',
+    thPackages: 'Dune Buggy Packages',
+    thSeater: 'Seater Type',
+    thPersons: 'Persons',
+    thDuration: 'Duration',
+    thPrice: 'Price',
+    thExperience: 'Experience',
+    thCapacity: 'Seating Capacity',
+    thModel: 'Model',
+    thEngine: 'Engine',
+    th30Min: '30 Min',
+    th1Hour: '1 Hour',
+    th90Min: '90 Min',
+    th2Hours: '2 Hours',
+    polarisTitle: 'Polaris RZR Dune Buggy Prices',
+    canamTitle: 'Can-am Maverick Dune Buggy Prices',
+    rowEarlyBird: 'Early Bird Buggy Tour (Polaris RZR 1000 CC)',
+    rowNightRiders: 'Night Riders: Dune Buggy Dubai Adventure',
+    rowAfternoon: 'Red Dunes Afternoon Buggy',
+    rowSharedTransfer: 'Red Dunes Buggy Ride + Shared Transfer',
+    rowCombo: 'DESERT COMBO: sharing safari + can-am X3 MAX (dinner show + bbq dinner)'
+  },
+  // Hourly Packages
+  hourly: {
+    eyebrow: 'CHOOSE YOUR TIME. CONTROL YOUR ADVENTURE.',
+    title: 'Custom Hourly',
+    accent: 'Dune Buggy Packages',
+    mostPopular: 'MOST POPULAR',
+    fullKey: 'FULL KEY (NO LOCKED ENGINE, ONLY OPEN KEYS)',
+    duration: 'Duration',
+    seats: 'Seats',
+    privateTransfer: 'Private Transfer',
+    bookNow: 'BOOK NOW',
+    tourDetails: 'TOUR DETAILS',
+    item1Title: '30 Min Dune Buggy Maverick X3 (MAX for 4 Seater)',
+    item1F1: '30-Minute Buggy Ride',
+    item1F2: 'Hotel Pick-Up',
+    item1F3: 'Free Camel Ride',
+    item2Title: '1-Hour Dune Buggy Tour Dubai (MAX for 4 Seater)',
+    item2F1: '1-Hour Buggy Ride',
+    item2F2: 'Hotel Pick-Up',
+    item2F3: 'Free Camel Ride',
+    item3Title: '2-Hour Can-Am Maverick R MAX (245 HP) Tour (MAX for 4 Seater)',
+    item3F1: '2-Hour Buggy Ride (245 HP)',
+    item3F2: 'Hotel Pick-Up',
+    item3F3: 'Free Camel Ride'
+  },
+  // Booking Process
+  bookingProcess: {
+    eyebrow: 'YOUR ROUTE TO THE DUNES',
+    title: 'How to Book Your',
+    accent: 'Desert Buggy Tour in Dubai?',
+    step1Title: 'Choose your buggy',
+    step1Copy: 'Pick the ride format that suits your group.',
+    step2Title: 'Select your package',
+    step2Copy: 'Choose a duration and preferred experience.',
+    step3Title: 'Confirm your slot',
+    step3Copy: 'Share your preferred date and details.',
+    step4Title: 'Pay on arrival & ride',
+    step4Copy: 'Arrive, complete confirmation and get ready.'
+  },
+  // Buggy Guide
+  buggyGuide: {
+    eyebrow: 'PREPARE FOR THE TERRAIN',
+    title: 'Inclusive Guide For',
+    accent: 'Sand Dune Buggy Dubai',
+    desc: 'A practical tour guide structure covering preparation, safety and the desert driving experience.',
+    q1: 'Who Can Drive a Dune Buggy?',
+    a1: 'Anyone aged 16 and above with an adventurous spirit can drive our buggies. No special driving license is required as our tours are conducted in safe, designated off-road desert zones under expert guidance.',
+    q2: 'What Should You Wear?',
+    a2: 'We recommend comfortable, casual outdoor clothing and closed-toe shoes. Sunglasses are essential, and we provide sanitized helmets and protective goggles for your safety.',
+    q3: 'Safety Equipment',
+    a3: 'Every tour includes high-standard safety gear: full-face helmets, goggles, and multi-point seat harnesses. Our buggies are equipped with full roll-cage protection.',
+    q4: 'Driving in the Dunes',
+    a4: 'Before starting, our experienced instructors provide a full safety briefing and controls demonstration. You will follow a lead guide who knows the dunes and ensures a smooth, thrilling route.',
+    q5: 'What to Bring',
+    a5: 'Bring a valid ID or passport, sunscreen, and a camera or smartphone to capture incredible photos and memories. We provide complimentary refreshments and water.',
+    q6: 'Before Your Tour',
+    a6: 'Please arrive at our desert camp 15-20 minutes prior to your booking slot. Our team will welcome you in our climate-controlled lounge before gearing up.'
+  },
+  // Tour Includes
+  tourIncludes: {
+    eyebrow: 'GEAR UP / RIDE READY',
+    title: 'Our Desert Dune Buggy',
+    accent: 'Tour Includes',
+    items: [
+      "Private & Shared Transfer",
+      "Polaris RZR 1000 cc XP SPORT",
+      "Can-Am Maverick R MAX X rs Dune Adventure '26",
+      "Sharing Car 4WD",
+      "Climate-Controlled Comfort Lounge",
+      "Experienced Tour Guide",
+      "Water & Soft Drinks",
+      "Safety Gear: Helmet & Goggles",
+      "Morning, evening & overnight options",
+      "Red Dune Bashing 30 minutes",
+      "Air-conditioned vehicle for comfort",
+      "Hotel Pickup and Drop-Off",
+      "Shisha (In the corner)",
+      "BBQ With Buffet Dinner",
+      "Henna Tattoo (For Ladies Only)",
+      "Backup vehicle support",
+      "Full roll cage bucket seat protection",
+      "70cc to 1000cc Buggies",
+      "Self-Drive training areas",
+      "Complimentary Water & Soft Drinks",
+      "Fireshow-Tanoura-Belly Dancing-Yowla Desert Shows",
+      "Bluetooth sound system",
+      "Free sandboarding",
+      "Free camel ride (5-10 mins)",
+      "Memorable Stop For Photos",
+      "Medication (if needed)",
+      "Car parking",
+      "Washroom"
+    ]
+  },
+  // FAQ
+  faq: {
+    eyebrow: 'KNOW BEFORE YOU RIDE',
+    title: 'Frequently Asked',
+    accent: 'Questions',
+    q1: 'Do I need a driving licence?',
+    a1: 'No driving licence is needed to drive our buggies in designated desert areas. Drivers must be 16+ years old, and passengers of all ages are welcome.',
+    q2: 'Is advance payment required?',
+    a2: 'No! Speed Desert Adventure features a 100% transparent zero advance payment policy. You pay on the spot when you arrive at our camp.',
+    q3: 'Can beginners drive a dune buggy?',
+    a3: 'Absolutely! Our modern automatic buggies are intuitive and easy to handle. Our expert instructors provide complete training before you hit the sand.',
+    q4: 'What should I wear?',
+    a4: 'Wear comfortable clothing and closed footwear (sneakers or boots). Avoid loose scarves or long flowing dresses while driving for optimal safety.',
+    q5: 'Are helmets provided?',
+    a5: 'Yes, certified sanitized helmets, dust masks, and safety goggles are provided free of charge for all drivers and passengers.',
+    q6: 'Can children join the tour?',
+    a6: 'Yes, children are welcome as passengers in our 2-seater and 4-seater buggies alongside an adult driver.',
+    q7: 'Do you provide hotel transfers?',
+    a7: 'Yes, we offer both shared and VIP private door-to-door hotel pick-up and drop-off anywhere across Dubai and Sharjah.'
+  },
+  // Final CTA
+  finalCta: {
+    eyebrow: 'READY TO RIDE?',
+    title: 'The desert',
+    titleAccent: 'is waiting.',
+    desc: "Choose your buggy, book your adventure and experience Dubai's dunes the Speed Desert way.",
+    bookRide: 'Book your ride',
+    viewPackages: 'View packages'
+  },
+  // Footer
+  footer: {
+    tagline: 'Premium off-road desert experiences across Dubai and the UAE.',
+    whatsappUs: 'WhatsApp us ↗',
+    quickLinks: 'Quick links',
+    experiences: 'Experiences',
+    contact: 'Contact',
+    follow: 'Follow the adventure',
+    coordinates: '25.2048° N / 55.2708° E — DUBAI, UAE',
+    copyright: 'Speed Desert Adventure',
+    terms: 'Terms & Conditions',
+    privacy: 'Privacy Policy',
+    exp1: 'Dune Buggy Tours',
+    exp2: 'Hourly Packages',
+    exp3: 'Private Experiences',
+    exp4: 'Desert Combo Tours'
+  },
+  // Common Labels
+  common: {
+    hours: 'Hours',
+    hour: 'Hour',
+    mins: 'Mins',
+    person: 'Person',
+    persons: 'Persons',
+    seater: 'Seater',
+    seaters: 'Seaters',
+    backToPackages: 'Back to Packages',
+    backToTours: 'Back to Tours',
+    tourInfo: 'Tour Information',
+    tripInclusions: 'Trip Inclusions',
+    ticketPriceTiming: 'Ticket Price & Timing',
+    recommendedTours: 'Recommended Tours'
+  }
+}

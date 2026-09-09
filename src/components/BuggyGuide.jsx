@@ -1,24 +1,27 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import SectionHeading from './SectionHeading'
-
-const guide = [
-  ['Who Can Drive a Dune Buggy?', 'Eligibility and driver requirements will be added here.'],
-  ['What Should You Wear?', 'Recommended clothing information will be added here.'],
-  ['Safety Equipment', 'Safety equipment details will be confirmed here.'],
-  ['Driving in the Dunes', 'A short preparation note will be added here.'],
-  ['What to Bring', 'The final guest checklist will be added here.'],
-  ['Before Your Tour', 'Arrival and preparation details will be added here.'],
-]
+import { useLanguage } from '../context/LanguageContext'
 
 export default function BuggyGuide() {
+  const { t } = useLanguage()
   const [open, setOpen] = useState(0)
+
+  const guide = [
+    [t('buggyGuide.q1'), t('buggyGuide.a1')],
+    [t('buggyGuide.q2'), t('buggyGuide.a2')],
+    [t('buggyGuide.q3'), t('buggyGuide.a3')],
+    [t('buggyGuide.q4'), t('buggyGuide.a4')],
+    [t('buggyGuide.q5'), t('buggyGuide.a5')],
+    [t('buggyGuide.q6'), t('buggyGuide.a6')],
+  ]
+
   return (
     <section className="guide-section">
       <div className="guide-top">
         <div className="guide-intro">
-          <SectionHeading eyebrow="PREPARE FOR THE TERRAIN" title="Inclusive Guide For" accent="Sand Dune Buggy Dubai" />
-          <p>A practical tour guide structure covering preparation, safety and the desert driving experience.</p>
+          <SectionHeading eyebrow={t('buggyGuide.eyebrow')} title={t('buggyGuide.title')} accent={t('buggyGuide.accent')} />
+          <p>{t('buggyGuide.desc')}</p>
         </div>
         
         <div className="guide-visual">
@@ -45,3 +48,4 @@ export default function BuggyGuide() {
     </section>
   )
 }
+

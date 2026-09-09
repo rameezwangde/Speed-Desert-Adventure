@@ -1,6 +1,4 @@
-const items = [
-  ['goggle', 'Powerful', 'Buggies'], ['pin', 'Premium', 'Desert tracks'], ['shield', 'Safety', 'Guaranteed'], ['team', 'Expert', 'Guides']
-]
+import { useLanguage } from '../context/LanguageContext'
 
 function Icon({ type }) {
   const paths = {
@@ -13,8 +11,18 @@ function Icon({ type }) {
 }
 
 export default function HeroFeatures({ ready }) {
+  const { t } = useLanguage()
+
+  const items = [
+    ['goggle', t('heroFeatures.powerful'), t('heroFeatures.buggies')], 
+    ['pin', t('heroFeatures.premium'), t('heroFeatures.desertTracks')], 
+    ['shield', t('heroFeatures.safety'), t('heroFeatures.guaranteed')], 
+    ['team', t('heroFeatures.expert'), t('heroFeatures.guides')]
+  ]
+
   return <div className={`feature-strip ${ready ? 'ready' : ''}`}>
     <div className="features">{items.map(([icon, top, bottom]) => <div className="feature" key={top}><Icon type={icon}/><p><strong>{top}</strong><span>{bottom}</span></p></div>)}</div>
-    <div className="awaits"><strong>Adventure</strong><span>Awaits you</span></div>
+    <div className="awaits"><strong>{t('heroFeatures.adventure')}</strong><span>{t('heroFeatures.awaitsYou')}</span></div>
   </div>
 }
+

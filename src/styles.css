@@ -5390,3 +5390,287 @@ a {
     height: 200px;
   }
 }
+
+/* ===================================================
+   LANGUAGE SELECTOR & RTL STYLES
+   =================================================== */
+
+.nav-right-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.lang-selector-container {
+  position: relative;
+  z-index: 60;
+}
+
+.lang-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
+}
+
+.lang-toggle-btn:hover,
+.lang-toggle-btn.open {
+  background: rgba(225, 25, 36, 0.18);
+  border-color: rgba(225, 25, 36, 0.6);
+  color: #fff;
+}
+
+.lang-flag {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.lang-code {
+  font-weight: 700;
+  color: #fff;
+}
+
+.lang-chevron {
+  width: 14px;
+  height: 14px;
+  stroke: #aaa;
+  transition: transform 0.25s ease;
+}
+
+.lang-toggle-btn.open .lang-chevron {
+  transform: rotate(180deg);
+  stroke: #e11924;
+}
+
+.lang-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 170px;
+  background: #0d0d0d;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(225, 25, 36, 0.15);
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  backdrop-filter: blur(20px);
+}
+
+[dir="rtl"] .lang-dropdown-menu {
+  right: auto;
+  left: 0;
+}
+
+.lang-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  color: #ccc;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+[dir="rtl"] .lang-option-btn {
+  text-align: right;
+}
+
+.lang-option-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  transform: translateX(3px);
+}
+
+[dir="rtl"] .lang-option-btn:hover {
+  transform: translateX(-3px);
+}
+
+.lang-option-btn.selected {
+  background: rgba(225, 25, 36, 0.2);
+  color: #ff3344;
+}
+
+.lang-native {
+  flex: 1;
+}
+
+.lang-code-tag {
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #888;
+  font-family: Oswald, sans-serif;
+}
+
+.lang-active-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e11924;
+  box-shadow: 0 0 8px #e11924;
+}
+
+/* Mobile Language Selector inside Drawer */
+.mobile-lang-selector {
+  margin: 15px 0 20px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.mobile-lang-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.mobile-lang-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.mobile-lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mobile-lang-btn.active {
+  background: #e11924;
+  border-color: #e11924;
+  font-weight: 700;
+}
+
+/* ===================================================
+   RTL (ARABIC) SPECIAL ADAPTATIONS
+   =================================================== */
+
+[dir="rtl"] {
+  font-family: 'Cairo', 'Barlow Condensed', sans-serif;
+  text-align: right;
+}
+
+[dir="rtl"] .logo {
+  transform: skew(7deg) rotate(2deg);
+}
+
+[dir="rtl"] .desktop-nav {
+  margin-left: 0;
+  margin-right: 8vw;
+}
+
+[dir="rtl"] .hero-copy {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-copy h1,
+[dir="rtl"] .csh-title,
+[dir="rtl"] .section-heading h2 {
+  font-family: 'Cairo', 'Barlow Condensed', sans-serif;
+}
+
+[dir="rtl"] .features {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .feature p {
+  text-align: right;
+}
+
+[dir="rtl"] .feature svg {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+[dir="rtl"] .custom-table th,
+[dir="rtl"] .custom-table td {
+  text-align: right;
+}
+
+[dir="rtl"] .nhc-specs,
+[dir="rtl"] .td-quick-stats {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .faq-row button {
+  text-align: right;
+}
+
+[dir="rtl"] .faq-row button b {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+[dir="rtl"] .faq-row button i {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .guide-item button {
+  text-align: right;
+}
+
+[dir="rtl"] .guide-item button b {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+[dir="rtl"] .guide-item button i {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .includes-item {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+[dir="rtl"] .includes-item svg {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+[dir="rtl"] .footer-main {
+  direction: rtl;
+}
+
+[dir="rtl"] .footer-col {
+  text-align: right;
+}
+
