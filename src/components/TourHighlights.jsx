@@ -1,44 +1,46 @@
 import { motion } from 'framer-motion'
 import { useLanguage } from '../context/LanguageContext'
+import { formatMultiPrice } from '../utils/currency'
 
 export default function TourHighlights() {
   const { t } = useLanguage()
 
   const tours = [
     { 
-      price: '1300 AED', 
+      price: formatMultiPrice(1300), 
       title: t('highlights.card1Title'), 
-      copy: t('highlights.card1Copy'),
+      copy: `Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR MAX. 1 hr: ${formatMultiPrice(1300)} | 2 hrs: ${formatMultiPrice(1800)}.`,
       duration: '1 - 2 Hours', 
       seats: '2 & 4 Seaters', 
       transferType: t('highlights.privateTransfer'),
-      transfer: '300 AED', 
+      transfer: formatMultiPrice(300), 
       image: '/image.png',
       link: '/tour/can-am-maverick-xrs-26'
     },
     { 
-      price: '1300 AED', 
+      price: formatMultiPrice(1300), 
       title: t('highlights.card2Title'), 
-      copy: t('highlights.card2Copy'),
+      copy: `Immerse yourself in our buggy adventure for a unique desert experience. 1 hr: ${formatMultiPrice(1300)} | 2 hrs: ${formatMultiPrice(1800)}.`,
       duration: '1 - 2 Hours', 
       seats: '2 & 4 Seaters', 
       transferType: t('highlights.privateTransfer'),
-      transfer: '300 AED', 
+      transfer: formatMultiPrice(300), 
       image: '/red-buggy.jpeg',
       link: '/tour/can-am-maverick-r-x-rs'
     },
     { 
-      price: '400 AED', 
+      price: formatMultiPrice(400), 
       title: t('highlights.card3Title'), 
-      copy: t('highlights.card3Copy'),
+      copy: `Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: ${formatMultiPrice(400)} | 2 hrs: ${formatMultiPrice(700)}.`,
       duration: '1 - 2 Hours', 
       seats: '1, 2 & 4 Seaters', 
       transferType: t('highlights.privateTransfer'),
-      transfer: '300 AED', 
+      transfer: formatMultiPrice(300), 
       image: '/polaris-rzr-custom.png',
       link: '/tour/polaris-rzr-custom'
     }
   ]
+
 
   return (
     <section className="tour-highlights" id="tour-highlights">
