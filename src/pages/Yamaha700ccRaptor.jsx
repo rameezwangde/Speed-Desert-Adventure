@@ -42,7 +42,7 @@ export default function Yamaha700ccRaptor() {
   const { formatPrice, formatPriceString } = useCurrency()
 
   useEffect(() => {
-    document.title = 'Yamaha 700cc Raptor | Speed Desert Adventure'
+    document.title = '250cc Quad Bike | Speed Desert Adventure'
     window.scrollTo(0, 0)
   }, [])
 
@@ -54,12 +54,12 @@ export default function Yamaha700ccRaptor() {
           Back to Packages
         </a>
         <div className="td-hero-header">
-          <SectionHeading eyebrow="YAMAHA 700CC RAPTOR" title="QUAD BIKE TOURS" accent="IN DUBAI" align="center" />
+          <SectionHeading eyebrow="250CC QUAD BIKE" title="QUAD BIKE TOURS" accent="IN DUBAI" align="center" />
           <p style={{ textAlign: 'center', color: '#fff', fontSize: '18px', maxWidth: '800px', margin: '0 auto 30px' }}>
-            Embark on the ultimate quad biking adventure in Dubai's red dunes. Our Yamaha 700cc Raptor offers unmatched power and thrill for those seeking an adrenaline-pumping experience.
+            Embark on an exhilarating quad biking adventure in Dubai's red dunes. Our 250cc Quad Bike offers agile handling, speed, and thrill for everyone.
           </p>
           <div className="td-hero-price">
-            <span className="price-label">{formatPrice(400)}</span>
+            <span className="price-label">{formatPrice(250)}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -160,17 +160,17 @@ export default function Yamaha700ccRaptor() {
       </section>
 
       <section className="td-ticket-prices" style={{ padding: '0 5%', maxWidth: '1200px', margin: '40px auto 0' }}>
-        <SectionHeading title="Yamaha 700cc Raptor" accent="Ticket Price & Timing" align="center" />
+        <SectionHeading title="250cc Quad Bike" accent="Ticket Price & Timing" align="center" />
         <div className="table-wrapper td-table" style={{ maxWidth: '800px', margin: '40px auto 0' }}>
           <table className="custom-table" style={{ width: '100%', minWidth: '100%', borderCollapse: 'collapse', border: '1px solid rgba(255,255,255,0.1)' }}>
             <tbody>
               <tr>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Yamaha 700cc Raptor Quad Bike Ride</strong></td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>250cc Quad Bike Ride</strong></td>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Information</strong></td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Ticket Price</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(400)}</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(250)}</td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Total Duration</td>

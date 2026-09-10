@@ -55,15 +55,15 @@ const packagesData = [
     category: 'Quad Bike',
     options: [
       { 
-        rawAed: 100,
-        title: '620cc Quad Bike', link: '/tour/620cc-quad-bike', image: '/620cc.jpeg',
-        copy: 'Feel the adrenaline with our powerful 620cc Quad Bike.',
+        rawAed: 400,
+        title: 'Raptor 700 cc', link: '/tour/620cc-quad-bike', image: '/620cc.jpeg',
+        copy: 'Feel the adrenaline with our powerful Raptor 700 cc.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transferAed: 300
       },
       { 
-        rawAed: 400,
-        title: 'Yamaha 700cc Raptor', link: '/tour/yamaha-700cc-raptor', image: '/gallery/img-7.jpeg',
-        copy: 'Conquer the dunes with the ultimate Yamaha 700cc Raptor.',
+        rawAed: 250,
+        title: '250cc Quad Bike', link: '/tour/yamaha-700cc-raptor', image: '/WhatsApp Image 2026-09-10 at 11.40.30 AM.jpeg',
+        copy: 'Conquer the dunes with our agile and powerful 250cc Quad Bike.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transferAed: 300
       },
     ]
@@ -73,8 +73,8 @@ const packagesData = [
     options: [
       { 
         rawAed: 250,
-        title: 'Desert Combo: Sharing Safari + Quad', link: '/tour/safari-quad', image: '/quad-girls.png',
-        copy: 'Double the thrill with our combo desert safari and quad bike ride.',
+        title: 'Desert Combo: Sharing Safari + 570cc Quad', link: '/tour/safari-quad', image: '/quad-girls.png',
+        copy: 'Double the thrill with our combo desert safari and 570cc quad bike ride.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transferAed: 300
       },
     ]

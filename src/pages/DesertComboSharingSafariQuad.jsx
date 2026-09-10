@@ -44,7 +44,7 @@ export default function DesertComboSharingSafariQuad() {
   const { formatPrice } = useCurrency()
 
   useEffect(() => {
-    document.title = 'Desert Combo: Safari + Quad | Speed Desert Adventure'
+    document.title = 'Desert Combo: Safari + 570cc Quad | Speed Desert Adventure'
     window.scrollTo(0, 0)
   }, [])
 
@@ -56,12 +56,12 @@ export default function DesertComboSharingSafariQuad() {
           Back to Packages
         </a>
         <div className="td-hero-header">
-          <SectionHeading eyebrow="DESERT COMBO:" title="SHARING SAFARI +" accent="QUAD BIKING TOUR" align="center" />
+          <SectionHeading eyebrow="DESERT COMBO:" title="SHARING SAFARI +" accent="570CC QUAD BIKING TOUR" align="center" />
           <p style={{ textAlign: 'center', color: '#fff', fontSize: '18px', maxWidth: '800px', margin: '0 auto 30px' }}>
             Embark on an unforgettable adventure where exhilarating excitement meets rich cultural immersion in the heart of Dubai's iconic desert.
           </p>
           <div className="td-hero-price">
-            <span className="price-label">{formatPrice(99)}</span>
+            <span className="price-label">{formatPrice(250)}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -168,12 +168,12 @@ export default function DesertComboSharingSafariQuad() {
           <table className="custom-table" style={{ width: '100%', minWidth: '100%', borderCollapse: 'collapse', border: '1px solid rgba(255,255,255,0.1)' }}>
             <tbody>
               <tr>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Desert Combo: Sharing Safari + Quad 1-seater</strong></td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Desert Combo: Sharing Safari + 570cc Quad 1-seater</strong></td>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Information</strong></td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Ticket Price</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(99)}</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(250)}</td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Package</td>

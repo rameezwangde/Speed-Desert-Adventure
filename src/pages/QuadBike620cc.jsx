@@ -6,7 +6,7 @@ import { useCurrency } from '../context/CurrencyContext'
 
 const tourInfo = [
   'Private Transfer (Optional)',
-  '620cc Quad Bike Adventure',
+  'Raptor 700 cc Quad Bike Adventure',
   '1-Hour Drive',
   'Self Drive Quad Bike',
   'Private Tour',
@@ -36,6 +36,7 @@ const tripInclusions = [
 ]
 
 const packages = [
+  { name: 'Raptor 700 cc Quad Bike', seats: '1-seater', time: '60 min', price: 'AED 400.00' },
   { name: 'Yamaha 700cc Raptor', seats: '1-seater', time: '60 min', price: 'AED 400.00' },
   { name: 'Desert Combo: Sharing Safari + Quad', seats: '1-seater', time: '60 min', price: 'AED 99.00' },
   { name: 'Early Bird Quad Bike Tour', seats: '1-seater', time: '60 min', price: 'AED 50.00' },
@@ -51,7 +52,7 @@ export default function QuadBike620cc() {
   const { formatPrice, formatPriceString } = useCurrency()
 
   useEffect(() => {
-    document.title = '620cc Quad Bike Tour | Speed Desert Adventure'
+    document.title = 'Raptor 700 cc Quad Bike Tour | Speed Desert Adventure'
     window.scrollTo(0, 0)
   }, [])
 
@@ -63,12 +64,12 @@ export default function QuadBike620cc() {
           Back to Packages
         </a>
         <div className="td-hero-header">
-          <SectionHeading eyebrow="620CC QUAD BIKE" title="QUAD BIKE TOURS" accent="IN DUBAI" align="center" />
+          <SectionHeading eyebrow="RAPTOR 700 CC" title="QUAD BIKE TOURS" accent="IN DUBAI" align="center" />
           <p style={{ textAlign: 'center', color: '#fff', fontSize: '18px', maxWidth: '800px', margin: '0 auto 30px' }}>
             Are you prepared to embark on an unmatched desert expedition? At Speed Desert Adventure, we provide the premier quad biking tour packages in Dubai, immersing you in the stunning scenery and exhilarating adventures of the Arabian Desert.
           </p>
           <div className="td-hero-price">
-            <span className="price-label">{formatPriceString('From AED 50')}</span>
+            <span className="price-label">{formatPriceString('From AED 400')}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
