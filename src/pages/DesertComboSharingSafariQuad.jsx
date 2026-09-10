@@ -4,6 +4,7 @@ import SectionHeading from '../components/SectionHeading'
 import BrushButton from '../components/BrushButton'
 import FAQ from '../components/FAQ'
 import TourIncludes from '../components/TourIncludes'
+import { useCurrency } from '../context/CurrencyContext'
 
 const tourInfo = [
   '14:30 to 15:00 Pick up',
@@ -40,6 +41,8 @@ const tripInclusions = [
 ]
 
 export default function DesertComboSharingSafariQuad() {
+  const { formatPrice } = useCurrency()
+
   useEffect(() => {
     document.title = 'Desert Combo: Safari + Quad | Speed Desert Adventure'
     window.scrollTo(0, 0)
@@ -58,7 +61,7 @@ export default function DesertComboSharingSafariQuad() {
             Embark on an unforgettable adventure where exhilarating excitement meets rich cultural immersion in the heart of Dubai's iconic desert.
           </p>
           <div className="td-hero-price">
-            <span className="price-label">AED 99</span>
+            <span className="price-label">{formatPrice(99)}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -170,7 +173,7 @@ export default function DesertComboSharingSafariQuad() {
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Ticket Price</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>AED 99.00</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(99)}</td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Package</td>

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import BrushButton from './BrushButton'
 import LanguageSelector from './LanguageSelector'
+import CurrencySelector from './CurrencySelector'
 import { useLanguage } from '../context/LanguageContext'
 
 export default function Navbar({ ready }) {
@@ -33,6 +34,7 @@ export default function Navbar({ ready }) {
         {links.map(link => <a className={(link.href === '/' && location.pathname === '/') || link.href === location.pathname ? 'active' : ''} key={link.href} href={link.href}>{link.label}</a>)}
       </nav>
       <div className="nav-right-actions">
+        <CurrencySelector />
         <LanguageSelector />
         <BrushButton className="nav-cta">{t('nav.bookYourRide')}</BrushButton>
         <button className="menu-button" onClick={() => setOpen(true)} aria-label={t('nav.openMenu')}><i/><i/><i/></button>
@@ -41,6 +43,7 @@ export default function Navbar({ ready }) {
         {open && <motion.div className="mobile-menu" initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }} transition={{ ease: [.22,1,.36,1], duration: .55 }}>
           <button className="menu-close" onClick={() => setOpen(false)} aria-label={t('nav.closeMenu')}>×</button>
           <span className="mobile-index">{t('nav.menu')}</span>
+          <CurrencySelector isMobile={true} />
           <LanguageSelector isMobile={true} />
           {links.map((link, i) => <a key={link.href} onClick={() => setOpen(false)} href={link.href}><small>0{i + 1}</small>{link.label}</a>)}
           <BrushButton>{t('nav.bookYourRide')}</BrushButton>

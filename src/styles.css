@@ -6023,6 +6023,209 @@ a {
 }
 
 /* ===================================================
+   CURRENCY SELECTOR (NAVBAR & MOBILE)
+   =================================================== */
+
+.curr-selector-container {
+  position: relative;
+  z-index: 60;
+}
+
+.curr-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 8px 13px;
+  border-radius: 6px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
+}
+
+.curr-toggle-btn:hover,
+.curr-toggle-btn.open {
+  background: rgba(225, 25, 36, 0.18);
+  border-color: rgba(225, 25, 36, 0.6);
+  color: #fff;
+}
+
+.curr-flag {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.curr-code {
+  font-weight: 700;
+  color: #fff;
+}
+
+.curr-symbol-badge {
+  font-size: 11px;
+  color: #ff4755;
+  background: rgba(225, 25, 36, 0.15);
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.curr-chevron {
+  width: 13px;
+  height: 13px;
+  stroke: #aaa;
+  transition: transform 0.25s ease;
+}
+
+.curr-toggle-btn.open .curr-chevron {
+  transform: rotate(180deg);
+  stroke: #e11924;
+}
+
+.curr-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 220px;
+  background: #0d0d0d;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85), 0 0 20px rgba(225, 25, 36, 0.15);
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  backdrop-filter: blur(20px);
+}
+
+[dir="rtl"] .curr-dropdown-menu {
+  right: auto;
+  left: 0;
+}
+
+.curr-dropdown-header {
+  padding: 6px 10px 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #666;
+  letter-spacing: 0.08em;
+  font-family: Oswald, sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  margin-bottom: 2px;
+}
+
+.curr-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 8px 10px;
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  color: #ccc;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+[dir="rtl"] .curr-option-btn {
+  text-align: right;
+}
+
+.curr-option-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  transform: translateX(3px);
+}
+
+[dir="rtl"] .curr-option-btn:hover {
+  transform: translateX(-3px);
+}
+
+.curr-option-btn.selected {
+  background: rgba(225, 25, 36, 0.2);
+  color: #ff3344;
+}
+
+.curr-name {
+  flex: 1;
+}
+
+.curr-rate-info {
+  font-size: 11px;
+  color: #777;
+  font-family: Oswald, sans-serif;
+}
+
+.curr-active-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e11924;
+  box-shadow: 0 0 8px #e11924;
+}
+
+/* Mobile Currency Selector inside Drawer */
+.mobile-curr-selector {
+  margin: 10px 0 15px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.mobile-curr-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.mobile-curr-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.mobile-curr-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mobile-curr-btn.active {
+  background: #e11924;
+  border-color: #e11924;
+  font-weight: 700;
+}
+
+.curr-symbol-tag {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-left: auto;
+}
+
+/* ===================================================
    RTL (ARABIC) SPECIAL ADAPTATIONS
    =================================================== */
 

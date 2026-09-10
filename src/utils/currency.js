@@ -1,36 +1,62 @@
 import { FX_RATES } from '../context/CurrencyContext'
 
-export const FX = {
-  USD: 0.2723,
-  EUR: 0.2340,
-  GBP: 0.2010,
-  RUB: 25.10,
-  SAR: 1.02,
-  INR: 23.40
+export { FX_RATES }
+
+/**
+ * Formats a raw AED number into the currently selected currency string,
+ * or formats with specific rate info if provided.
+ */
+export function formatAedPrice(aedVal, currencyCode = 'AED') {
+  if (aedVal === undefined || aedVal === null || aedVal === '') return ''
+  const curr = FX_RATES[currencyCode] || FX_RATES.AED
+
+  const num = typeof aedVal === 'number'
+    ? aedVal
+    : parseFloat(String(aedVal).replace(/[^0-9.]/g, ''))
+
+  if (isNaN(num)) return String(aedVal)
+
+  const converted = Math.round(num * curr.rate)
+  const formattedNum = converted.toLocaleString()
+
+  if (currencyCode === 'AED') {
+    return `${formattedNum} AED`
+  }
+
+  if (curr.prefix) {
+    return `${curr.symbol}${formattedNum} ${currencyCode}`
+  }
+
+  return `${formattedNum} ${curr.symbol}`
 }
 
 /**
- * Formats price in AED only:
- * formatAedPrice(1300) -> "1300 AED"
+ * Backwards-compatible alias for formatAedPrice
  */
-export function formatAedPrice(aedVal) {
-  if (!aedVal && aedVal !== 0) return ''
-  const num = typeof aedVal === 'number' ? aedVal : parseFloat(String(aedVal).replace(/[^0-9.]/g, ''))
-  if (isNaN(num)) return aedVal
-  return `${num} AED`
-}
-
-// Backwards compatibility alias
-export function formatMultiPrice(aedVal) {
-  return formatAedPrice(aedVal)
+export function formatMultiPrice(aedVal, currencyCode = 'AED') {
+  return formatAedPrice(aedVal, currencyCode)
 }
 
 /**
- * Helper to format a range or complex string like "1 hr: 1300 AED | 2 hrs: 1800 AED"
+ * Helper to convert complex price strings containing AED to another currency.
+ * e.g. "1 hr: 1300 AED | 2 hrs: 1800 AED" -> "1 hr: $354 USD | 2 hrs: $490 USD"
  */
-export function formatPriceString(str) {
+export function formatPriceString(str, currencyCode = 'AED') {
   if (!str) return ''
-  return str.replace(/(\d+)\s*AED/gi, (match, p1) => {
-    return `${p1} AED`
+  const curr = FX_RATES[currencyCode] || FX_RATES.AED
+
+  return str.replace(/(\d+(?:\.\d+)?)\s*(?:AED|Dirhams?)/gi, (match, p1) => {
+    const num = parseFloat(p1)
+    if (isNaN(num)) return match
+    const converted = Math.round(num * curr.rate)
+    const formattedNum = converted.toLocaleString()
+
+    if (currencyCode === 'AED') {
+      return `${formattedNum} AED`
+    }
+    if (curr.prefix) {
+      return `${curr.symbol}${formattedNum} ${currencyCode}`
+    }
+    return `${formattedNum} ${curr.symbol}`
   })
 }

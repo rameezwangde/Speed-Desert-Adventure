@@ -4,6 +4,7 @@ import SectionHeading from '../components/SectionHeading'
 import BrushButton from '../components/BrushButton'
 import FAQ from '../components/FAQ'
 import TourIncludes from '../components/TourIncludes'
+import { useCurrency } from '../context/CurrencyContext'
 
 const tourInfo = [
   'Sharing Car 4WD',
@@ -43,6 +44,8 @@ const tripInclusions = [
 ]
 
 export default function DesertComboSharingSafariBuggy() {
+  const { formatPrice } = useCurrency()
+
   useEffect(() => {
     document.title = 'Desert Combo: Safari + Buggy | Speed Desert Adventure'
     window.scrollTo(0, 0)
@@ -61,7 +64,7 @@ export default function DesertComboSharingSafariBuggy() {
             Combine the thrill of dune bashing with a powerful buggy ride across the red dunes, topped off with a traditional Bedouin camp experience.
           </p>
           <div className="td-hero-price">
-            <span className="price-label">AED 299</span>
+            <span className="price-label">{formatPrice(299)}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -173,7 +176,7 @@ export default function DesertComboSharingSafariBuggy() {
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Ticket Price</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>AED 299.00</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(299)}</td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Package</td>

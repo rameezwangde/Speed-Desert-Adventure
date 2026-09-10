@@ -2,44 +2,43 @@ import { motion } from 'framer-motion'
 import SectionHeading from './SectionHeading'
 import { useLanguage } from '../context/LanguageContext'
 import { useCurrency } from '../context/CurrencyContext'
-import { formatMultiPrice } from '../utils/currency'
 
 export default function HourlyPackages() {
   const { t } = useLanguage()
-  const { openConverter } = useCurrency()
+  const { formatPrice } = useCurrency()
 
   const hourly = [
     { 
       rawAed: 400,
-      price: `${formatMultiPrice(400)} / ${t('common.person')}`, 
+      perPerson: true,
       title: t('hourly.item1Title'), 
       features: [t('hourly.item1F1'), t('hourly.item1F2'), t('hourly.item1F3')],
       duration: '30 mins',
       seats: '1, 2 & 4 Seaters',
-      transfer: formatMultiPrice(300),
+      transferAed: 300,
       image: '/buggy-duo.jpg',
       link: '/tour/30-minute-dune-buggy-ride'
     },
     { 
       rawAed: 1000,
-      price: formatMultiPrice(1000), 
+      perPerson: false,
       title: t('hourly.item2Title'), 
       features: [t('hourly.item2F1'), t('hourly.item2F2'), t('hourly.item2F3')],
       duration: '1-hour',
       seats: '1, 2 & 4 Seaters',
-      transfer: formatMultiPrice(300),
+      transferAed: 300,
       popular: true, 
       image: '/buggy.png',
       link: '/tour/1-hour-dune-buggy-tour'
     },
     { 
       rawAed: 1800,
-      price: formatMultiPrice(1800), 
+      perPerson: false,
       title: t('hourly.item3Title'), 
       features: [t('hourly.item3F1'), t('hourly.item3F2'), t('hourly.item3F3')],
       duration: '2-hours',
       seats: '1, 2 & 4 Seaters',
-      transfer: formatMultiPrice(300),
+      transferAed: 300,
       image: '/2-hour.png',
       link: '/tour/2-hour-dune-buggy-adventure'
     },
@@ -55,16 +54,9 @@ export default function HourlyPackages() {
             <div className="nhc-image-wrap">
               <img src={item.image} alt={item.title} loading="lazy" />
               <div className="nhc-price-box">
-                <span className="nhc-price">{item.price}</span>
-                <button 
-                  type="button" 
-                  className="nhc-curr-toggle" 
-                  onClick={() => openConverter(item.rawAed)}
-                  title="View in USD, EUR, GBP, RUB, SAR..."
-                >
-                  <span className="nhc-curr-icon">💱</span>
-                  <span>View other currencies</span>
-                </button>
+                <span className="nhc-price">
+                  {item.perPerson ? `${formatPrice(item.rawAed)} / ${t('common.person')}` : formatPrice(item.rawAed)}
+                </span>
               </div>
             </div>
             <div className="nhc-body">
@@ -102,7 +94,7 @@ export default function HourlyPackages() {
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" strokeWidth="2"/><circle cx="7" cy="17" r="2" strokeWidth="2"/><path d="M9 17h6" strokeWidth="2"/><circle cx="17" cy="17" r="2" strokeWidth="2"/></svg>
                   <div>
                     <small>{t('hourly.privateTransfer')}</small>
-                    <strong>{item.transfer}</strong>
+                    <strong>{formatPrice(item.transferAed)}</strong>
                   </div>
                 </div>
               </div>

@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import SectionHeading from '../components/SectionHeading'
 import BrushButton from '../components/BrushButton'
+import { useCurrency } from '../context/CurrencyContext'
 
 const tourInfo = [
   'Private Transfer (Optional)',
@@ -33,6 +34,8 @@ const tripInclusions = [
 ]
 
 export default function CustomBuggyPackages() {
+  const { formatPrice, formatPriceString } = useCurrency()
+
   useEffect(() => {
     document.title = 'Custom Buggy Packages | Speed Desert Adventure'
     window.scrollTo(0, 0)
@@ -51,7 +54,7 @@ export default function CustomBuggyPackages() {
             Whether you're celebrating a special occasion or hosting an event, we'll tailor every detail to match your vision.
           </p>
           <div className="td-hero-price">
-            <span className="price-label">AED 400</span>
+            <span className="price-label">{formatPrice(400)}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -75,7 +78,7 @@ export default function CustomBuggyPackages() {
             <svg viewBox="0 0 24 24" fill="none" stroke="#e11924"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" strokeWidth="2"/><circle cx="7" cy="17" r="2" strokeWidth="2"/><path d="M9 17h6" strokeWidth="2"/><circle cx="17" cy="17" r="2" strokeWidth="2"/></svg>
             <div>
               <small>Private Transfer</small>
-              <strong>300 AED</strong>
+              <strong>{formatPrice(300)}</strong>
             </div>
           </div>
         </div>
@@ -158,7 +161,7 @@ export default function CustomBuggyPackages() {
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Base Price</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>AED 400.00 (varies based on requests)</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPriceString('AED 400.00 (varies based on requests)')}</td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Total Duration</td>
@@ -199,7 +202,7 @@ export default function CustomBuggyPackages() {
             { q: "What does a 'custom' package mean?", a: "A custom package means we design the experience entirely around your needs. This can include specific scenic routes, special event setups (like birthdays or proposals), private camping arrangements, or customized food and beverage options." },
             { q: "How do I communicate my special requests?", a: "When you book, there will be an option to add special requests. Our team will then reach out to you directly to discuss your vision, provide options, and finalize the details of your customized desert adventure." },
             { q: "Can you arrange a private setup in the desert?", a: "Yes! We specialize in setting up private VIP areas in the dunes complete with seating, lighting, and refreshments for a truly exclusive and memorable experience after your buggy ride." },
-            { q: "Is the price fixed at AED 400?", a: "AED 400 is the base price for the buggy ride itself. The final cost will vary depending on the specific customizations, additions, and special arrangements you request." },
+            { q: "Is the price fixed?", a: `${formatPrice(400)} is the base price for the buggy ride itself. The final cost will vary depending on the specific customizations, additions, and special arrangements you request.` },
             { q: "Can we extend the duration of the tour?", a: "Absolutely. Since it is a custom package, you can extend the ride beyond the standard 1 hour. Just let us know how long you'd like to explore the desert, and we will arrange it." },
             { q: "Are custom packages available for large corporate groups?", a: "Yes, we frequently host large corporate events and can customize the experience with branding, team-building activities, and large-scale catering in the desert." }
           ].map((faq, i) => (

@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import SectionHeading from '../components/SectionHeading'
 import BrushButton from '../components/BrushButton'
+import { useCurrency } from '../context/CurrencyContext'
 
 const tourInfo = [
   'Private Transfer (Optional)',
@@ -40,6 +41,8 @@ const tripInclusions = [
 ]
 
 export default function TourDetails() {
+  const { formatPrice, formatPriceString } = useCurrency()
+
   useEffect(() => {
     document.title = 'Can-Am Maverick XRS 26 Tour | Speed Desert Adventure'
     window.scrollTo(0, 0)
@@ -55,7 +58,7 @@ export default function TourDetails() {
         <div className="td-hero-header">
           <SectionHeading eyebrow="2 & 4 SEATER DUNE BUGGY" title="CAN-AM MAVERICK" accent="XRS 26" align="center" />
           <div className="td-hero-price">
-            <span className="price-label">AED 1000 - 1800</span>
+            <span className="price-label">{formatPriceString('AED 1000 - 1800')}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -79,7 +82,7 @@ export default function TourDetails() {
             <svg viewBox="0 0 24 24" fill="none" stroke="#e11924"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" strokeWidth="2"/><circle cx="7" cy="17" r="2" strokeWidth="2"/><path d="M9 17h6" strokeWidth="2"/><circle cx="17" cy="17" r="2" strokeWidth="2"/></svg>
             <div>
               <small>Private Transfer</small>
-              <strong>300 AED</strong>
+              <strong>{formatPrice(300)}</strong>
             </div>
           </div>
         </div>
@@ -102,7 +105,7 @@ export default function TourDetails() {
             <p>At <strong>Speed Desert Adventure</strong>, your safety is our utmost priority. We provide all essential protective gear, including sanitized helmets and goggles. Before hitting the dunes, our expert desert instructors conduct a comprehensive safety briefing, ensuring that both beginners and experienced off-roaders can confidently navigate the dramatic Dubai desert landscape in their private tour.</p>
             
             <h2>Hassle-Free Private Transfers Across Dubai</h2>
-            <p>For a completely seamless experience, upgrade your booking with our optional <strong>private 4x4 transfer service</strong> for just AED 300. Ideal for families and small groups of up to six passengers, this door-to-door, air-conditioned transport ensures you arrive at our desert base relaxed and ready for your buggy ride, without the stress of navigating the city.</p>
+            <p>For a completely seamless experience, upgrade your booking with our optional <strong>private 4x4 transfer service</strong> for just {formatPrice(300)}. Ideal for families and small groups of up to six passengers, this door-to-door, air-conditioned transport ensures you arrive at our desert base relaxed and ready for your buggy ride, without the stress of navigating the city.</p>
             
             <h2>Book Your Can-Am Maverick XRS 26 Adventure Today</h2>
             <p>Don't settle for a standard desert outing. From towering dune climbs to scenic sunset photo stops, every second of our private tours is designed for excitement and luxury. Secure your <strong>Can-Am Maverick XRS 26 Dune Buggy Tour</strong> today with Dubai's leading off-road operator and create unforgettable memories in the heart of the Arabian Desert.</p>
@@ -137,7 +140,7 @@ export default function TourDetails() {
             <tbody>
               <tr>
                 <td><strong>Ticket Price</strong></td>
-                <td>1000 AED (1 Hr) – 1800 AED (2 Hrs)</td>
+                <td>{formatPriceString('1000 AED (1 Hr) – 1800 AED (2 Hrs)')}</td>
               </tr>
               <tr>
                 <td><strong>Seating Options</strong></td>

@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import SectionHeading from '../components/SectionHeading'
 import BrushButton from '../components/BrushButton'
+import { useCurrency } from '../context/CurrencyContext'
 
 const tourInfo = [
   'Private Transfer (Optional)',
@@ -39,6 +40,8 @@ const tripInclusions = [
 ]
 
 export default function ThirtyMinBuggyRide() {
+  const { formatPrice, formatPriceString } = useCurrency()
+
   useEffect(() => {
     document.title = '30-Minute Dune Buggy Ride Dubai | Speed Desert Adventure'
     window.scrollTo(0, 0)
@@ -54,7 +57,7 @@ export default function ThirtyMinBuggyRide() {
         <div className="td-hero-header">
           <SectionHeading eyebrow="QUICK ADVENTURE" title="30-MINUTE" accent="DUNE BUGGY RIDE DUBAI" align="center" />
           <div className="td-hero-price">
-            <span className="price-label">AED 400</span>
+            <span className="price-label">{formatPrice(400)}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -78,7 +81,7 @@ export default function ThirtyMinBuggyRide() {
             <svg viewBox="0 0 24 24" fill="none" stroke="#e11924"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" strokeWidth="2"/><circle cx="7" cy="17" r="2" strokeWidth="2"/><path d="M9 17h6" strokeWidth="2"/><circle cx="17" cy="17" r="2" strokeWidth="2"/></svg>
             <div>
               <small>Private Transfer</small>
-              <strong>300 AED</strong>
+              <strong>{formatPrice(300)}</strong>
             </div>
           </div>
         </div>
@@ -171,7 +174,7 @@ export default function ThirtyMinBuggyRide() {
             <tbody>
               <tr>
                 <td><strong>Ticket Price</strong></td>
-                <td>400 AED / Person</td>
+                <td>{formatPriceString('400 AED / Person')}</td>
               </tr>
               <tr>
                 <td><strong>Seating Options</strong></td>

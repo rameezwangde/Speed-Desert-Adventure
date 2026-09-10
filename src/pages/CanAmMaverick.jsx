@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import SectionHeading from '../components/SectionHeading'
 import BrushButton from '../components/BrushButton'
+import { useCurrency } from '../context/CurrencyContext'
 
 const tourInfo = [
   'Private Transfer (Optional)',
@@ -41,6 +42,8 @@ const packages = [
 ]
 
 export default function CanAmMaverick() {
+  const { formatPrice, formatPriceString } = useCurrency()
+
   useEffect(() => {
     document.title = 'Can-Am Maverick Tours | Speed Desert Adventure'
     window.scrollTo(0, 0)
@@ -59,7 +62,7 @@ export default function CanAmMaverick() {
             Choose from our premium fleet of Can-Am Maverick buggies. Whether you want a 2-seater or 4-seater, we offer the ultimate off-road adventure in Dubai's red dunes.
           </p>
           <div className="td-hero-price">
-            <span className="price-label">From AED 700</span>
+            <span className="price-label">{formatPriceString('From AED 700')}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -83,7 +86,7 @@ export default function CanAmMaverick() {
             <svg viewBox="0 0 24 24" fill="none" stroke="#e11924"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" strokeWidth="2"/><circle cx="7" cy="17" r="2" strokeWidth="2"/><path d="M9 17h6" strokeWidth="2"/><circle cx="17" cy="17" r="2" strokeWidth="2"/></svg>
             <div>
               <small>Private Transfer</small>
-              <strong>300 AED</strong>
+              <strong>{formatPrice(300)}</strong>
             </div>
           </div>
         </div>
@@ -167,7 +170,7 @@ export default function CanAmMaverick() {
                   <td><strong>{pkg.name}</strong></td>
                   <td>{pkg.seats}</td>
                   <td>{pkg.time}</td>
-                  <td style={{ color: '#e11924', fontWeight: 'bold' }}>{pkg.price}</td>
+                  <td style={{ color: '#e11924', fontWeight: 'bold' }}>{formatPriceString(pkg.price)}</td>
                 </tr>
               ))}
             </tbody>

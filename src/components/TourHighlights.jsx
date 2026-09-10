@@ -1,51 +1,46 @@
 import { motion } from 'framer-motion'
 import { useLanguage } from '../context/LanguageContext'
 import { useCurrency } from '../context/CurrencyContext'
-import { formatMultiPrice } from '../utils/currency'
 
 export default function TourHighlights() {
   const { t } = useLanguage()
-  const { openConverter } = useCurrency()
+  const { formatPrice, formatPriceString } = useCurrency()
 
   const tours = [
     { 
       rawAed: 1300,
-      price: formatMultiPrice(1300), 
       title: t('highlights.card1Title'), 
       copyKey: 'highlights.card1Copy',
       duration: '1 - 2 Hours', 
       seats: '2 & 4 Seaters', 
       transferType: t('highlights.privateTransfer'),
-      transfer: formatMultiPrice(300), 
+      transferAed: 300, 
       image: '/image.png',
       link: '/tour/can-am-maverick-xrs-26'
     },
     { 
       rawAed: 1300,
-      price: formatMultiPrice(1300), 
       title: t('highlights.card2Title'), 
       copyKey: 'highlights.card2Copy',
       duration: '1 - 2 Hours', 
       seats: '2 & 4 Seaters', 
       transferType: t('highlights.privateTransfer'),
-      transfer: formatMultiPrice(300), 
+      transferAed: 300, 
       image: '/red-buggy.jpeg',
       link: '/tour/can-am-maverick-r-x-rs'
     },
     { 
       rawAed: 400,
-      price: formatMultiPrice(400), 
       title: t('highlights.card3Title'), 
       copyKey: 'highlights.card3Copy',
       duration: '1 - 2 Hours', 
       seats: '1, 2 & 4 Seaters', 
       transferType: t('highlights.privateTransfer'),
-      transfer: formatMultiPrice(300), 
+      transferAed: 300, 
       image: '/polaris-rzr-custom.png',
       link: '/tour/polaris-rzr-custom'
     }
   ]
-
 
   return (
     <section className="tour-highlights" id="tour-highlights">
@@ -67,21 +62,14 @@ export default function TourHighlights() {
             <div className="nhc-image-wrap">
               <img src={tour.image} alt={tour.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
               <div className="nhc-price-box">
-                <span className="nhc-price">{tour.price}</span>
-                <button 
-                  type="button" 
-                  className="nhc-curr-toggle" 
-                  onClick={() => openConverter(tour.rawAed)}
-                  title="View in USD, EUR, GBP, RUB, SAR..."
-                >
-                  <span className="nhc-curr-icon">💱</span>
-                  <span>View other currencies</span>
-                </button>
+                <span className="nhc-price">{formatPrice(tour.rawAed)}</span>
               </div>
             </div>
             <div className="nhc-body">
               <h3 className="nhc-title">{tour.title}</h3>
-              <p style={{ color: '#999', fontSize: '16px', lineHeight: '1.4', textAlign: 'center', marginBottom: '20px' }}>{t(tour.copyKey)}</p>
+              <p style={{ color: '#999', fontSize: '16px', lineHeight: '1.4', textAlign: 'center', marginBottom: '20px' }}>
+                {formatPriceString(t(tour.copyKey))}
+              </p>
               
               <div style={{ background: 'rgba(215, 25, 32, 0.1)', border: '1px solid rgba(215, 25, 32, 0.3)', color: '#d71920', padding: '8px 12px', borderRadius: '4px', textAlign: 'center', fontSize: '13px', fontWeight: 'bold', marginBottom: '20px', letterSpacing: '0.5px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style={{ width: '16px', height: '16px', marginRight: '8px' }}>
@@ -109,7 +97,7 @@ export default function TourHighlights() {
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" strokeWidth="2"/><circle cx="7" cy="17" r="2" strokeWidth="2"/><path d="M9 17h6" strokeWidth="2"/><circle cx="17" cy="17" r="2" strokeWidth="2"/></svg>
                   <div>
                     <small>{tour.transferType}</small>
-                    <strong>{tour.transfer}</strong>
+                    <strong>{formatPrice(tour.transferAed)}</strong>
                   </div>
                 </div>
               </div>

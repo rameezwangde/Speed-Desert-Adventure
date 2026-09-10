@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import SectionHeading from '../components/SectionHeading'
 import BrushButton from '../components/BrushButton'
+import { useCurrency } from '../context/CurrencyContext'
 
 const tourInfo = [
   'Private Transfer (Optional)',
@@ -34,6 +35,8 @@ const tripInclusions = [
 ]
 
 export default function SelfDriveBuggyTours() {
+  const { formatPrice, formatPriceString } = useCurrency()
+
   useEffect(() => {
     document.title = 'Self-Drive Buggy Tours | Speed Desert Adventure'
     window.scrollTo(0, 0)
@@ -52,7 +55,7 @@ export default function SelfDriveBuggyTours() {
             Take the wheel of a powerful off-road buggy and conquer the majestic red dunes of the Arabian Desert at your own pace.
           </p>
           <div className="td-hero-price">
-            <span className="price-label">AED 400</span>
+            <span className="price-label">{formatPrice(400)}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -76,7 +79,7 @@ export default function SelfDriveBuggyTours() {
             <svg viewBox="0 0 24 24" fill="none" stroke="#e11924"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" strokeWidth="2"/><circle cx="7" cy="17" r="2" strokeWidth="2"/><path d="M9 17h6" strokeWidth="2"/><circle cx="17" cy="17" r="2" strokeWidth="2"/></svg>
             <div>
               <small>Private Transfer</small>
-              <strong>300 AED</strong>
+              <strong>{formatPrice(300)}</strong>
             </div>
           </div>
         </div>
@@ -159,7 +162,7 @@ export default function SelfDriveBuggyTours() {
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Ticket Price</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>AED 400.00</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(400)}</td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Total Duration</td>
@@ -202,7 +205,7 @@ export default function SelfDriveBuggyTours() {
             { q: "Are there any age restrictions for driving?", a: "To drive the dune buggy independently, you must be at least 16 years old. Passengers of all ages are welcome, making it a great activity for families and groups." },
             { q: "Is the tour safe?", a: "Absolutely. Safety is our top priority. Our buggies are equipped with roll cages, safety harnesses, and you'll be provided with a helmet and goggles. Plus, our expert guides will lead the way." },
             { q: "Can we switch drivers during the tour?", a: "Yes, if you book a 2-seater or 4-seater buggy, you can take turns driving during the tour so everyone gets to experience the thrill of being behind the wheel." },
-            { q: "Is hotel pick-up and drop-off included?", a: "Private transfer is available as an optional add-on for AED 300. We can pick you up directly from your hotel or residence in Dubai for a seamless experience." }
+            { q: "Is hotel pick-up and drop-off included?", a: `Private transfer is available as an optional add-on for ${formatPrice(300)}. We can pick you up directly from your hotel or residence in Dubai for a seamless experience.` }
           ].map((faq, i) => (
             <details key={i} style={{ background: '#111', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)', padding: '20px', cursor: 'pointer', height: 'fit-content' }}>
               <summary style={{ color: '#fff', fontSize: '18px', fontWeight: 'bold', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
