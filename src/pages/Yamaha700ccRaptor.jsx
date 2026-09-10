@@ -42,7 +42,7 @@ export default function Yamaha700ccRaptor() {
   const { formatPrice, formatPriceString } = useCurrency()
 
   useEffect(() => {
-    document.title = '250cc Quad Bike | Speed Desert Adventure'
+    document.title = 'Yamaha 570 cc bike rzr Polrize USA | Speed Desert Adventure'
     window.scrollTo(0, 0)
   }, [])
 
@@ -54,12 +54,12 @@ export default function Yamaha700ccRaptor() {
           Back to Packages
         </a>
         <div className="td-hero-header">
-          <SectionHeading eyebrow="250CC QUAD BIKE" title="QUAD BIKE TOURS" accent="IN DUBAI" align="center" />
+          <SectionHeading eyebrow="YAMAHA 570 CC" title="RZR POLRIZE USA" accent="(4X4 QUAD BIKE)" align="center" />
           <p style={{ textAlign: 'center', color: '#fff', fontSize: '18px', maxWidth: '800px', margin: '0 auto 30px' }}>
-            Embark on an exhilarating quad biking adventure in Dubai's red dunes. Our 250cc Quad Bike offers agile handling, speed, and thrill for everyone.
+            Embark on an exhilarating 4x4 quad biking adventure in Dubai's red dunes with the powerful Yamaha 570 cc bike rzr Polrize USA.
           </p>
           <div className="td-hero-price">
-            <span className="price-label">{formatPrice(250)}</span>
+            <span className="price-label">{formatPriceString('350 AED (1 Hr) / 600 AED (2 Hrs)')}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -69,14 +69,14 @@ export default function Yamaha700ccRaptor() {
             <svg viewBox="0 0 24 24" fill="none" stroke="#e11924"><circle cx="12" cy="12" r="10" strokeWidth="2"/><path d="M12 6v6l4 2" strokeWidth="2" strokeLinecap="round"/></svg>
             <div>
               <small>Duration</small>
-              <strong>1 Hour</strong>
+              <strong>1 Hr / 2 Hrs</strong>
             </div>
           </div>
           <div className="td-stat">
             <svg viewBox="0 0 24 24" fill="none" stroke="#e11924"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" strokeWidth="2"/><circle cx="9" cy="7" r="4" strokeWidth="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" strokeWidth="2"/><path d="M16 3.13a4 4 0 0 1 0 7.75" strokeWidth="2"/></svg>
             <div>
-              <small>Seats</small>
-              <strong>1 Seater</strong>
+              <small>Drive / Seats</small>
+              <strong>4x4 / 1 Seater</strong>
             </div>
           </div>
           <div className="td-stat">
@@ -160,21 +160,29 @@ export default function Yamaha700ccRaptor() {
       </section>
 
       <section className="td-ticket-prices" style={{ padding: '0 5%', maxWidth: '1200px', margin: '40px auto 0' }}>
-        <SectionHeading title="250cc Quad Bike" accent="Ticket Price & Timing" align="center" />
+        <SectionHeading title="Yamaha 570 cc bike rzr Polrize USA" accent="Ticket Price & Timing" align="center" />
         <div className="table-wrapper td-table" style={{ maxWidth: '800px', margin: '40px auto 0' }}>
           <table className="custom-table" style={{ width: '100%', minWidth: '100%', borderCollapse: 'collapse', border: '1px solid rgba(255,255,255,0.1)' }}>
             <tbody>
               <tr>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>250cc Quad Bike Ride</strong></td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Yamaha 570 cc bike rzr Polrize USA (4x4)</strong></td>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Information</strong></td>
               </tr>
               <tr>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Ticket Price</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(250)}</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Ticket Price (1 Hour)</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(350)}</td>
+              </tr>
+              <tr>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Ticket Price (2 Hours)</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(600)}</td>
+              </tr>
+              <tr>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Drive Type</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>4 by 4 (4x4 All-Wheel Drive)</td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Total Duration</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>1 Hour</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>1 Hour / 2 Hours</td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Seating Capacity</td>
@@ -182,7 +190,7 @@ export default function Yamaha700ccRaptor() {
               </tr>
               <tr>
                 <td style={{ padding: '20px' }}>Quad Ride Time</td>
-                <td style={{ padding: '20px' }}>60 Minutes</td>
+                <td style={{ padding: '20px' }}>60 min / 120 min</td>
               </tr>
             </tbody>
           </table>

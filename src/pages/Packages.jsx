@@ -61,8 +61,15 @@ const packagesData = [
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transferAed: 300
       },
       { 
+        rawAed: 350,
+        rawAed2: 600,
+        title: 'Yamaha 570 cc bike rzr Polrize USA', link: '/tour/yamaha-700cc-raptor', image: '/WhatsApp Image 2026-09-10 at 11.40.30 AM.jpeg',
+        copy: 'Conquer the dunes with the powerful 4x4 Yamaha 570 cc bike rzr Polrize USA.',
+        duration: '1-hour / 2-hour', seats: '1 Seater (4x4)', transferType: 'Private Transfer', transferAed: 300
+      },
+      { 
         rawAed: 250,
-        title: '250cc Quad Bike', link: '/tour/yamaha-700cc-raptor', image: '/WhatsApp Image 2026-09-10 at 11.40.30 AM.jpeg',
+        title: '250cc Quad Bike', link: '/tour/yamaha-700cc-raptor', image: '/gallery/img-7.jpeg',
         copy: 'Conquer the dunes with our agile and powerful 250cc Quad Bike.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transferAed: 300
       },
@@ -138,7 +145,13 @@ export default function PackagesPage() {
                     <div className="nhc-image-wrap">
                       <img src={opt.image} alt={opt.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
                       <div className="nhc-price-box">
-                        <span className="nhc-price">{formatPrice(opt.rawAed)}</span>
+                        {opt.rawAed2 ? (
+                          <span className="nhc-price" style={{ fontSize: '13px', lineHeight: '1.2' }}>
+                            {formatPrice(opt.rawAed)} (1h) | {formatPrice(opt.rawAed2)} (2h)
+                          </span>
+                        ) : (
+                          <span className="nhc-price">{formatPrice(opt.rawAed)}</span>
+                        )}
                       </div>
                     </div>
                     <div className="nhc-body">
