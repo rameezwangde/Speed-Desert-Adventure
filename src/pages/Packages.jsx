@@ -63,8 +63,8 @@ const packagesData = [
       { 
         rawAed: 350,
         rawAed2: 600,
-        title: 'Yamaha 570 cc bike rzr Polrize USA', link: '/tour/yamaha-700cc-raptor', image: '/WhatsApp Image 2026-09-10 at 11.40.30 AM.jpeg',
-        copy: 'Conquer the dunes with the powerful 4x4 Yamaha 570 cc bike rzr Polrize USA.',
+        title: 'Yamaha 570 cc bike rzr Polaris USA', link: '/tour/yamaha-700cc-raptor', image: '/WhatsApp Image 2026-09-10 at 11.40.30 AM.jpeg',
+        copy: 'Conquer the dunes with the powerful 4x4 Yamaha 570 cc bike rzr Polaris USA.',
         duration: '1-hour / 2-hour', seats: '1 Seater (4x4)', transferType: 'Private Transfer', transferAed: 300
       },
       { 

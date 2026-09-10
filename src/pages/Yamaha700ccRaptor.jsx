@@ -42,7 +42,7 @@ export default function Yamaha700ccRaptor() {
   const { formatPrice, formatPriceString } = useCurrency()
 
   useEffect(() => {
-    document.title = 'Yamaha 570 cc bike rzr Polrize USA | Speed Desert Adventure'
+    document.title = 'Yamaha 570 cc bike rzr Polaris USA | Speed Desert Adventure'
     window.scrollTo(0, 0)
   }, [])
 
@@ -54,9 +54,9 @@ export default function Yamaha700ccRaptor() {
           Back to Packages
         </a>
         <div className="td-hero-header">
-          <SectionHeading eyebrow="YAMAHA 570 CC" title="RZR POLRIZE USA" accent="(4X4 QUAD BIKE)" align="center" />
+          <SectionHeading eyebrow="YAMAHA 570 CC" title="RZR POLARIS USA" accent="(4X4 QUAD BIKE)" align="center" />
           <p style={{ textAlign: 'center', color: '#fff', fontSize: '18px', maxWidth: '800px', margin: '0 auto 30px' }}>
-            Embark on an exhilarating 4x4 quad biking adventure in Dubai's red dunes with the powerful Yamaha 570 cc bike rzr Polrize USA.
+            Embark on an exhilarating 4x4 quad biking adventure in Dubai's red dunes with the powerful Yamaha 570 cc bike rzr Polaris USA.
           </p>
           <div className="td-hero-price">
             <span className="price-label">{formatPriceString('350 AED (1 Hr) / 600 AED (2 Hrs)')}</span>
@@ -160,12 +160,12 @@ export default function Yamaha700ccRaptor() {
       </section>
 
       <section className="td-ticket-prices" style={{ padding: '0 5%', maxWidth: '1200px', margin: '40px auto 0' }}>
-        <SectionHeading title="Yamaha 570 cc bike rzr Polrize USA" accent="Ticket Price & Timing" align="center" />
+        <SectionHeading title="Yamaha 570 cc bike rzr Polaris USA" accent="Ticket Price & Timing" align="center" />
         <div className="table-wrapper td-table" style={{ maxWidth: '800px', margin: '40px auto 0' }}>
           <table className="custom-table" style={{ width: '100%', minWidth: '100%', borderCollapse: 'collapse', border: '1px solid rgba(255,255,255,0.1)' }}>
             <tbody>
               <tr>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Yamaha 570 cc bike rzr Polrize USA (4x4)</strong></td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Yamaha 570 cc bike rzr Polaris USA (4x4)</strong></td>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}><strong>Information</strong></td>
               </tr>
               <tr>
