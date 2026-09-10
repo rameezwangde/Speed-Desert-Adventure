@@ -40,13 +40,31 @@ export default function Navbar({ ready }) {
         <button className="menu-button" onClick={() => setOpen(true)} aria-label={t('nav.openMenu')}><i/><i/><i/></button>
       </div>
       <AnimatePresence>
-        {open && <motion.div className="mobile-menu" initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }} transition={{ ease: [.22,1,.36,1], duration: .55 }}>
-          <button className="menu-close" onClick={() => setOpen(false)} aria-label={t('nav.closeMenu')}>×</button>
-          <span className="mobile-index">{t('nav.menu')}</span>
-          <CurrencySelector isMobile={true} />
-          <LanguageSelector isMobile={true} />
-          {links.map((link, i) => <a key={link.href} onClick={() => setOpen(false)} href={link.href}><small>0{i + 1}</small>{link.label}</a>)}
-          <BrushButton>{t('nav.bookYourRide')}</BrushButton>
+        {open && <motion.div className="mobile-menu" initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }} transition={{ ease: [.22,1,.36,1], duration: .45 }}>
+          <div className="mobile-menu-header">
+            <span className="mobile-index">{t('nav.menu')}</span>
+            <button className="menu-close" onClick={() => setOpen(false)} aria-label={t('nav.closeMenu')}>×</button>
+          </div>
+
+          <div className="mobile-menu-content">
+            <div className="mobile-selectors-row">
+              <CurrencySelector isMobile={true} />
+              <LanguageSelector isMobile={true} />
+            </div>
+
+            <nav className="mobile-nav-links">
+              {links.map((link, i) => (
+                <a key={link.href} onClick={() => setOpen(false)} href={link.href}>
+                  <small>0{i + 1}</small>
+                  <span>{link.label}</span>
+                </a>
+              ))}
+            </nav>
+
+            <div className="mobile-menu-footer">
+              <BrushButton href="/#book" onClick={() => setOpen(false)}>{t('nav.bookYourRide')}</BrushButton>
+            </div>
+          </div>
         </motion.div>}
       </AnimatePresence>
     </motion.header>
