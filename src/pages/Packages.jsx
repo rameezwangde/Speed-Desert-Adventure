@@ -32,8 +32,8 @@ const packagesData = [
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transferAed: 300
       },
       { 
-        rawAed: 400,
-        title: 'Self-Drive Buggy Tours (MAX for 4 Seater)', link: '/tour/self-drive-buggy-tours', image: '/self-drive.png',
+        rawAed: 800,
+        title: 'Self Drive Buggy - Can-Am Maverick X3 (MAX for 4 Seater)', link: '/tour/self-drive-buggy-tours', image: '/self-drive.png',
         copy: 'Take the wheel of a powerful off-road buggy and conquer the majestic red dunes of the Arabian Desert at your own pace.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transferAed: 300
       },

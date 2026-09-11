@@ -38,7 +38,7 @@ export default function SelfDriveBuggyTours() {
   const { formatPrice, formatPriceString } = useCurrency()
 
   useEffect(() => {
-    document.title = 'Self-Drive Buggy Tours | Speed Desert Adventure'
+    document.title = 'Self Drive Buggy - Can-Am Maverick X3 | Speed Desert Adventure'
     window.scrollTo(0, 0)
   }, [])
 
@@ -55,7 +55,7 @@ export default function SelfDriveBuggyTours() {
             Take the wheel of a powerful off-road buggy and conquer the majestic red dunes of the Arabian Desert at your own pace.
           </p>
           <div className="td-hero-price">
-            <span className="price-label">{formatPrice(400)}</span>
+            <span className="price-label">{formatPrice(800)}</span>
             <BrushButton href="/#book">Book Now</BrushButton>
           </div>
         </div>
@@ -162,7 +162,7 @@ export default function SelfDriveBuggyTours() {
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Ticket Price</td>
-                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(400)}</td>
+                <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)', color: '#e11924', fontWeight: 'bold' }}>{formatPrice(800)}</td>
               </tr>
               <tr>
                 <td style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>Total Duration</td>
