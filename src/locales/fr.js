@@ -131,7 +131,7 @@ export const fr = {
     item2F1: 'Balade en buggy d\'une heure',
     item2F2: 'Prise en charge à l\'hôtel',
     item2F3: 'Balade à dos de chameau offerte',
-    item3Title: '2 Heures Can-Am Maverick R MAX (245 CH) (jusqu\'à 4 places)',
+    item3Title: '2 Heures Can-Am Maverick R (245 CH) (jusqu\'à 4 places)',
     item3F1: 'Balade en buggy de 2 heures (245 CH)',
     item3F2: 'Prise en charge à l\'hôtel',
     item3F3: 'Balade à dos de chameau offerte'

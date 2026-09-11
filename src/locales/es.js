@@ -131,7 +131,7 @@ export const es = {
     item2F1: 'Paseo en buggy de 1 hora',
     item2F2: 'Recogida en el hotel',
     item2F3: 'Paseo en camello gratis',
-    item3Title: '2 Horas Can-Am Maverick R MAX (245 HP) Tour (hasta 4 plazas)',
+    item3Title: '2 Horas Can-Am Maverick R (245 HP) Tour (hasta 4 plazas)',
     item3F1: 'Paseo en buggy de 2 horas (245 HP)',
     item3F2: 'Recogida en el hotel',
     item3F3: 'Paseo en camello gratis'

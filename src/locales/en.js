@@ -131,7 +131,7 @@ export const en = {
     item2F1: '1-Hour Buggy Ride',
     item2F2: 'Hotel Pick-Up',
     item2F3: 'Free Camel Ride',
-    item3Title: '2-Hour Can-Am Maverick R MAX (245 HP) Tour (MAX for 4 Seater)',
+    item3Title: '2-Hour Can-Am Maverick R (245 HP) Tour (MAX for 4 Seater)',
     item3F1: '2-Hour Buggy Ride (245 HP)',
     item3F2: 'Hotel Pick-Up',
     item3F3: 'Free Camel Ride'
