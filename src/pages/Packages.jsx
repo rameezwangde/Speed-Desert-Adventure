@@ -125,7 +125,7 @@ export default function PackagesPage() {
         </div>
       </section>
 
-      <div className="packages-container" style={{ maxWidth: '1200px', margin: '30px auto 0', padding: '0 5vw' }}>
+      <div className="packages-container" style={{ maxWidth: '1440px', margin: '30px auto 0', padding: '0 5vw' }}>
         
         <div className="packages-grid-wrapper" style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
           {packagesData.map((cat, i) => (
