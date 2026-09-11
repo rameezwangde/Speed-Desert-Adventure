@@ -106,7 +106,7 @@ export const ar = {
     polarisTitle: 'أسعار بجي بولاريس RZR',
     canamTitle: 'أسعار بجي كان-آم مافريك',
     rowEarlyBird: 'جولة الصباح الباكر (بولاريس RZR 1000 CC)',
-    rowNightRiders: 'جولة فرسان الليل: مغامرة البجي الليلية',
+    rowNightRiders: 'جولة فرسان الليل: Maverick R',
     rowAfternoon: 'جولة الكثبان الحمراء بعد الظهر',
     rowSharedTransfer: 'جولة الكثبان الحمراء + توصيل مشترك',
     rowCombo: 'كومبو الصحراء: سفاري + كان-آم X3 MAX (عروض + عشاء باربكيو)'

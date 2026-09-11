@@ -48,7 +48,7 @@ export default function NightRidersBuggyTour() {
   const { formatPrice, formatPriceString } = useCurrency()
 
   useEffect(() => {
-    document.title = 'Night Riders: Dune Buggy Dubai Adventure | Speed Desert Adventure'
+    document.title = 'Night Riders: Maverick R | Speed Desert Adventure'
     window.scrollTo(0, 0)
   }, [])
 
@@ -165,7 +165,7 @@ export default function NightRidersBuggyTour() {
           <table className="custom-table" style={{ minWidth: '100%' }}>
             <thead>
               <tr>
-                <th>Night Riders: Dune Buggy Dubai Adventure Details</th>
+                <th>Night Riders: Maverick R Details</th>
                 <th>Information</th>
               </tr>
             </thead>
@@ -183,7 +183,7 @@ export default function NightRidersBuggyTour() {
 
       <section style={{ background: 'rgba(255,255,255,0.02)', padding: '40px 5%' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>Are you up for a thrilling escapade under the stars? Our Night Riders: Dune Buggy Dubai Adventure offers an electrifying evening deep in the desert's embrace! Seize the controls of a Polaris RZR 1000XP Sport buggy, engineered for peak performance and ultimate comfort. Whether you're flying solo, with a partner, or in a group with our 1-seater, 2-seater, or 4-seater options, we've got the perfect buggy to suit your adventure needs. This private tour is exclusively yours, allowing for a completely personalized and exhilarating experience with just you and your chosen companions.</p>
+          <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>Are you up for a thrilling escapade under the stars? Our Night Riders: Maverick R tour offers an electrifying evening deep in the desert's embrace! Seize the controls of a Polaris RZR 1000XP Sport buggy, engineered for peak performance and ultimate comfort. Whether you're flying solo, with a partner, or in a group with our 1-seater, 2-seater, or 4-seater options, we've got the perfect buggy to suit your adventure needs. This private tour is exclusively yours, allowing for a completely personalized and exhilarating experience with just you and your chosen companions.</p>
           <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px', marginBottom: '20px' }}>We know schedules can be tight, which is why we provide flexible booking times for our Night Riders tour. Choose a slot that fits your itinerary and gear up for an unforgettable night of exploration and excitement in Dubai's enchanting desert. Led by our expert guides and with all safety equipment provided, you can immerse yourself in the adventure while we take care of everything else.</p>
           <p style={{ color: '#ccc', lineHeight: '1.8', fontSize: '16px' }}>Don't miss out on this unique opportunity to create lasting memories beneath the starry desert sky. Book your Night Riders adventure now for a night of adrenaline that you'll remember forever!</p>
         </div>
