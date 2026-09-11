@@ -78,7 +78,7 @@ export const ru = {
     tourDetails: 'ПОДРОБНЕЕ О ТУРЕ',
     card1Title: 'Can-Am Maverick XR (245 Л.С. Stage 4) (до 4 мест)',
     card1Copy: 'Покорите красные дюны Дубая на Can-Am Maverick XR мощностью 245 л.с. 1 ч: 1300 AED | 2 ч: 1800 AED.',
-    card2Title: 'Can-am Buggy Maverick R X rs MAX: Smart-Shox! (до 4 мест)',
+    card2Title: 'Can-am Buggy Maverick R X rs: Smart-Shox! (до 4 мест)',
     card2Copy: 'Погрузитесь в захватывающее приключение на багги по пустыне. 1 ч: 1300 AED | 2 ч: 1800 AED.',
     card3Title: 'Polaris RZR 1000 CC (145 Л.С.) (до 4 мест)',
     card3Copy: 'Отправьтесь в увлекательное путешествие на Polaris RZR 1000 CC мощностью 145 л.с. 1 ч: 400 AED | 2 ч: 700 AED.'

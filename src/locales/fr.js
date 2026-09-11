@@ -78,7 +78,7 @@ export const fr = {
     tourDetails: 'DÉTAILS DU TOUR',
     card1Title: 'Can-Am Maverick XR (245 CH Stage 4) (jusqu\'à 4 places)',
     card1Copy: 'Dominez les dunes rouges de Dubaï avec le Can-Am Maverick XR de 245 CH. 1h : 1300 AED | 2h : 1800 AED.',
-    card2Title: 'Can-am Buggy Maverick R X rs MAX : Smart-Shox ! (jusqu\'à 4 places)',
+    card2Title: 'Can-am Buggy Maverick R X rs : Smart-Shox ! (jusqu\'à 4 places)',
     card2Copy: 'Plongez dans notre aventure en buggy pour une expérience unique dans le désert. 1h : 1300 AED | 2h : 1800 AED.',
     card3Title: 'Polaris RZR 1000 CC (145 CH) (jusqu\'à 4 places)',
     card3Copy: 'Partez pour un voyage palpitant dans le désert avec le Polaris RZR 1000 CC de 145 CH. 1h : 400 AED | 2h : 700 AED.'
