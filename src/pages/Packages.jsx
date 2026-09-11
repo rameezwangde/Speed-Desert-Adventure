@@ -68,9 +68,9 @@ const packagesData = [
         duration: '1-hour / 2-hour', seats: '1 Seater (4x4)', transferType: 'Private Transfer', transferAed: 300
       },
       { 
-        rawAed: 250,
-        title: '250cc Quad Bike', link: '/tour/yamaha-700cc-raptor', image: '/gallery/img-7.jpeg',
-        copy: 'Conquer the dunes with our agile and powerful 250cc Quad Bike.',
+        rawAed: 350,
+        title: 'RZR 570 CC', link: '/tour/yamaha-700cc-raptor', image: '/gallery/img-7.jpeg',
+        copy: 'Conquer the dunes with our agile and powerful RZR 570 CC.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transferAed: 300
       },
     ]
