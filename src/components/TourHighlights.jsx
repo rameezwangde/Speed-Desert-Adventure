@@ -37,7 +37,7 @@ export default function TourHighlights() {
       seats: '1, 2 & 4 Seaters', 
       transferType: t('highlights.privateTransfer'),
       transferAed: 300, 
-      image: '/polaris-rzr-custom.png',
+      image: ['/polaris-rzr-custom.png', '/polaris-rzr-4seater.jpg'],
       link: '/tour/polaris-rzr-custom'
     }
   ]
@@ -60,7 +60,17 @@ export default function TourHighlights() {
         {tours.map((tour, i) => (
           <motion.article className="hourly-card" key={i} initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .25 }} transition={{ delay: i * .12, duration: .7, ease: [.22,1,.36,1] }}>
             <div className="nhc-image-wrap">
-              <img src={tour.image} alt={tour.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
+              {Array.isArray(tour.image) ? (
+                <div style={{ display: 'flex', width: '100%', height: '100%', background: '#111' }}>
+                  {tour.image.map((img, idx) => (
+                    <div key={idx} style={{ flex: 1, height: '100%', borderRight: idx === 0 ? '2px solid #050505' : 'none' }}>
+                      <img src={img} alt={tour.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <img src={tour.image} alt={tour.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
+              )}
               <div className="nhc-price-box">
                 <span className="nhc-price">{formatPrice(tour.rawAed)}</span>
               </div>

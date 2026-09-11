@@ -15,7 +15,7 @@ const packagesData = [
       },
       { 
         rawAed: 400,
-        title: 'Polaris RZR 1000 CC (145 HP) (MAX for 4 Seater)', link: '/tour/polaris-rzr-custom', image: '/polaris-rzr-custom.png',
+        title: 'Polaris RZR 1000 CC (145 HP) (MAX for 4 Seater)', link: '/tour/polaris-rzr-custom', image: ['/polaris-rzr-custom.png', '/polaris-rzr-4seater.jpg'],
         copy: "Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.",
         duration: '1 - 2 Hours', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transferAed: 300
       },
@@ -143,7 +143,17 @@ export default function PackagesPage() {
                 {cat.options.map((opt, j) => (
                   <article className="hourly-card" key={j}>
                     <div className="nhc-image-wrap">
-                      <img src={opt.image} alt={opt.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
+                      {Array.isArray(opt.image) ? (
+                        <div style={{ display: 'flex', width: '100%', height: '100%', background: '#111' }}>
+                          {opt.image.map((img, idx) => (
+                            <div key={idx} style={{ flex: 1, height: '100%', borderRight: idx === 0 ? '2px solid #050505' : 'none' }}>
+                              <img src={img} alt={opt.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <img src={opt.image} alt={opt.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
+                      )}
                       <div className="nhc-price-box">
                         {opt.rawAed2 ? (
                           <span className="nhc-price" style={{ fontSize: '13px', lineHeight: '1.2' }}>
