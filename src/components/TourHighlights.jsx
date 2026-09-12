@@ -15,7 +15,7 @@ export default function TourHighlights() {
       seats: '2 & 4 Seaters', 
       transferType: t('highlights.privateTransfer'),
       transferAed: 300, 
-      image: '/canam.png',
+      image: ['/canam.png', '/gallery/img-g2-31.jpeg'],
       link: '/tour/can-am-maverick-xrs-26'
     },
     { 
@@ -58,7 +58,7 @@ export default function TourHighlights() {
       </motion.div>
       <div className="hourly-grid">
         {tours.map((tour, i) => (
-          <motion.article className="hourly-card" key={i} initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .25 }} transition={{ delay: i * .12, duration: .7, ease: [.22,1,.36,1] }}>
+          <motion.article className="hourly-card" key={i} style={{ gridColumn: Array.isArray(tour.image) ? 'span 2' : 'auto' }} initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .25 }} transition={{ delay: i * .12, duration: .7, ease: [.22,1,.36,1] }}>
             <div className="nhc-image-wrap">
               {Array.isArray(tour.image) ? (
                 <div style={{ display: 'flex', width: '100%', height: '100%', background: '#111' }}>
@@ -69,7 +69,7 @@ export default function TourHighlights() {
                   ))}
                 </div>
               ) : (
-                <img src={tour.image} alt={tour.title} loading="lazy" style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
+                <img src={tour.image} alt={tour.title} loading="lazy" style={{ objectFit: tour.objectFit || 'cover', width: '100%', height: '100%', filter: 'none', opacity: 1 }} />
               )}
               <div className="nhc-price-box">
                 <span className="nhc-price">{formatPrice(tour.rawAed)}</span>

@@ -9,7 +9,7 @@ const packagesData = [
     options: [
       {
         rawAed: 1300,
-        title: 'Can-Am Maverick XR (245 HP Stage 4) (MAX for 4 Seater)', link: '/tour/can-am-maverick-xrs-26', image: '/canam.png',
+        title: 'Can-Am Maverick XR (245 HP Stage 4) (MAX for 4 Seater)', link: '/tour/can-am-maverick-xrs-26', image: ['/canam.png', '/gallery/img-g2-31.jpeg'],
         copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR. 1 hr: 1300 AED | 2 hrs: 1800 AED.",
         duration: '1 - 2 Hours', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transferAed: 300
       },
@@ -27,7 +27,7 @@ const packagesData = [
       },
       {
         rawAed: 1300,
-        title: 'Night Riders: Maverick R (MAX for 4 Seater)', link: '/tour/night-riders-buggy-tour', image: '/5.jpeg',
+        title: 'Night Riders: Maverick R (MAX for 4 Seater)', link: '/tour/night-riders-buggy-tour', image: ['/canam.png', '/seater.jpeg'],
         copy: 'Experience the thrill of navigating the desert under the starry night sky.',
         duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transferAed: 300
       },
@@ -141,7 +141,7 @@ export default function PackagesPage() {
 
               <div className="hourly-grid">
                 {cat.options.map((opt, j) => (
-                  <article className="hourly-card" key={j}>
+                  <article className="hourly-card" key={j} style={{ gridColumn: Array.isArray(opt.image) ? 'span 2' : 'auto' }}>
                     <div className="nhc-image-wrap">
                       {Array.isArray(opt.image) ? (
                         <div style={{ display: 'flex', width: '100%', height: '100%', background: '#111' }}>
