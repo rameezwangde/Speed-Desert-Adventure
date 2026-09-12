@@ -3053,8 +3053,20 @@ a {
 }
 
 @media (max-width: 1050px) {
+  .centered-flex-grid .single-card {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+  }
+  .centered-flex-grid .collage-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
   .centered-flex-grid .single-card,
   .centered-flex-grid .collage-card {
+    flex: 1 1 100%;
     max-width: 100%;
   }
 }
