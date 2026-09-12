@@ -33,7 +33,7 @@ const packagesData = [
       },
       {
         rawAed: 800,
-        title: 'Self Drive Buggy - Can-Am Maverick X3 (MAX for 4 Seater)', link: '/tour/self-drive-buggy-tours', image: '/self-drive.png',
+        title: 'Self Drive Buggy - Can-Am Maverick X3 (MAX for 4 Seater)', link: '/tour/self-drive-buggy-tours', image: ['/self-drive.png', '/gallery/img-g2-31.jpeg'],
         copy: 'Take the wheel of a powerful off-road buggy and conquer the majestic red dunes of the Arabian Desert at your own pace.',
         duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transferAed: 300
       },
@@ -139,9 +139,9 @@ export default function PackagesPage() {
                 {cat.category}
               </motion.h3>
 
-              <div className="hourly-grid">
+              <div className="hourly-grid centered-flex-grid">
                 {cat.options.map((opt, j) => (
-                  <article className="hourly-card" key={j} style={{ gridColumn: Array.isArray(opt.image) ? 'span 2' : 'auto' }}>
+                  <article className={`hourly-card ${Array.isArray(opt.image) ? 'collage-card' : 'single-card'}`} key={j}>
                     <div className="nhc-image-wrap">
                       {Array.isArray(opt.image) ? (
                         <div style={{ display: 'flex', width: '100%', height: '100%', background: '#111' }}>

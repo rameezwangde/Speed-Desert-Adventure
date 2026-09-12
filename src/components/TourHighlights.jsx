@@ -56,9 +56,9 @@ export default function TourHighlights() {
           </span>
         </h2>
       </motion.div>
-      <div className="hourly-grid">
+      <div className="hourly-grid centered-flex-grid">
         {tours.map((tour, i) => (
-          <motion.article className="hourly-card" key={i} style={{ gridColumn: Array.isArray(tour.image) ? 'span 2' : 'auto' }} initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .25 }} transition={{ delay: i * .12, duration: .7, ease: [.22,1,.36,1] }}>
+          <motion.article className={`hourly-card ${Array.isArray(tour.image) ? 'collage-card' : 'single-card'}`} key={i} initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .25 }} transition={{ delay: i * .12, duration: .7, ease: [.22,1,.36,1] }}>
             <div className="nhc-image-wrap">
               {Array.isArray(tour.image) ? (
                 <div style={{ display: 'flex', width: '100%', height: '100%', background: '#111' }}>

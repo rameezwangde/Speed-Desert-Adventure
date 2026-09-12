@@ -3032,6 +3032,33 @@ a {
   align-items: stretch
 }
 
+.centered-flex-grid {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hourly-card {
+  flex: 1 1 340px;
+}
+
+.centered-flex-grid .single-card {
+  flex: 1 1 calc(33.333% - 16px);
+  max-width: calc(33.333% - 16px);
+}
+
+.centered-flex-grid .collage-card {
+  flex: 1 1 calc(50% - 12px);
+  max-width: calc(50% - 12px);
+}
+
+@media (max-width: 1050px) {
+  .centered-flex-grid .single-card,
+  .centered-flex-grid .collage-card {
+    max-width: 100%;
+  }
+}
+
 .hourly-card {
   position: relative;
   overflow: hidden;
