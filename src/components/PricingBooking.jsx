@@ -29,7 +29,7 @@ export default function PricingBooking() {
           </thead>
           <tbody>
             <tr><td>Can-Am Maverick R MAX X rs '26</td><td>2-4 seater</td><td>2 persons</td><td>60 MIN Buggy Drive</td><td>{formatPrice(1300)}</td></tr>
-            <tr><td>Can-Am Maverick X3</td><td>2-4 seater</td><td>2 persons</td><td>60 MIN Buggy Drive</td><td>{formatPrice(1300)}</td></tr>
+            <tr><td>Can-Am Maverick X3</td><td>2-4 seater</td><td>2 persons</td><td>60 MIN Buggy Drive</td><td>{formatPrice(800)}</td></tr>
             <tr><td>{t('pricing.rowCombo')}</td><td>2-4 seater</td><td>1 person</td><td>30-Minute Can-Am X3 MAX Ride</td><td>{formatPrice(499)}</td></tr>
             <tr><td>{t('pricing.rowEarlyBird')}</td><td>1, 2 & 4 seater</td><td>1-4 persons</td><td>60 MIN Buggy Drive</td><td>{formatPrice(400)}</td></tr>
             <tr><td>{t('pricing.rowNightRiders')}</td><td>1, 2 & 4 seater</td><td>1-4 persons</td><td>60 MIN Buggy Drive</td><td>{formatPrice(1300)}</td></tr>

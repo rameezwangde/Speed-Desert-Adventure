@@ -39,7 +39,7 @@ const packagesData = [
       },
       {
         rawAed: 400,
-        title: 'Couples Buggy Tours', link: '/tour/couples-buggy-tours', image: '/couples-quad.png',
+        title: 'Couples Buggy Tours', link: '/tour/couples-buggy-tours', image: '/gallery/img-g2-84.jpeg',
         copy: 'Experience the desert like never before with our Couple Buggy Tours, created for those who love both adventure and each other.',
         duration: '1-hour', seats: '2 seater', transferType: 'Private Transfer', transferAed: 300
       },
@@ -68,9 +68,9 @@ const packagesData = [
         duration: '1-hour / 2-hour', seats: '1 Seater (4x4)', transferType: 'Private Transfer', transferAed: 300
       },
       {
-        rawAed: 350,
-        title: 'RZR 570 CC', link: '/tour/yamaha-700cc-raptor', image: '/gallery/img-7.jpeg',
-        copy: 'Conquer the dunes with our agile and powerful RZR 570 CC.',
+        rawAed: 250,
+        title: '250 cc bike', link: '/tour/yamaha-700cc-raptor', image: '/gallery/img-7.jpeg',
+        copy: 'Conquer the dunes with our agile and powerful 250 cc bike.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transferAed: 300
       },
     ]
@@ -79,9 +79,9 @@ const packagesData = [
     category: 'Combo Package',
     options: [
       {
-        rawAed: 250,
-        title: 'Desert Combo: Sharing Safari + 570cc Quad', link: '/tour/safari-quad', image: '/quad-girls.png',
-        copy: 'Double the thrill with our combo desert safari and 570cc quad bike ride.',
+        rawAed: 250, priceSuffix: ' / Person',
+        title: 'Desert Combo: Sharing Safari + 250cc Quad Bike', link: '/tour/safari-quad', image: '/gallery/img-7.jpeg',
+        copy: 'Double the thrill with our combo desert safari and 250cc quad bike ride.',
         duration: '1-hour', seats: '1 Seater', transferType: 'Private Transfer', transferAed: 300
       },
     ]
@@ -160,7 +160,7 @@ export default function PackagesPage() {
                             {formatPrice(opt.rawAed)} (1h) | {formatPrice(opt.rawAed2)} (2h)
                           </span>
                         ) : (
-                          <span className="nhc-price">{formatPrice(opt.rawAed)}</span>
+                          <span className="nhc-price" style={opt.priceSuffix ? {fontSize: '20px'} : {}}>{formatPrice(opt.rawAed)}{opt.priceSuffix || ''}</span>
                         )}
                       </div>
                     </div>

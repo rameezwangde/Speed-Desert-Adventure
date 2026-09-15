@@ -39,7 +39,7 @@ const packages = [
   { name: 'Raptor 700 cc Quad Bike', seats: '1-seater', time: '60 min', price: 'AED 400.00' },
   { name: '250cc Quad Bike', seats: '1-seater', time: '60 min', price: 'AED 250.00' },
   { name: 'Yamaha 700cc Raptor', seats: '1-seater', time: '60 min', price: 'AED 400.00' },
-  { name: 'Desert Combo: Sharing Safari + 570cc Quad', seats: '1-seater', time: '60 min', price: 'AED 250.00' },
+  { name: 'Desert Combo: Sharing Safari + 250cc Quad', seats: '1-seater', time: '60 min', price: 'AED 250.00 / Person' },
   { name: 'Early Bird Quad Bike Tour', seats: '1-seater', time: '60 min', price: 'AED 50.00' },
   { name: 'Early Bird Quad Bike Tour', seats: '2-seater', time: '60 min', price: 'AED 100.00' },
   { name: 'Afternoon Quad Bike Tour', seats: '1-seater', time: '60 min', price: 'AED 50.00' },
