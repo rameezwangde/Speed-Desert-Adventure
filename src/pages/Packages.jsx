@@ -21,7 +21,7 @@ const packagesData = [
       },
       {
         rawAed: 800,
-        title: '2 & 4 Seater Dune Buggy Can-Am Maverick X3 (200 HP) (MAX for 4 Seater)', link: '/tour/can-am-maverick-r-x-rs', image: ['/canam2.jpeg', '/seater.jpeg'],
+        title: '2 & 4 Seater Dune Buggy Can-Am Maverick X3 (200 HP) (MAX for 4 Seater)', link: '/tour/can-am-maverick-r-x-rs', image: ['/canam2.jpeg', '/right.jpeg'],
         copy: 'Can-Am Maverick Adventure: Experience thrilling group or couple rides.',
         duration: '1-hour', seats: '2 & 4 Seaters', transferType: 'Private Transfer', transferAed: 300
       },
