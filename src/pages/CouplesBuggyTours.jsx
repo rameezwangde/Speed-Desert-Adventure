@@ -83,44 +83,7 @@ export default function CouplesBuggyTours() {
           </div>
         </div>
 
-        <div className="td-gallery-slider-wrapper">
-          <div className="td-gallery-slider">
-            <div className="td-gallery-track">
-              {[
-                '/gallery/img-g2-18.jpeg',
-                '/gallery/img-g2-19.jpeg',
-                '/gallery/img-g2-20.jpeg',
-                '/gallery/img-g2-21.jpeg',
-                '/gallery/img-g2-22.jpeg',
-                '/gallery/img-g2-23.jpeg',
-                '/gallery/img-g2-24.jpeg',
-                '/gallery/img-g2-25.jpeg',
-                '/gallery/img-g2-26.jpeg',
-                '/gallery/img-g2-27.jpeg'
-              ].map((src, i) => (
-                <div className="td-gallery-item" key={`orig-${i}`}>
-                  <img src={src} alt="Tour Gallery" loading="lazy" />
-                </div>
-              ))}
-              {[
-                '/gallery/img-g2-18.jpeg',
-                '/gallery/img-g2-19.jpeg',
-                '/gallery/img-g2-20.jpeg',
-                '/gallery/img-g2-21.jpeg',
-                '/gallery/img-g2-22.jpeg',
-                '/gallery/img-g2-23.jpeg',
-                '/gallery/img-g2-24.jpeg',
-                '/gallery/img-g2-25.jpeg',
-                '/gallery/img-g2-26.jpeg',
-                '/gallery/img-g2-27.jpeg'
-              ].map((src, i) => (
-                <div className="td-gallery-item" key={`dup-${i}`}>
-                  <img src={src} alt="Tour Gallery" loading="lazy" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+
       </section>
 
       <section className="td-content-section">
