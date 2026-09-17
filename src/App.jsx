@@ -100,6 +100,8 @@ export default function App() {
   if (isPolarisRZRCustomTour) return <div className="site"><div className="page-shell"><Navbar ready /><PolarisRZRCustom/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
   if (isStage4Stunner) return <div className="site"><div className="page-shell"><Navbar ready /><Stage4Stunner/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
   if (isThirtyMinBuggyRide) return <div className="site"><div className="page-shell"><Navbar ready /><ThirtyMinBuggyRide/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isOneHourBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><OneHourBuggyTour/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
+  if (isTwoHourBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><TwoHourBuggyTour/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
   if (isEarlyBirdBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><EarlyBirdBuggyTour/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
   if (isRedDunesAfternoonBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><RedDunesAfternoonBuggyTour/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
   if (isNightRidersBuggyTour) return <div className="site"><div className="page-shell"><Navbar ready /><NightRidersBuggyTour/><Footer/><WhatsAppFloat/><CurrencyConverterModal/></div></div>
