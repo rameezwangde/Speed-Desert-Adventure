@@ -100,44 +100,7 @@ export default function QuadBike620cc() {
         </div>
 
 
-                <div className="td-gallery-slider-wrapper">
-          <div className="td-gallery-slider">
-            <div className="td-gallery-track">
-              {[
-                '/gallery/img-g2-57.jpeg',
-                '/gallery/img-g2-58.jpeg',
-                '/gallery/img-g2-59.jpeg',
-                '/gallery/img-g2-60.jpeg',
-                '/gallery/img-g2-61.jpeg',
-                '/gallery/img-g2-62.jpeg',
-                '/gallery/img-g2-63.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-65.jpeg',
-                '/gallery/img-g2-66.jpeg'
-              ].map((src, i) => (
-                <div className="td-gallery-item" key={`orig-${i}`}>
-                  <img src={src} alt="Tour Gallery" loading="lazy" />
-                </div>
-              ))}
-              {[
-                '/gallery/img-g2-57.jpeg',
-                '/gallery/img-g2-58.jpeg',
-                '/gallery/img-g2-59.jpeg',
-                '/gallery/img-g2-60.jpeg',
-                '/gallery/img-g2-61.jpeg',
-                '/gallery/img-g2-62.jpeg',
-                '/gallery/img-g2-63.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-65.jpeg',
-                '/gallery/img-g2-66.jpeg'
-              ].map((src, i) => (
-                <div className="td-gallery-item" key={`dup-${i}`}>
-                  <img src={src} alt="Tour Gallery" loading="lazy" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+
       </section>
 
       <section className="td-content-section">

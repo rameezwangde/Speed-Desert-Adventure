@@ -83,44 +83,7 @@ export default function NightBuggyTours() {
           </div>
         </div>
 
-        <div className="td-gallery-slider-wrapper">
-          <div className="td-gallery-slider">
-            <div className="td-gallery-track">
-              {[
-                '/gallery/img-g2-28.jpeg',
-                '/gallery/img-g2-29.jpeg',
-                '/gallery/img-g2-30.jpeg',
-                '/gallery/img-g2-31.jpeg',
-                '/gallery/img-g2-32.jpeg',
-                '/gallery/img-g2-33.jpeg',
-                '/gallery/img-g2-34.jpeg',
-                '/gallery/img-g2-35.jpeg',
-                '/gallery/img-g2-36.jpeg',
-                '/gallery/img-g2-37.jpeg'
-              ].map((src, i) => (
-                <div className="td-gallery-item" key={`orig-${i}`}>
-                  <img src={src} alt="Tour Gallery" loading="lazy" />
-                </div>
-              ))}
-              {[
-                '/gallery/img-g2-28.jpeg',
-                '/gallery/img-g2-29.jpeg',
-                '/gallery/img-g2-30.jpeg',
-                '/gallery/img-g2-31.jpeg',
-                '/gallery/img-g2-32.jpeg',
-                '/gallery/img-g2-33.jpeg',
-                '/gallery/img-g2-34.jpeg',
-                '/gallery/img-g2-35.jpeg',
-                '/gallery/img-g2-36.jpeg',
-                '/gallery/img-g2-37.jpeg'
-              ].map((src, i) => (
-                <div className="td-gallery-item" key={`dup-${i}`}>
-                  <img src={src} alt="Tour Gallery" loading="lazy" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+
       </section>
 
       <section className="td-content-section">
