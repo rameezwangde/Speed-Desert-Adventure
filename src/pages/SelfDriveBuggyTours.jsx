@@ -84,44 +84,7 @@ export default function SelfDriveBuggyTours() {
           </div>
         </div>
 
-        <div className="td-gallery-slider-wrapper">
-          <div className="td-gallery-slider">
-            <div className="td-gallery-track">
-              {[
-                '/gallery/img-g2-77.jpeg',
-                '/gallery/img-g2-78.jpeg',
-                '/gallery/img-g2-79.jpeg',
-                '/gallery/img-g2-80.jpeg',
-                '/gallery/img-g2-81.jpeg',
-                '/gallery/img-g2-82.jpeg',
-                '/gallery/img-g2-83.jpeg',
-                '/gallery/img-g2-84.jpeg',
-                '/gallery/img-g2-85.jpeg',
-                '/gallery/img-g2-86.jpeg'
-              ].map((src, i) => (
-                <div className="td-gallery-item" key={`orig-${i}`}>
-                  <img src={src} alt="Tour Gallery" loading="lazy" />
-                </div>
-              ))}
-              {[
-                '/gallery/img-g2-77.jpeg',
-                '/gallery/img-g2-78.jpeg',
-                '/gallery/img-g2-79.jpeg',
-                '/gallery/img-g2-80.jpeg',
-                '/gallery/img-g2-81.jpeg',
-                '/gallery/img-g2-82.jpeg',
-                '/gallery/img-g2-83.jpeg',
-                '/gallery/img-g2-84.jpeg',
-                '/gallery/img-g2-85.jpeg',
-                '/gallery/img-g2-86.jpeg'
-              ].map((src, i) => (
-                <div className="td-gallery-item" key={`dup-${i}`}>
-                  <img src={src} alt="Tour Gallery" loading="lazy" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+
       </section>
 
       <section className="td-content-section">
