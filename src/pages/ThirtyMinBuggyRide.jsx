@@ -90,32 +90,22 @@ export default function ThirtyMinBuggyRide() {
           <div className="td-gallery-slider">
             <div className="td-gallery-track">
               {[
-                '/gallery/img-g2-68.jpeg',
-                '/gallery/img-g2-69.jpeg',
-                '/gallery/img-g2-70.jpeg',
-                '/gallery/img-g2-71.jpeg',
-                '/gallery/img-g2-72.jpeg',
-                '/gallery/img-g2-73.jpeg',
-                '/gallery/img-g2-74.jpeg',
-                '/gallery/img-g2-75.jpeg',
-                '/gallery/img-g2-76.jpeg',
-                '/gallery/img-g2-77.jpeg'
+                '/gallery/img-g2-8.jpeg',
+                '/gallery/img-g2-31.jpeg',
+                '/gallery/img-g2-47.jpeg',
+                '/gallery/img-g2-53.jpeg',
+                '/gallery/img-g2-61.jpeg'
               ].map((src, i) => (
                 <div className="td-gallery-item" key={`orig-${i}`}>
                   <img src={src} alt="Tour Gallery" loading="lazy" />
                 </div>
               ))}
               {[
-                '/gallery/img-g2-68.jpeg',
-                '/gallery/img-g2-69.jpeg',
-                '/gallery/img-g2-70.jpeg',
-                '/gallery/img-g2-71.jpeg',
-                '/gallery/img-g2-72.jpeg',
-                '/gallery/img-g2-73.jpeg',
-                '/gallery/img-g2-74.jpeg',
-                '/gallery/img-g2-75.jpeg',
-                '/gallery/img-g2-76.jpeg',
-                '/gallery/img-g2-77.jpeg'
+                '/gallery/img-g2-8.jpeg',
+                '/gallery/img-g2-31.jpeg',
+                '/gallery/img-g2-47.jpeg',
+                '/gallery/img-g2-53.jpeg',
+                '/gallery/img-g2-61.jpeg'
               ].map((src, i) => (
                 <div className="td-gallery-item" key={`dup-${i}`}>
                   <img src={src} alt="Tour Gallery" loading="lazy" />
