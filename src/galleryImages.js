@@ -24,17 +24,13 @@ export const galleryImages = [
   '/gallery/img-g2-61.jpeg',
   '/gallery/img-g2-62.jpeg',
   '/gallery/img-g2-63.jpeg',
-  '/gallery/img-g2-64.jpeg',
-  '/gallery/img-g2-65.jpeg',
-  '/gallery/img-g2-66.jpeg',
+
   '/gallery/img-g2-67.jpeg',
   '/gallery/img-g2-68.jpeg',
 
-  '/gallery/img-g2-77.jpeg',
-  '/gallery/img-g2-78.jpeg',
+
   '/gallery/img-g2-8.jpeg',
   '/gallery/img-g2-81.jpeg',
   '/gallery/img-g2-82.jpeg',
-  '/gallery/img-g2-84.jpeg',
-  '/gallery/img-g2-85.jpeg',
+
 ];
