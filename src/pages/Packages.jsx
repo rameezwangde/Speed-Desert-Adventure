@@ -199,7 +199,7 @@ export default function PackagesPage() {
                         </div>
                       </div>
                       <div className="nhc-actions">
-                        <a href="#book" className="btn-primary">BOOK NOW</a>
+                        <a href={`https://wa.me/971504799258?text=${encodeURIComponent(`Hello, I would like to book the ${opt.title} for ${opt.duration}.`)}`} target="_blank" rel="noopener noreferrer" className="btn-primary">BOOK NOW</a>
                         {opt.link.startsWith('/tour/') ? (
                           <a href={opt.link} className="btn-secondary">TOUR DETAILS</a>
                         ) : (

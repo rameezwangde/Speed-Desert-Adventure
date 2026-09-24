@@ -112,7 +112,7 @@ export default function TourHighlights() {
                 </div>
               </div>
               <div className="nhc-actions">
-                <a href="#book" className="btn-primary">{t('highlights.bookNow')}</a>
+                <a href={`https://wa.me/971504799258?text=${encodeURIComponent(`Hello, I would like to book the ${tour.title} for ${tour.duration}.`)}`} target="_blank" rel="noopener noreferrer" className="btn-primary">{t('highlights.bookNow')}</a>
                 <a href={tour.link || "#details"} onClick={(e) => { if(tour.link) { window.location.href = tour.link; } }} style={{ pointerEvents: 'auto', zIndex: 10, position: 'relative' }} className="btn-secondary">{t('highlights.tourDetails')}</a>
               </div>
             </div>

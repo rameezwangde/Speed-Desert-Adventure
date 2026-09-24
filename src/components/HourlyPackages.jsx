@@ -99,7 +99,7 @@ export default function HourlyPackages() {
                 </div>
               </div>
               <div className="nhc-actions">
-                <a href="#book" className="btn-primary">{t('hourly.bookNow')}</a>
+                <a href={`https://wa.me/971504799258?text=${encodeURIComponent(`Hello, I would like to book the ${item.title} for ${item.duration}.`)}`} target="_blank" rel="noopener noreferrer" className="btn-primary">{t('hourly.bookNow')}</a>
                 <a href={item.link || "#details"} onClick={(e) => { if(item.link) { window.location.href = item.link; } }} style={{ pointerEvents: 'auto', zIndex: 10, position: 'relative' }} className="btn-secondary">{t('hourly.tourDetails')}</a>
               </div>
             </div>

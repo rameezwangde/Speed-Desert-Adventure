@@ -60,7 +60,7 @@ export default function Yamaha700ccRaptor() {
           </p>
           <div className="td-hero-price">
             <span className="price-label">{formatPriceString('350 AED (1 Hr) / 600 AED (2 Hrs)')}</span>
-            <BrushButton href="/#book">Book Now</BrushButton>
+            <BrushButton href="https://wa.me/971504799258?text=Hello,%20I%20would%20like%20to%20book%20a%20desert%20adventure!" target="_blank" rel="noopener noreferrer">Book Now</BrushButton>
           </div>
         </div>
 

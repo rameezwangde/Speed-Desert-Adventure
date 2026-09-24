@@ -62,7 +62,7 @@ export default function Navbar({ ready }) {
             </nav>
 
             <div className="mobile-menu-footer">
-              <BrushButton href="/#book" onClick={() => setOpen(false)}>{t('nav.bookYourRide')}</BrushButton>
+              <BrushButton href="https://wa.me/971504799258?text=Hello,%20I%20would%20like%20to%20book%20a%20desert%20adventure!" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>{t('nav.bookYourRide')}</BrushButton>
             </div>
           </div>
         </motion.div>}

@@ -65,7 +65,7 @@ export default function DesertComboSharingSafariBuggy() {
           </p>
           <div className="td-hero-price">
             <span className="price-label">{formatPrice(299)}</span>
-            <BrushButton href="/#book">Book Now</BrushButton>
+            <BrushButton href="https://wa.me/971504799258?text=Hello,%20I%20would%20like%20to%20book%20a%20desert%20adventure!" target="_blank" rel="noopener noreferrer">Book Now</BrushButton>
           </div>
         </div>
 

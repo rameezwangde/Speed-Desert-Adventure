@@ -14,8 +14,8 @@ export default function FinalCTA(){
         <h2>{t('finalCta.title')}<br/><em>{t('finalCta.titleAccent')}</em></h2>
         <p>{t('finalCta.desc')}</p>
         <div>
-          <BrushButton>{t('finalCta.bookRide')}</BrushButton>
-          <a href="#tour-highlights">{t('finalCta.viewPackages')} <i>→</i></a>
+          <BrushButton href="https://wa.me/971504799258?text=Hello,%20I%20would%20like%20to%20book%20a%20desert%20adventure!" target="_blank" rel="noopener noreferrer">{t('finalCta.bookRide')}</BrushButton>
+          <a href="/packages">{t('finalCta.viewPackages')} <i>→</i></a>
         </div>
       </motion.div>
     </section>

@@ -1,3 +1,3 @@
-export default function BrushButton({ children, href = '#contact', className = '' }) {
-  return <a className={`brush-button ${className}`} href={href}><span>{children}</span></a>
+export default function BrushButton({ children, href = '#contact', className = '', target, rel }) {
+  return <a className={`brush-button ${className}`} href={href} target={target} rel={rel}><span>{children}</span></a>
 }
