@@ -99,11 +99,7 @@ export default function EarlyBirdBuggyTour() {
                 '/gallery/img-g2-59.jpeg',
                 '/gallery/img-g2-60.jpeg',
                 '/gallery/img-g2-61.jpeg',
-                '/gallery/img-g2-62.jpeg',
                 '/gallery/img-g2-63.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-65.jpeg',
-                '/gallery/img-g2-66.jpeg',
                 '/gallery/img-g2-67.jpeg',
                 '/gallery/img-g2-68.jpeg'
               ].map((src, i) => (
@@ -115,11 +111,7 @@ export default function EarlyBirdBuggyTour() {
                 '/gallery/img-g2-59.jpeg',
                 '/gallery/img-g2-60.jpeg',
                 '/gallery/img-g2-61.jpeg',
-                '/gallery/img-g2-62.jpeg',
                 '/gallery/img-g2-63.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-65.jpeg',
-                '/gallery/img-g2-66.jpeg',
                 '/gallery/img-g2-67.jpeg',
                 '/gallery/img-g2-68.jpeg'
               ].map((src, i) => (

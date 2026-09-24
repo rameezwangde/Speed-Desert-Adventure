@@ -91,11 +91,7 @@ export default function PrivateBuggyTours() {
                 '/gallery/img-g2-59.jpeg',
                 '/gallery/img-g2-60.jpeg',
                 '/gallery/img-g2-61.jpeg',
-                '/gallery/img-g2-62.jpeg',
                 '/gallery/img-g2-63.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-65.jpeg',
-                '/gallery/img-g2-66.jpeg',
                 '/gallery/img-g2-67.jpeg'
               ].map((src, i) => (
                 <div className="td-gallery-item" key={`orig-${i}`}>
@@ -107,11 +103,7 @@ export default function PrivateBuggyTours() {
                 '/gallery/img-g2-59.jpeg',
                 '/gallery/img-g2-60.jpeg',
                 '/gallery/img-g2-61.jpeg',
-                '/gallery/img-g2-62.jpeg',
                 '/gallery/img-g2-63.jpeg',
-                '/gallery/img-g2-64.jpeg',
-                '/gallery/img-g2-65.jpeg',
-                '/gallery/img-g2-66.jpeg',
                 '/gallery/img-g2-67.jpeg'
               ].map((src, i) => (
                 <div className="td-gallery-item" key={`dup-${i}`}>
