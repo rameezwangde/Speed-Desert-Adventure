@@ -21,7 +21,7 @@ export default function Hero({ ready }) {
           {t('hero.desc')}
         </motion.p>
         <motion.div className="hero-actions" {...item(.62)}>
-          <BrushButton href="#packages">{t('hero.explorePackages')}</BrushButton>
+          <BrushButton href="/packages">{t('hero.explorePackages')}</BrushButton>
         </motion.div>
       </div>
       <HeroFeatures ready={ready}/>
