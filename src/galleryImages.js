@@ -8,7 +8,7 @@ export const galleryImages = [
   '/gallery/img-g2-45.jpeg',
   '/gallery/img-g2-46.jpeg',
   '/gallery/img-g2-47.jpeg',
-  '/gallery/img-g2-48.jpeg',
+
   '/gallery/img-g2-49.jpeg',
   '/gallery/img-g2-50.jpeg',
   '/gallery/img-g2-51.jpeg',
