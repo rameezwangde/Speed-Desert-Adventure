@@ -35,12 +35,19 @@ export default function Footer(){
           <a href="mailto:info@speeddesert.ae">info@speeddesert.ae</a>
           <span style={{maxWidth: '220px'}}>XP83+8CW Al Madam - Dubai-Hatta Rd - Sharjah - United Arab Emirates</span>
           <h3 className="follow">{t('footer.follow')}</h3>
-          <div style={{display:'flex',gap:'10px'}}>
+          <div style={{display:'flex',gap:'10px',flexWrap:'wrap'}}>
             <a href="https://www.instagram.com/speed_desert/" target="_blank" rel="noopener noreferrer" style={{color:'#ccc', textDecoration:'none', display: 'flex', alignItems: 'center', gap: '6px'}}>
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               Instagram
             </a> 
-            <span style={{color:'#666'}}>/</span> <span style={{color:'#666'}}>Facebook</span> <span style={{color:'#666'}}>/</span> <span style={{color:'#666'}}>TikTok</span>
+            <span style={{color:'#666'}}>/</span>
+            <a href="https://www.snapchat.com/add/speed_desert" target="_blank" rel="noopener noreferrer" style={{color:'#ccc', textDecoration:'none', display: 'flex', alignItems: 'center'}}>
+              Snapchat
+            </a>
+            <span style={{color:'#666'}}>/</span>
+            <a href="https://share.google/LZFB2nznfO7WHh2ZT" target="_blank" rel="noopener noreferrer" style={{color:'#ccc', textDecoration:'none', display: 'flex', alignItems: 'center'}}>
+              TikTok
+            </a>
           </div>
         </div>
       </div>
