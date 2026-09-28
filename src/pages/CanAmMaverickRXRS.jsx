@@ -55,7 +55,7 @@ export default function CanAmMaverickRXRS() {
         <div className="td-hero-header">
           <SectionHeading eyebrow="CAN-AM MAVERICK R X RS" title="SMART-SHOX" accent="DUNE BUGGY TOUR" align="center" />
           <div className="td-hero-price">
-            <span className="price-label">{formatPrice(1300)}</span>
+            <span className="price-label">{formatPrice(1000)}</span>
             <BrushButton href="https://wa.me/971504799258?text=Hello,%20I%20would%20like%20to%20book%20a%20desert%20adventure!" target="_blank" rel="noopener noreferrer">Book Now</BrushButton>
           </div>
         </div>
@@ -141,7 +141,7 @@ export default function CanAmMaverickRXRS() {
             <tbody>
               <tr>
                 <td><strong>Ticket Price</strong></td>
-                <td>{formatPriceString('1 hr: 1300 AED | 2 hrs: 1800 AED')}</td>
+                <td>{formatPriceString('1 hr: 1000 AED | 2 hrs: 1800 AED')}</td>
               </tr>
               <tr>
                 <td><strong>Seating Options</strong></td>

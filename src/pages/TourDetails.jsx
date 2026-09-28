@@ -58,7 +58,7 @@ export default function TourDetails() {
         <div className="td-hero-header">
           <SectionHeading eyebrow="2 & 4 SEATER DUNE BUGGY" title="CAN-AM MAVERICK" accent="XRS 26" align="center" />
           <div className="td-hero-price">
-            <span className="price-label">{formatPriceString('AED 1000 - 1800')}</span>
+            <span className="price-label">{formatPrice(1000)}</span>
             <BrushButton href="https://wa.me/971504799258?text=Hello,%20I%20would%20like%20to%20book%20a%20desert%20adventure!" target="_blank" rel="noopener noreferrer">Book Now</BrushButton>
           </div>
         </div>
@@ -140,7 +140,7 @@ export default function TourDetails() {
             <tbody>
               <tr>
                 <td><strong>Ticket Price</strong></td>
-                <td>{formatPriceString('1000 AED (1 Hr) – 1800 AED (2 Hrs)')}</td>
+                <td>{formatPrice(1000)}</td>
               </tr>
               <tr>
                 <td><strong>Seating Options</strong></td>

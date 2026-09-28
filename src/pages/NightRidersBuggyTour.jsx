@@ -38,7 +38,7 @@ const tripInclusions = [
 ]
 
 const detailsTable = [
-  { label: 'Ticket Price', value: 'AED 1300.00' },
+  { label: 'Ticket Price', value: 'AED 1000.00' },
   { label: 'Duration', value: '1-Hour Buggy Drive' },
   { label: 'Seating Options', value: '1, 2 & 4 Seater' },
   { label: 'Minimum Age of Rider', value: '16+ years' }
@@ -62,7 +62,7 @@ export default function NightRidersBuggyTour() {
         <div className="td-hero-header">
           <SectionHeading eyebrow="NIGHT RIDERS:" title="NIGHT DUNE" accent="BUGGY DUBAI" align="center" />
           <div className="td-hero-price">
-            <span className="price-label">{formatPrice(1300)}</span>
+            <span className="price-label">{formatPrice(1000)}</span>
             <BrushButton href="https://wa.me/971504799258?text=Hello,%20I%20would%20like%20to%20book%20a%20desert%20adventure!" target="_blank" rel="noopener noreferrer">Book Now</BrushButton>
           </div>
         </div>

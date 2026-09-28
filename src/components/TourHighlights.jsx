@@ -8,18 +8,29 @@ export default function TourHighlights() {
 
   const tours = [
     { 
-      rawAed: 1300,
-      title: t('highlights.card1Title'), 
+      rawAed: 1000,
+      title: t('highlights.card1Title2Seater'), 
       copyKey: 'highlights.card1Copy',
       duration: '1 - 2 Hours', 
-      seats: '2 & 4 Seaters', 
+      seats: '2 Seaters', 
       transferType: t('highlights.privateTransfer'),
       transferAed: 300, 
-      image: ['/canam.png', '/gallery/img-g2-31.jpeg'],
+      image: '/canam.png',
       link: '/tour/can-am-maverick-xrs-26'
     },
     { 
-      rawAed: 1300,
+      rawAed: 1000,
+      title: t('highlights.card1Title'), 
+      copyKey: 'highlights.card1Copy',
+      duration: '1 - 2 Hours', 
+      seats: '4 Seaters', 
+      transferType: t('highlights.privateTransfer'),
+      transferAed: 300, 
+      image: '/gallery/img-g2-31.jpeg',
+      link: '/tour/can-am-maverick-xrs-26'
+    },
+    { 
+      rawAed: 1000,
       title: t('highlights.card2Title'), 
       copyKey: 'highlights.card2Copy',
       duration: '1 - 2 Hours', 
