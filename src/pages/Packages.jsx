@@ -45,15 +45,27 @@ const packagesData = [
       },
       {
         rawAed: 1000,
-        title: 'Night Riders: Maverick R (MAX for 4 Seater)', link: '/tour/night-riders-buggy-tour', image: ['/canam.png', '/seater.jpeg'],
+        title: 'Night Riders: Maverick R (2 Seater)', link: '/tour/night-riders-buggy-tour', image: '/canam.png',
         copy: 'Experience the thrill of navigating the desert under the starry night sky.',
-        duration: '1-hour', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transferAed: 300
+        duration: '1-hour', seats: '2 Seaters', transferType: 'Private Transfer', transferAed: 300
+      },
+      {
+        rawAed: 1000,
+        title: 'Night Riders: Maverick R (MAX for 4 Seater)', link: '/tour/night-riders-buggy-tour', image: '/seater.jpeg',
+        copy: 'Experience the thrill of navigating the desert under the starry night sky.',
+        duration: '1-hour', seats: '4 Seaters', transferType: 'Private Transfer', transferAed: 300
       },
       {
         rawAed: 800,
-        title: 'Self Drive Buggy - Can-Am Maverick X3 (MAX for 4 Seater)', link: '/tour/self-drive-buggy-tours', image: ['/self-drive.png', '/gallery/img-g2-31.jpeg'],
+        title: 'Self Drive Buggy - Can-Am Maverick X3 (2 Seater)', link: '/tour/self-drive-buggy-tours', image: '/self-drive.png',
         copy: 'Take the wheel of a powerful off-road buggy and conquer the majestic red dunes of the Arabian Desert at your own pace.',
-        duration: '1-hour', seats: '1, 2, and 4 seater', transferType: 'Private Transfer', transferAed: 300
+        duration: '1-hour', seats: '2 Seaters', transferType: 'Private Transfer', transferAed: 300
+      },
+      {
+        rawAed: 800,
+        title: 'Self Drive Buggy - Can-Am Maverick X3 (MAX for 4 Seater)', link: '/tour/self-drive-buggy-tours', image: '/gallery/img-g2-31.jpeg',
+        copy: 'Take the wheel of a powerful off-road buggy and conquer the majestic red dunes of the Arabian Desert at your own pace.',
+        duration: '1-hour', seats: '4 Seaters', transferType: 'Private Transfer', transferAed: 300
       },
       {
         rawAed: 400,
