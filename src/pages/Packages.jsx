@@ -9,13 +9,13 @@ const packagesData = [
     options: [
       {
         rawAed: 1000,
-        title: 'Can-Am Maverick XR (245 HP Stage 4) (2 Seater)', link: '/tour/can-am-maverick-xrs-26', image: '/canam.png',
+        title: 'Can-Am Maverick XR (245 HP Stage 4) (2 Seater)', link: '/tour/can-am-maverick-xrs-26', image: '/gallery/img-g2-31.jpeg',
         copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR. 1 hr: 1000 AED | 2 hrs: 1800 AED.",
         duration: '1 - 2 Hours', seats: '2 Seaters', transferType: 'Private Transfer', transferAed: 300
       },
       {
         rawAed: 1000,
-        title: 'Can-Am Maverick XR (245 HP Stage 4) (MAX for 4 Seater)', link: '/tour/can-am-maverick-xrs-26', image: '/gallery/img-g2-31.jpeg',
+        title: 'Can-Am Maverick XR (245 HP Stage 4) (MAX for 4 Seater)', link: '/tour/can-am-maverick-xrs-26', image: '/canam.png',
         copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR. 1 hr: 1000 AED | 2 hrs: 1800 AED.",
         duration: '1 - 2 Hours', seats: '4 Seaters', transferType: 'Private Transfer', transferAed: 300
       },

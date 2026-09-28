@@ -15,7 +15,7 @@ export default function TourHighlights() {
       seats: '2 Seaters', 
       transferType: t('highlights.privateTransfer'),
       transferAed: 300, 
-      image: '/canam.png',
+      image: '/gallery/img-g2-31.jpeg',
       link: '/tour/can-am-maverick-xrs-26'
     },
     { 
@@ -26,7 +26,7 @@ export default function TourHighlights() {
       seats: '4 Seaters', 
       transferType: t('highlights.privateTransfer'),
       transferAed: 300, 
-      image: '/gallery/img-g2-31.jpeg',
+      image: '/canam.png',
       link: '/tour/can-am-maverick-xrs-26'
     },
     { 
