@@ -81,6 +81,7 @@ export const en = {
     card1Copy: "Dominate Dubai's red dunes with the 245 HP Stage 4 Can-Am Maverick XR. 1 hr: 1000 AED | 2 hrs: 1800 AED.",
     card2Title: 'Can-am Buggy Maverick R X rs: Smart-Shox! (MAX for 4 Seater)',
     card2Copy: 'Immerse yourself in our buggy adventure for a unique desert experience. 1 hr: 1000 AED | 2 hrs: 1800 AED.',
+    card3Title2Seater: 'Polaris RZR 1000 CC (145 HP) (2 Seater)',
     card3Title: 'Polaris RZR 1000 CC (145 HP) (MAX for 4 Seater)',
     card3Copy: 'Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.'
   },

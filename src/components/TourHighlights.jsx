@@ -42,13 +42,24 @@ export default function TourHighlights() {
     },
     { 
       rawAed: 400,
+      title: t('highlights.card3Title2Seater'), 
+      copyKey: 'highlights.card3Copy',
+      duration: '1 - 2 Hours', 
+      seats: '2 Seaters', 
+      transferType: t('highlights.privateTransfer'),
+      transferAed: 300, 
+      image: '/polaris-rzr-custom.png',
+      link: '/tour/polaris-rzr-custom'
+    },
+    { 
+      rawAed: 400,
       title: t('highlights.card3Title'), 
       copyKey: 'highlights.card3Copy',
       duration: '1 - 2 Hours', 
-      seats: '1, 2 & 4 Seaters', 
+      seats: '4 Seaters', 
       transferType: t('highlights.privateTransfer'),
       transferAed: 300, 
-      image: ['/polaris-rzr-custom.png', '/polaris-rzr-4seater.jpg'],
+      image: '/polaris-rzr-4seater.jpg',
       link: '/tour/polaris-rzr-custom'
     }
   ]

@@ -81,6 +81,7 @@ export const es = {
     card1Copy: 'Domina las dunas rojas de Dubái con el Can-Am Maverick XR de 245 HP Stage 4. 1 h: 1000 AED | 2 h: 1800 AED.',
     card2Title: 'Can-am Buggy Maverick R X rs: ¡Smart-Shox! (hasta 4 plazas)',
     card2Copy: 'Sumérgete en nuestra aventura en buggy para una experiencia única en el desierto. 1 h: 1000 AED | 2 h: 1800 AED.',
+    card3Title2Seater: 'Polaris RZR 1000 CC (145 HP) (2 plazas)',
     card3Title: 'Polaris RZR 1000 CC (145 HP) (hasta 4 plazas)',
     card3Copy: 'Emprende un emocionante viaje por el desierto con el Polaris RZR 1000 CC de 145 HP. 1 h: 400 AED | 2 h: 700 AED.'
   },

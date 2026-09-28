@@ -21,9 +21,15 @@ const packagesData = [
       },
       {
         rawAed: 400,
-        title: 'Polaris RZR 1000 CC (145 HP) (MAX for 4 Seater)', link: '/tour/polaris-rzr-custom', image: ['/polaris-rzr-custom.png', '/polaris-rzr-4seater.jpg'],
+        title: 'Polaris RZR 1000 CC (145 HP) (2 Seater)', link: '/tour/polaris-rzr-custom', image: '/polaris-rzr-custom.png',
         copy: "Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.",
-        duration: '1 - 2 Hours', seats: '1, 2 & 4 Seaters', transferType: 'Private Transfer', transferAed: 300
+        duration: '1 - 2 Hours', seats: '2 Seaters', transferType: 'Private Transfer', transferAed: 300
+      },
+      {
+        rawAed: 400,
+        title: 'Polaris RZR 1000 CC (145 HP) (MAX for 4 Seater)', link: '/tour/polaris-rzr-custom', image: '/polaris-rzr-4seater.jpg',
+        copy: "Embark on an exciting desert journey with the 145 HP Polaris RZR 1000 CC. 1 hr: 400 AED | 2 hrs: 700 AED.",
+        duration: '1 - 2 Hours', seats: '4 Seaters', transferType: 'Private Transfer', transferAed: 300
       },
       {
         rawAed: 800,

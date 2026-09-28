@@ -81,6 +81,7 @@ export const ru = {
     card1Copy: 'Покорите красные дюны Дубая на Can-Am Maverick XR мощностью 245 л.с. 1 ч: 1000 AED | 2 ч: 1800 AED.',
     card2Title: 'Can-am Buggy Maverick R X rs: Smart-Shox! (до 4 мест)',
     card2Copy: 'Погрузитесь в захватывающее приключение на багги по пустыне. 1 ч: 1000 AED | 2 ч: 1800 AED.',
+    card3Title2Seater: 'Polaris RZR 1000 CC (145 Л.С.) (2 мест)',
     card3Title: 'Polaris RZR 1000 CC (145 Л.С.) (до 4 мест)',
     card3Copy: 'Отправьтесь в увлекательное путешествие на Polaris RZR 1000 CC мощностью 145 л.с. 1 ч: 400 AED | 2 ч: 700 AED.'
   },
